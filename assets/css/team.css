@@ -1,0 +1,39 @@
+.parallax-teachers {
+  background: linear-gradient(to right, rgba(119, 124, 128, 0.6), rgba(173, 61, 61, 0.9)), url('../images/cover_teacher.jpg') no-repeat scroll center 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parallax-web {
+  background: linear-gradient(to right, rgba(119, 124, 128, 0.6), rgba(173, 61, 61, 0.9)), url('../images/cover_web.jpg') no-repeat scroll center 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parallax-vr {
+  background: linear-gradient(to right, rgba(119, 124, 128, 0.6), rgba(173, 61, 61, 0.9)), url('../images/cover_vr.jpg') no-repeat scroll center 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.parallax-ar {
+  background: linear-gradient(to right, rgba(119, 124, 128, 0.6), rgba(173, 61, 61, 0.9)), url('../images/cover_ar.jpg') no-repeat scroll center 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

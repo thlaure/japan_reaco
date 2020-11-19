@@ -1,0 +1,204 @@
+{
+    "managers": [
+        {
+            "name": "PAPINI",
+            "firstname": "Olivia",
+            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEIZemQN5tjnw/profile-displayphoto-shrink_200_200/0/1538985065561?e=1611187200&v=beta&t=UUUHQPtjYsEXltvzjGwVytY5E0eAue4EeoG--NuELP4",
+            "role": "CNAM teacher and coordinator",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/oliviapapini/"
+                }
+            ]
+        },
+        {
+            "name": "ROBERT",
+            "firstname": "Jean-Marc",
+            "image": "../assets/images/jmr.jpg",
+            "role": "CNAM teacher",
+            "socials": [
+                {
+                    "icon": "fas fa-globe",
+                    "link": "http://jrobert.univ-tln.fr/"
+                }
+            ]
+        },
+        {
+            "name": "BARROY",
+            "firstname": "Willy",
+            "image": "../assets/images/barroy.jpg",
+            "role": "CNAM and Ingemedia teacher",
+            "socials": []
+        },
+        {
+            "name": "BONFILS",
+            "firstname": "Philippe",
+            "image": "https://media-exp1.licdn.com/dms/image/C5103AQEMeFzHWDnO6g/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=tqLDCF8a4I_h-8HN7FVw5l7r_Tqocu_LnLjbFnnZ8Z0",
+            "role": "Ingemedia director and teacher, CNAM teacher",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/bonfilsphilippe/"
+                },
+                {
+                    "icon": "fas fa-globe",
+                    "link": "https://www.philippe-bonfils.com/"
+                }
+            ]
+        }
+    ],
+    "web": [
+        {
+            "name": "LAURE",
+            "firstname": "Thomas",
+            "image": "https://media-exp1.licdn.com/dms/image/C5603AQHim1Wz3ed4Jg/profile-displayphoto-shrink_200_200/0/1519469768174?e=1611187200&v=beta&t=yPWAOOkvGw9IiN9nGgj1FwRhfg7ii29FD9DA2hgh14w",
+            "degree": "CNAM engineer",
+            "role": "Web project manager and web developer",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/thomas-laure-developpeur-web/"
+                },
+                {
+                    "icon": "fab fa-twitter",
+                    "link": "https://twitter.com/laure_th"
+                },
+                {
+                    "icon": "fab fa-github",
+                    "link": "https://github.com/thlaure"
+                },
+                {
+                    "icon": "fas fa-globe",
+                    "link": "https://thomaslaure.fr/"
+                }
+            ]
+
+        },
+        {
+            "name": "ANDRES",
+            "firstname": "Nicolas",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGN_YLHRimhGg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=GhxZnywO5wKLKCkuH_Bb3cMz_Ex2r0_4OrcTxKflRI0",
+            "degree": "CNAM engineer",
+            "role": "Web developer",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/nicolas-andres-02b359162/"
+                }
+            ]
+        },
+        {
+            "name": "ARNOUX",
+            "firstname": "Thomas",
+            "image": "https://media-exp1.licdn.com/dms/image/C5603AQHi5GMSJ2CvMQ/profile-displayphoto-shrink_200_200/0/1520534042033?e=1611187200&v=beta&t=BJbysSDK2dcn-LP8ctU-jJIhg1ENI5itPZkUsJGFZLw",
+            "degree": "CNAM engineer",
+            "role": "Web developer",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/thomas-arnoux/"
+                }
+            ]
+        },
+        {
+            "name": "NEMR",
+            "firstname": "Andrew",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHkA7q95aktUA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=KY74Yhb5UbtWpmquoAiTlVcl-eba78zlFcQ5yTx-Fk8",
+            "degree": "Ingemedia",
+            "role": "Graphist",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/andrew-nemr-40b5a8145/"
+                }
+            ]
+        },
+        {
+            "name": "GOMA",
+            "firstname": "Maëva",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHoD6diuBUuKA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=8nvaQgs-SD5E7TxGK474-nFr094zO6sZctv_ov4irXs",
+            "degree": "Ingemedia",
+            "role": "Graphist",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/maeva-goma-a462a6109/"
+                }
+            ]
+        },
+        {
+            "name": "BONNARD",
+            "firstname": "Lucas",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQG_93clcbwx6Q/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=fq3Shi0iCrQxPkJatR-emkhMUchr_Gdb8b0cLD2GRhk",
+            "degree": "Ingemedia",
+            "role": "Web designer",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/lucas-bonnard-705953131/"
+                }
+            ]
+        },
+        {
+            "name": "BAIBAH",
+            "firstname": "Ismail",
+            "image": "https://media-exp1.licdn.com/dms/image/C5603AQEe25BsnWLzyg/profile-displayphoto-shrink_200_200/0/1604871777314?e=1611187200&v=beta&t=7nNARsRPho9zSsEaD-dQ2ZCtgNV2rOkCWb6kr_4D7bE",
+            "degree": "Ingemedia",
+            "role": "Storytelling / Communication",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/issmail-baibah-5492a8123/"
+                }
+            ]
+        }
+    ],
+    "vr": [
+        {
+            "name": "ASEJO CASPILLO",
+            "firstname": "Vanessa",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHD-HALvwCbsA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=qYuqrbNlMdWT0QP8b6QaeExdcN0m9CPdAZYkGwTp6IA",
+            "degree": "CNAM engineer",
+            "role": "VR project manager",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/vanessaasejocaspillo/"
+                }
+            ]
+        },
+        {
+            "name": "BOGANIN",
+            "firstname": "Aurore",
+            "image": "https://media-exp1.licdn.com/dms/image/C5603AQEyI1CzRc2b5w/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=nUGVhKDXz5U1ZNur121Utzc5ik2D98OU3EX1WfRM3fY",
+            "degree": "Ingemedia : numeric creation",
+            "role": "2D designer",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/aurore-boganin/"
+                },
+                {
+                    "icon": "fas fa-globe",
+                    "link": "https://www.behance.net/auroreboganin"
+                }
+            ]
+        }
+    ],
+    "ar": [
+        {
+            "name": "DE SERNA",
+            "firstname": "Nathan",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHSEO2ceZJcwA/profile-displayphoto-shrink_200_200/0/1526117109793?e=1611187200&v=beta&t=lmujRDBahJ5e4wySsemVRDAwka80-4jOWXkuPnNlJ1o",
+            "degree": "CNAM engineer",
+            "role": "AR project manager",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/nathan-de-serna-5a0b8315b/"
+                }
+            ]
+        }
+    ]
+}
