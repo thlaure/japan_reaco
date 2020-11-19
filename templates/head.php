@@ -4,18 +4,18 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="theme-color" content="#ff0000">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="title" content="">
+<meta name="title" content="Hiroshima Exploration">
 <meta name="author" content="CNAM / Ingemedia">
-<meta name="description" content="">
+<meta name="description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
-<meta property="og:title" content="">
-<meta property="og:description" content="">
+<meta property="og:title" content="Hiroshima Exploration">
+<meta property="og:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
 <meta property="og:image" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="">
-<meta property="twitter:title" content="">
-<meta property="twitter:description" content="">
+<meta property="twitter:title" content="Hiroshima Exploration">
+<meta property="twitter:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
 <meta property="twitter:image" content="">
 <link rel="shortcut icon" href="">
 <link rel="apple-touch-icon" href="">
