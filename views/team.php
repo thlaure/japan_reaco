@@ -24,8 +24,6 @@
             </blockquote>
         </div>
 
-        <?php $members = json_decode(file_get_contents("./assets/docs/members.json")) ?>
-
         <article class="container my-5">
             <h2 class="display-4 mb-5">Teachers</h2>
             <div class="row container mx-auto">
