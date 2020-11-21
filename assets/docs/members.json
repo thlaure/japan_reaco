@@ -53,7 +53,7 @@
             "name": "LAURE",
             "firstname": "Thomas",
             "image": "https://media-exp1.licdn.com/dms/image/C5603AQHim1Wz3ed4Jg/profile-displayphoto-shrink_200_200/0/1519469768174?e=1611187200&v=beta&t=yPWAOOkvGw9IiN9nGgj1FwRhfg7ii29FD9DA2hgh14w",
-            "degree": "CNAM engineer",
+            "degree": "CNAM: IT and multimedia engineer",
             "role": "Web project manager and web developer",
             "socials": [
                 {
@@ -79,7 +79,7 @@
             "name": "ANDRES",
             "firstname": "Nicolas",
             "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGN_YLHRimhGg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=GhxZnywO5wKLKCkuH_Bb3cMz_Ex2r0_4OrcTxKflRI0",
-            "degree": "CNAM engineer",
+            "degree": "CNAM: IT and multimedia engineer",
             "role": "Web developer",
             "socials": [
                 {
@@ -92,7 +92,7 @@
             "name": "ARNOUX",
             "firstname": "Thomas",
             "image": "https://media-exp1.licdn.com/dms/image/C5603AQHi5GMSJ2CvMQ/profile-displayphoto-shrink_200_200/0/1520534042033?e=1611187200&v=beta&t=BJbysSDK2dcn-LP8ctU-jJIhg1ENI5itPZkUsJGFZLw",
-            "degree": "CNAM engineer",
+            "degree": "CNAM: IT and multimedia engineer",
             "role": "Web developer",
             "socials": [
                 {
@@ -154,12 +154,27 @@
             ]
         }
     ],
+    "ar": [
+        {
+            "name": "DE SERNA",
+            "firstname": "Nathan",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHSEO2ceZJcwA/profile-displayphoto-shrink_200_200/0/1526117109793?e=1611187200&v=beta&t=lmujRDBahJ5e4wySsemVRDAwka80-4jOWXkuPnNlJ1o",
+            "degree": "CNAM: IT and multimedia engineer",
+            "role": "AR project manager",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/nathan-de-serna-5a0b8315b/"
+                }
+            ]
+        }
+    ],
     "vr": [
         {
             "name": "ASEJO CASPILLO",
             "firstname": "Vanessa",
             "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHD-HALvwCbsA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=qYuqrbNlMdWT0QP8b6QaeExdcN0m9CPdAZYkGwTp6IA",
-            "degree": "CNAM engineer",
+            "degree": "CNAM: IT and multimedia engineer",
             "role": "VR project manager",
             "socials": [
                 {
@@ -172,7 +187,7 @@
             "name": "BOGANIN",
             "firstname": "Aurore",
             "image": "https://media-exp1.licdn.com/dms/image/C5603AQEyI1CzRc2b5w/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=nUGVhKDXz5U1ZNur121Utzc5ik2D98OU3EX1WfRM3fY",
-            "degree": "Ingemedia : numeric creation",
+            "degree": "Ingemedia: numeric creation",
             "role": "2D designer",
             "socials": [
                 {
@@ -184,19 +199,25 @@
                     "link": "https://www.behance.net/auroreboganin"
                 }
             ]
-        }
-    ],
-    "ar": [
+        },
         {
-            "name": "DE SERNA",
-            "firstname": "Nathan",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHSEO2ceZJcwA/profile-displayphoto-shrink_200_200/0/1526117109793?e=1611187200&v=beta&t=lmujRDBahJ5e4wySsemVRDAwka80-4jOWXkuPnNlJ1o",
-            "degree": "CNAM engineer",
-            "role": "AR project manager",
+            "name": "NOLOT",
+            "firstname": "Laurianne",
+            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQH_5omwCBqMQg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=lIaZ7G2c9WTqqXcuol7_HCD2bQt8eUAZU5JiuacXAQQ",
+            "degree": "Ingemedia: UX/UI design",
+            "role": "3D designer",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
-                    "link": "https://www.linkedin.com/in/nathan-de-serna-5a0b8315b/"
+                    "link": "https://www.linkedin.com/in/lauriane-nolot-30b199134/"
+                },
+                {
+                    "icon": "fab fa-instagram",
+                    "link": "https://www.instagram.com/lauriane.nolot/"
+                },
+                {
+                    "icon": "fab fa-facebook",
+                    "link": "https://www.facebook.com/profile.php?id=100009188411096"
                 }
             ]
         }

@@ -1,18 +1,3 @@
-.btn-light {
-  background-color: transparent;
-  color: white;;
-}
-
-.btn-light:hover {
-  color: #212529;
-  background-color: white;
-  border-color: white;
-}
-
-.sm-separator {
-  border-top: 2px solid rgba(255, 255, 255, 0.75);
-}
-
 body {
   margin: 0;
 }
@@ -28,14 +13,6 @@ h1 {
   text-align: center;
   background: linear-gradient(60deg, rgba(203, 45, 62, 0.7) 0%, rgba(239, 71, 58, 0.7) 100%), url(../images/cover_hiroshima.jpg) no-repeat center fixed;
   color: white;
-}
-
-.logo {
-  width: 50px;
-  fill: white;
-  padding-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .inner-header {

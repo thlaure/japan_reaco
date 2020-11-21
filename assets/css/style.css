@@ -1,3 +1,30 @@
 .shadowing {
   box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.7);
 }
+
+.sm-separator {
+  border-top: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+.btn-light {
+  background-color: transparent;
+  color: white;
+}
+
+.btn-light:hover {
+  color: #212529;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-primary {
+  background-color: transparent;
+  color: #212529;
+  border-color: #212529;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #212529;
+  border-color: white;
+}

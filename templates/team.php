@@ -8,17 +8,29 @@
 </head>
 
 <body>
-    <section class="container-fluid">
-        <h1 class="display-2 text-center mb-5">Team</h1>
+    <section>
+        <header class="parallax-header-team text-white">
+            <div class="container-fluid">
+                <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
+            </div>
+            <h1 class="text-center mt-4 display-4">Hiroshima Exploration</h1>
+            <hr class="sm-separator w-25">
+            <h2 class="text-center font-italic">Project Team</h2>
+        </header>
+
+        <div class="container mt-5">
+            <blockquote class="blockquote">
+                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.</p>
+            </blockquote>
+        </div>
+
         <?php $members = json_decode(file_get_contents("./assets/docs/members.json")) ?>
 
-        <article class="mb-5">
-            <div class="parallax-teachers mb-3">
-                <h2 class="display-3 mb-5 text-center text-white">Teachers</h2>
-            </div>
+        <article class="container my-5">
+            <h2 class="display-4 mb-5">Teachers</h2>
             <div class="row container mx-auto">
                 <?php foreach ($members->managers as $manager) : ?>
-                    <div class="card col-md-3 border-0" style="width: 18rem;">
+                    <div class="card col-md-3 border-0 mx-auto" style="width: 18rem;">
                         <img src="<?= $manager->image ?>" class="card-img-top rounded-circle" alt="Portrait of <?= $manager->firstname ?> <?= $manager->name ?>">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= $manager->firstname ?> <?= $manager->name ?></h5>
@@ -34,13 +46,11 @@
             </div>
         </article>
 
-        <article class="mb-5">
-            <div class="parallax-web mb-3">
-                <h2 class="display-3 mb-5 text-center text-white">Web project</h2>
-            </div>
+        <article class="container my-5">
+            <h2 class="display-4 mb-5">Web project</h2>
             <div class="row container mx-auto">
                 <?php foreach ($members->web as $web) : ?>
-                    <div class="card border-0 col-md-3" style="width: 18rem;">
+                    <div class="card border-0 col-md-3 mx-auto" style="width: 18rem;">
                         <img src="<?= $web->image ?>" class="card-img-top rounded-circle" alt="Portrait of <?= $web->firstname ?> <?= $web->name ?>">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= $web->firstname ?> <?= $web->name ?></h5>
@@ -57,13 +67,11 @@
             </div>
         </article>
 
-        <article class="mb-5">
-            <div class="parallax-ar mb-3">
-                <h2 class="display-3 mb-5 text-center text-white">AR project</h2>
-            </div>
+        <article class="container my-5">
+            <h2 class="display-4 mb-5">AR project</h2>
             <div class="row container mx-auto">
                 <?php foreach ($members->ar as $ar) : ?>
-                    <div class="card border-0 col-md-3" style="width: 18rem;">
+                    <div class="card border-0 col-md-3 mx-auto" style="width: 18rem;">
                         <img src="<?= $ar->image ?>" class="card-img-top rounded-circle" alt="Portrait of <?= $ar->firstname ?> <?= $ar->name ?>">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= $ar->firstname ?> <?= $ar->name ?></h5>
@@ -80,13 +88,11 @@
             </div>
         </article>
 
-        <article>
-            <div class="parallax-vr mb-3">
-                <h2 class="display-3 mb-5 text-center text-white">VR project</h2>
-            </div>
+        <article class="container my-5">
+            <h2 class="display-4 mb-5">VR project</h2>
             <div class="row container mx-auto">
                 <?php foreach ($members->vr as $vr) : ?>
-                    <div class="card border-0 col-md-3" style="width: 18rem;">
+                    <div class="card border-0 col-md-3 mx-auto" style="width: 18rem;">
                         <img src="<?= $vr->image ?>" class="card-img-top rounded-circle" alt="Portrait of <?= $vr->firstname ?> <?= $vr->name ?>">
                         <div class="card-body text-center">
                             <h5 class="card-title"><?= $vr->firstname ?> <?= $vr->name ?></h5>
@@ -102,6 +108,10 @@
                 <?php endforeach ?>
             </div>
         </article>
+
+        <div class="container-fluid text-center mb-5">
+            <a href="/" class="btn btn-primary rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
+        </div>
     </section>
 
     <?php include(__DIR__ . "./footer.php"); ?>

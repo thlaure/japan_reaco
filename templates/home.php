@@ -11,21 +11,21 @@
     <section>
         <div class="header">
             <div class="inner-header flex">
-                <h1>Hiroshima Exploration</h1>
+                <h1 class="display-3">Hiroshima Exploration</h1>
                 <h2>ひろしまたんけん</h2>
-                <hr class="sm-separator w-25">
+                <hr class="sm-separator w-25 my-md-5">
                 <div class="mx-auto container mt-md-5 row">
                     <div class="col-md-3 mt-2 mx-auto">
-                        <button class="btn btn-light btn-block rounded-pill p-md-3" id="scroll-timeline" title="Scroll to the timeline">Timeline</button>
+                        <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-timeline" title="Scroll to the timeline">Timeline</button>
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
-                        <button class="btn btn-light btn-block rounded-pill p-md-3" id="scroll-map" title="Scroll to the map">Interactive map</button>
+                        <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-map" title="Scroll to the map">Interactive map</button>
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
-                        <button class="btn btn-light btn-block rounded-pill p-md-3" id="scroll-projects" title="Scroll to the projects">Discover differently</button>
+                        <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-projects" title="Scroll to the projects">Discover differently</button>
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
-                        <a href="#" class="btn btn-light btn-block rounded-pill p-md-3">Team</a>
+                        <a href="/team" class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold">Team</a>
                     </div>
                 </div>
             </div>
