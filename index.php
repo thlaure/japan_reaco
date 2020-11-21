@@ -8,6 +8,6 @@ switch ($request) {
     case "/team":
         require __DIR__ . "/templates/team.php";
         break;
+    default:
+        require __DIR__ . "/templates/error404.php";
 }
-
-require __DIR__ . "/templates/error404.php";
