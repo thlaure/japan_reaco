@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <?php include("./templates/head.php"); ?>
+    <?php include(__DIR__ . "/head.php"); ?>
     <link rel="stylesheet" href="./assets/css/home.css">
-    <?php include("./templates/javascripts.php"); ?>
+    <?php include(__DIR__ . "/javascripts.php"); ?>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
         </article>
     </section>
 
-    <?php include("./templates/footer.php"); ?>
+    <?php include(__DIR__ . "/footer.php"); ?>
 </body>
 
 </html>
