@@ -4,7 +4,7 @@
 <head>
     <?php include(__DIR__ . "/head.php"); ?>
     <link rel="stylesheet" href="./assets/css/home.css">
-    <?php include(__DIR__ . "/javascripts.php"); ?>
+    <script src="./assets/js/home.js" defer></script>
 </head>
 
 <body>

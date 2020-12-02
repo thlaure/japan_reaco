@@ -6,7 +6,7 @@ switch ($request) {
         require __DIR__ . "/views/home.php";
         break;
     case "/team":
-        $members = json_decode(file_get_contents("./assets/docs/members.json"));
+        $projects = json_decode(file_get_contents("./assets/docs/members.json"))->projects;
         require __DIR__ . "/views/team.php";
         break;
     default:
