@@ -13,3 +13,5 @@
         <a href="/" class="btn btn-light rounded-pill p-md-3 col-md-2 mt-3 mx-auto" title="Return to home"><i class="fas fa-home"></i> Go home</a>
     </div>
 </body>
+
+</html>
