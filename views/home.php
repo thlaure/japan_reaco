@@ -66,14 +66,14 @@
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4" data-aos="fade-up-right" data-aos-duration="2000">
                         <h5 class="card-title">AR project</h5>
-                        <a href="/" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="/projects/ar-project" class="btn btn-danger rounded-0">Learn more</a>
                     </div>
                 </div>
                 <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-left" data-aos-duration="2000">
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right" data-aos="fade-up-left" data-aos-duration="2000">
                         <h5 class="card-title">VR project</h5>
-                        <a href="/" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="/projects/vr-project" class="btn btn-danger rounded-0">Learn more</a>
                     </div>
                 </div>
             </div>
