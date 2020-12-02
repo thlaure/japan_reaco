@@ -9,12 +9,12 @@
 
 <body>
     <section>
-        <div class="header">
+        <div class="header" id="title">
             <div class="inner-header flex">
-                <h1 class="display-3">Hiroshima Exploration</h1>
-                <h2>ひろしまたんけん</h2>
+                <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
+                <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまたんけん</h2>
                 <hr class="sm-separator w-25 my-md-5">
-                <div class="mx-auto container mt-md-5 row">
+                <div class="mx-auto container mt-md-5 row" data-aos="zoom-out" data-aos-duration="2000">
                     <div class="col-md-3 mt-2 mx-auto">
                         <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-timeline" title="Scroll to the timeline">Timeline</button>
                     </div>
@@ -49,17 +49,39 @@
             <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
         </div>
 
-        <article id="timeline">
+        <div id="timeline">
 
+        </div>
+
+        <div id="map">
+
+        </div>
+
+        <article class="my-5" id="projects">
+            <div class="view parallax-projects mb-3">
+                <h2 class="display-4 text-white text-center">Discover differently</h2>
+            </div>
+            <div class="container row mx-auto">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-right" data-aos-duration="2000">
+                    <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
+                    <div class="card-img-overlay ml-4">
+                        <h5 class="card-title">AR project</h5>
+                        <a href="/" class="btn btn-danger rounded-0">Learn more</a>
+                    </div>
+                </div>
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-left" data-aos-duration="2000">
+                    <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
+                    <div class="card-img-overlay ml-4">
+                        <h5 class="card-title">VR project</h5>
+                        <a href="/" class="btn btn-danger rounded-0">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <article id="map">
-
-        </article>
-
-        <article id="projects">
-
-        </article>
+        <div class="my-3 text-center">
+            <button class="btn btn-danger btn-rotate rounded-0" id="scroll-title" title="Scroll to the title"><i class="fas fa-arrow-up"></i></button>
+        </div>
     </section>
 
     <?php include(__DIR__ . "/footer.php"); ?>

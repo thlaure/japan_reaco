@@ -3,7 +3,7 @@ a {
 }
 
 .parallax-header-team {
-  background: linear-gradient(60deg, rgba(203, 45, 62, 0.7) 0%, rgba(239, 71, 58, 0.5) 100%), url(../images/cover_team.jpg) no-repeat scroll center 0;
+  background: linear-gradient(60deg, rgba(227, 6, 19, 0.7) 0%, rgba(190, 22, 34, 0.7) 100%), url(../images/cover_team.jpg) no-repeat scroll center 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
