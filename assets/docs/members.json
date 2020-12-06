@@ -176,6 +176,173 @@
                             "link": "https://www.linkedin.com/in/nathan-de-serna-5a0b8315b/"
                         }
                     ]
+                },
+                {
+                    "name": "DECREUX",
+                    "firstname": "Alexis",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4E03AQFLkxmGzvY33Q/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=QnWJgDgsLOJZXPTEDV4mySNc-YS2k9FKKb_WSE-R0vg",
+                    "role": "Project manager",
+                    "degree": "Ingemedia",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/alexis-decreux-5ba093184/"
+                        }
+                    ]
+                },
+                {
+                    "name": "MATSINHEA",
+                    "firstname": "Eta",
+                    "image": "",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia",
+                    "socials": []
+                },
+                {
+                    "name": "ARRA",
+                    "firstname": "Adrien",
+                    "image": "",
+                    "role": "Unity3D developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/adrien-arra-442a97164/"
+                        }
+                    ]
+                },
+                {
+                    "name": "FEBVRE",
+                    "firstname": "Ludovic",
+                    "image": "https://media-exp1.licdn.com/dms/image/C5603AQERyhE7MRxyLQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=Et9qEgNgVcVgbZcymrb6sedppplqI3ORp5T2ZYDy_vY",
+                    "role": "Unity3D developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/ludovic-febvre-44bbb513a/"
+                        }
+                    ]
+                },
+                {
+                    "name": "DUVAUCHELLE",
+                    "firstname": "Peter",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEE1gs0PrjKzw/profile-displayphoto-shrink_200_200/0/1520783724170?e=1613001600&v=beta&t=vHNfjC_ZJbO1VRsL6ZvX34DgMdtmc95rF6K9jpWm6aY",
+                    "role": "Unity3D developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/peter-duvauchelle-64927215b/"
+                        }
+                    ]
+                },
+                {
+                    "name": "HERLIN",
+                    "firstname": "Florian",
+                    "image": "",
+                    "role": "Unity3D developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/florian-herlin-38a24115b/"
+                        }
+                    ]
+                },
+                {
+                    "name": "HAMIDOUCHE",
+                    "firstname": "Mehdi",
+                    "image": "https://media-exp1.licdn.com/dms/image/C5603AQGOM9HiFFuEWg/profile-displayphoto-shrink_200_200/0/1516838978593?e=1613001600&v=beta&t=x9mmx__5_GV0pvXCOD699fTdSU7d0gdI1YEHRhICTYU",
+                    "role": "Unity3D developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/mehdi-h-717300b7/"
+                        }
+                    ]
+                },
+                {
+                    "name": "PETROSINO",
+                    "firstname": "Marie",
+                    "image": "",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/marie-petrosino-57524bb1/"
+                        }
+                    ]
+                },
+                {
+                    "name": "ALLONS",
+                    "firstname": "Fanny",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGqt-l4ramIfw/profile-displayphoto-shrink_200_200/0/1600865680838?e=1613001600&v=beta&t=_1S09sYAB913XO3hoZ73ItML9gZGoyXaGa8KUSG1AaI",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia: communication",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/fanny-allons-6028a2156/"
+                        }
+                    ]
+                },
+                {
+                    "name": "AMMAD",
+                    "firstname": "Rayima",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEr8bw-1oUINQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=EOVsKOnjRvmBOUTh5dW16QKb3NgHa_Bad6tmsjV0seI",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia: communication",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/rayima-a-408667197/"
+                        }
+                    ]
+                },
+                {
+                    "name": "TAVARES",
+                    "firstname": "Cristiane",
+                    "image": "",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia",
+                    "socials": []
+                },
+                {
+                    "name": "AMAZAL",
+                    "firstname": "Anas",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQH7g2DU9xyLIQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=7Hrip5PidhMJyymdWLWsL0zYKxtqa9LEY7MOu9kH4Kc",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia: communication",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/anas-amazal-322520137/"
+                        }
+                    ]
+                },
+                {
+                    "name": "SELIA",
+                    "firstname": "Sty-Yecha",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHwSmkbDyEi0g/profile-displayphoto-shrink_200_200/0/1580920915082?e=1613001600&v=beta&t=V75az8bHjQv6ye3ZCACPzvrbJxOE6mSoUc-_0z8IbeI",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia: communication",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/sty-yecha-selia-354806134/"
+                        }
+                    ]
+                },
+                {
+                    "name": "RI",
+                    "firstname": "Na",
+                    "image": "",
+                    "role": "Graphic designer / Computer graphic designer",
+                    "degree": "Ingemedia",
+                    "socials": []
                 }
             ]
         },
