@@ -182,7 +182,7 @@
                     "firstname": "Alexis",
                     "image": "https://media-exp1.licdn.com/dms/image/C4E03AQFLkxmGzvY33Q/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=QnWJgDgsLOJZXPTEDV4mySNc-YS2k9FKKb_WSE-R0vg",
                     "role": "Project manager",
-                    "degree": "Ingemedia",
+                    "degree": "Ingemedia: communication",
                     "socials": [
                         {
                             "icon": "fab fa-linkedin-in",
@@ -191,12 +191,17 @@
                     ]
                 },
                 {
-                    "name": "MATSINHEA",
-                    "firstname": "Eta",
-                    "image": "",
-                    "role": "Marketing / Communication",
-                    "degree": "Ingemedia",
-                    "socials": []
+                    "name": "MICHELS",
+                    "firstname": "Paul",
+                    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEBg9Ef3gdI6A/profile-displayphoto-shrink_200_200/0/1567445030571?e=1613001600&v=beta&t=iWtchxOZG-stcZ6NVFzhI9sog_tz7xiAKAmsMzI8z8U",
+                    "role": "Unity3D lead developer",
+                    "degree": "CNAM: IT and multimedia engineer",
+                    "socials": [
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "https://www.linkedin.com/in/paul-michels-774678162/"
+                        }
+                    ]
                 },
                 {
                     "name": "ARRA",
@@ -262,6 +267,14 @@
                             "link": "https://www.linkedin.com/in/mehdi-h-717300b7/"
                         }
                     ]
+                },
+                {
+                    "name": "MATSINHEA",
+                    "firstname": "Eta",
+                    "image": "",
+                    "role": "Marketing / Communication",
+                    "degree": "Ingemedia",
+                    "socials": []
                 },
                 {
                     "name": "PETROSINO",

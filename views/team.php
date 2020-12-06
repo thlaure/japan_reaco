@@ -31,11 +31,11 @@
                         <div class="card mb-3 col-md-6 border-0 mx-auto" data-aos="zoom-in-up" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="<?= $participant->image ? $participant->image : "../assets/images/team/default_avatar.png" ?>" class="card-img" alt="Portrait of <?= $participant->firstname ?> <?= $participant->name ?>">
+                                    <img src="<?= $participant->image ? $participant->image : "../assets/images/team/default_avatar.png" ?>" class="card-img" alt="Portrait of <?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?>">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title"><?= $participant->firstname ?> <?= $participant->name ?></h5>
+                                        <h5 class="card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h5>
                                         <p class="card-text"><?= $participant->role ?></p>
                                         <?php if (isset($participant->degree)) : ?>
                                             <p class="card-text font-italic text-muted"><?= $participant->degree ?></p>
