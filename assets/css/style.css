@@ -3,10 +3,6 @@
 	font-family: "Roboto", Arial, sans-serif;
 }
 
-.shadowing {
-  box-shadow: 0 6px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
 .sm-separator {
   border-top: 2px solid rgba(255, 255, 255, 0.75);
 }
