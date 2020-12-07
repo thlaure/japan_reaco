@@ -9,7 +9,18 @@ h1 {
 }
 
 .parallax-projects {
-  background: linear-gradient(107.18deg, rgba(227, 6, 19, 0.7) 1.84%, rgba(190, 22, 34, 0.7) 100%), url(../images/cover_hiroshima.jpg) no-repeat scroll center 0;
+  background: linear-gradient(107.18deg, rgba(227, 6, 19, 0.7) 1.84%, rgba(190, 22, 34, 0.7) 100%), url(../images/cover_projects.jpg) no-repeat scroll center 0;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-events {
+  background: linear-gradient(107.18deg, rgba(227, 6, 19, 0.7) 1.84%, rgba(190, 22, 34, 0.7) 100%), url(../images/cover_events.jpg) no-repeat scroll center 0;
   background-size: cover;
   background-attachment: fixed;
   min-height: 300px;

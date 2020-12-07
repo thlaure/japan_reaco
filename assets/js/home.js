@@ -13,6 +13,7 @@
 
   scrollTo("timeline", "smooth", "start");
   scrollTo("map", "smooth", "start");
+  scrollTo("events", "smooth", "start");
   scrollTo("projects", "smooth", "start");
   scrollTo("title", "smooth", "start");
 
