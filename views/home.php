@@ -22,6 +22,9 @@
                         <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-map" title="Scroll to the map">Interactive map</button>
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
+                        <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-events" title="Scroll to the events">Events</button>
+                    </div>
+                    <div class="col-md-3 mt-2 mx-auto">
                         <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-projects" title="Scroll to the projects">Discover differently</button>
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
@@ -56,6 +59,21 @@
         <div id="map">
 
         </div>
+
+        <article class="my-5" id="events">
+            <div class="view parallax-events mb-3">
+                <h2 class="display-4 text-white text-center">Events</h2>
+            </div>
+            <div class="container row mx-auto">
+                <div class="card text-white col-md-8 border-0 my-3" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
+                    <div class="card-img-overlay ml-4" data-aos="fade-right" data-aos-duration="2000">
+                        <h5 class="card-title">Events</h5>
+                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
 
         <article class="my-5" id="projects">
             <div class="view parallax-projects mb-3">
