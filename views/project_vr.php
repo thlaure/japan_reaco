@@ -17,6 +17,10 @@
             <h2 class="text-center font-italic">VR</h2>
         </header>
 
+        <div></div>
+
+        <?php include(__DIR__ . "/participants.inc.php") ?>
+
         <div class="container-fluid text-center mb-5">
             <a href="/" class="btn btn-danger rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
         </div>
