@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include(__DIR__ . "/head.php"); ?>
+    <?php include(__DIR__ . "/head.inc.php"); ?>
     <link rel="stylesheet" href="./assets/css/home.css">
     <script src="./assets/js/home.js" defer></script>
 </head>
@@ -26,9 +26,6 @@
                     </div>
                     <div class="col-md-3 mt-2 mx-auto">
                         <button class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold" id="scroll-projects" title="Scroll to the projects">Discover differently</button>
-                    </div>
-                    <div class="col-md-3 mt-2 mx-auto">
-                        <a href="/team" class="btn btn-light btn-block rounded-pill p-md-3 font-weight-bold">Team</a>
                     </div>
                 </div>
             </div>
@@ -68,8 +65,7 @@
                 <div class="card text-white col-md-8 border-0 my-3" data-aos="fade-up" data-aos-duration="2000">
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4" data-aos="fade-right" data-aos-duration="2000">
-                        <h5 class="card-title">Events</h5>
-                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0" title="Learn more">Events</a>
                     </div>
                 </div>
             </div>
@@ -83,24 +79,25 @@
                 <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4" data-aos="fade-up-right" data-aos-duration="2000">
-                        <h5 class="card-title">AR project</h5>
-                        <a href="/projects/ar-project" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="/projects/ar-project" class="btn btn-danger rounded-0" title="AR project">AR project</a>
                     </div>
                 </div>
                 <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-left" data-aos-duration="2000">
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right" data-aos="fade-up-left" data-aos-duration="2000">
-                        <h5 class="card-title">VR project</h5>
-                        <a href="/projects/vr-project" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="/projects/vr-project" class="btn btn-danger rounded-0" title="VR project">VR project</a>
                     </div>
                 </div>
                 <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up" data-aos-duration="2000">
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
                     <div class="card-img-overlay mr-4 text-center" data-aos="fade-up" data-aos-duration="2000">
-                        <h5 class="card-title">Web project</h5>
-                        <a href="/projects/web-project" class="btn btn-danger rounded-0">Learn more</a>
+                        <a href="/projects/web-project" class="btn btn-danger rounded-0" title="Web project">Web project</a>
                     </div>
                 </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <a href="/team" class="button animated-corners font-weight-bold p-4 text-decoration-none">See the project team</a>
             </div>
         </article>
 
@@ -109,7 +106,7 @@
         </div>
     </section>
 
-    <?php include(__DIR__ . "/footer.php"); ?>
+    <?php include(__DIR__ . "/footer.inc.php"); ?>
 </body>
 
 </html>

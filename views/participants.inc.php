@@ -1,5 +1,5 @@
 <article class="container my-5">
-    <h2 class="display-4 mb-5">Participants</h2>
+    <h3 class="display-4 mb-5">Participants</h3>
     <div class="row mx-auto">
         <?php foreach ($participants as $participant) : ?>
             <div class="card mb-3 col-md-6 border-0 mx-auto" data-aos="zoom-in-up" style="max-width: 540px;">
@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h5>
+                            <h3 class="h5 card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h3>
                             <p class="card-text"><?= $participant->role ?></p>
                             <?php if (isset($participant->degree)) : ?>
                                 <p class="card-text font-italic text-muted"><?= $participant->degree ?></p>

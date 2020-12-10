@@ -3,6 +3,7 @@
 $request = $_SERVER["REQUEST_URI"];
 switch ($request) {
     case "/":
+        $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->referents;
         require __DIR__ . "/views/home.php";
         break;
     case "/team":

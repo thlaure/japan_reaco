@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include(__DIR__ . "/head.php"); ?>
+    <?php include(__DIR__ . "/head.inc.php"); ?>
     <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
 
@@ -26,7 +26,7 @@
         </div>
     </section>
 
-    <?php include(__DIR__ . "./footer.php"); ?>
+    <?php include(__DIR__ . "./footer.inc.php"); ?>
 </body>
 
 </html>
