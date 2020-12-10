@@ -94,6 +94,13 @@
                         <a href="/projects/vr-project" class="btn btn-danger rounded-0">Learn more</a>
                     </div>
                 </div>
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
+                    <div class="card-img-overlay mr-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+                        <h5 class="card-title">Web project</h5>
+                        <a href="/projects/web-project" class="btn btn-danger rounded-0">Learn more</a>
+                    </div>
+                </div>
             </div>
         </article>
 

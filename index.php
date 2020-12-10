@@ -15,6 +15,9 @@ switch ($request) {
     case "/projects/vr-project":
         require __DIR__ . "/views/project_vr.php";
         break;
+    case "/projects/web-project":
+        require __DIR__ . "/views/project_web.php";
+        break;
     default:
         require __DIR__ . "/views/error404.php";
 }
