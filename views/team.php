@@ -23,11 +23,11 @@
             </blockquote>
         </div>
 
-        <?php foreach ($projects as $project) : ?>
-            <article id="<?= strtolower(str_replace(" ", "-", $project->title)) ?>" class="container my-5">
-                <h2 class="display-4 mb-5"><?= $project->title ?></h2>
+        <?php foreach ($projects as $key => $participants) : ?>
+            <article id="<?= strtolower(str_replace(" ", "-", $key)) ?>" class="container my-5">
+                <h2 class="display-4 mb-5"><?= strtoupper($key) ?></h2>
                 <div class="row container mx-auto">
-                    <?php foreach ($project->participants as $participant) : ?>
+                    <?php foreach ($participants as $participant) : ?>
                         <div class="card mb-3 col-md-6 border-0 mx-auto" data-aos="zoom-in-up" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">

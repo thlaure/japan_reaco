@@ -96,8 +96,8 @@
                 </div>
             </div>
 
-            <div class="mt-5 text-center">
-                <a href="/team" class="button animated-corners font-weight-bold p-4 text-decoration-none">See the project team</a>
+            <div class="mt-3 text-center">
+                <a href="/team" class="btn btn-danger rounded-0 p-3" title="Go to the team"><i class="fas fa-users"></i> See the project team</a>
             </div>
         </article>
 
