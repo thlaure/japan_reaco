@@ -1,6 +1,7 @@
 <?php
 
-$request = $_SERVER["REQUEST_URI"];
+$request = preg_match("/(\/[^\/ ]*)\/*[^\/ ]*/", $_SERVER["REQUEST_URI"], $matches) ? $matches[1] : "";
+
 switch ($request) {
     case "/":
         require __DIR__ . "/views/home.php";
@@ -9,17 +10,10 @@ switch ($request) {
         $projects = json_decode(file_get_contents("./assets/docs/projects.json"));
         require __DIR__ . "/views/team.php";
         break;
-    case "/projects/ar-project":
-        $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->ar;
-        require __DIR__ . "/views/project_ar.php";
-        break;
-    case "/projects/vr-project":
-        $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->vr;
-        require __DIR__ . "/views/project_vr.php";
-        break;
-    case "/projects/web-project":
-        $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->web;
-        require __DIR__ . "/views/project_web.php";
+    case "/projects":
+        $project = preg_match("/\/projects\/([a-z]+)-project/", $_SERVER["REQUEST_URI"], $matches) ? $matches[1] : header("Location: /");
+        $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->$project;
+        require __DIR__ . "/views/project.inc.php";
         break;
     default:
         require __DIR__ . "/views/error404.php";
