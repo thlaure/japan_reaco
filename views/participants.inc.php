@@ -2,7 +2,7 @@
     <h3 class="display-4 mb-5">Participants</h3>
     <div class="row mx-auto">
         <?php foreach ($participants as $participant) : ?>
-            <div class="card mb-3 col-md-6 border-0 mx-auto" data-aos="zoom-in-up" style="max-width: 540px;">
+            <div class="card mb-3 col-md-6 border-0 mx-auto" data-aos="zoom-in" style="max-width: 540px;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
                         <img src="<?= $participant->image ? $participant->image : "../assets/images/team/default_avatar.png" ?>" class="card-img" alt="Portrait of <?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?>">

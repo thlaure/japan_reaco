@@ -62,9 +62,9 @@
                 <h2 class="display-4 text-white text-center">Events</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-8 border-0 my-3" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card text-white col-md-8 border-0 my-3" data-aos="fade-up">
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="card-img-overlay ml-4" data-aos="fade-right">
                         <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0" title="Learn more">Events</a>
                     </div>
                 </div>
@@ -76,21 +76,21 @@
                 <h2 class="display-4 text-white text-center">Discover differently</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-right" data-aos-duration="2000">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="card-img-overlay ml-4">
                         <a href="/projects/ar-project" class="btn btn-danger rounded-0" title="AR project">AR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up-left" data-aos-duration="2000">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
-                    <div class="card-img-overlay mr-4 text-right" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="card-img-overlay mr-4 text-right">
                         <a href="/projects/vr-project" class="btn btn-danger rounded-0" title="VR project">VR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="fade-up" data-aos-duration="2000">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
-                    <div class="card-img-overlay mr-4 text-center" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card-img-overlay mr-4 text-center">
                         <a href="/projects/web-project" class="btn btn-danger rounded-0" title="Web project">Web project</a>
                     </div>
                 </div>
