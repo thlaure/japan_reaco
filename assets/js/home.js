@@ -7,8 +7,11 @@
    * @param {string} block
    */
   function scrollTo(to, behavior, block) {
-    const scroll = document.getElementById('scroll-' + to);
-    scroll.onclick = _ => document.getElementById(to).scrollIntoView({ behavior: behavior, block: block });
+    const scroll = document.getElementById("scroll-" + to);
+    scroll.onclick = (_) =>
+      document
+        .getElementById(to)
+        .scrollIntoView({ behavior: behavior, block: block });
   }
 
   scrollTo("timeline", "smooth", "start");
@@ -23,7 +26,7 @@
   });
   var init = function () {
     //return scroll position in session storage
-    $(window).scrollTop(sessionStorage.scrollPos || 0)
+    $(window).scrollTop(sessionStorage.scrollPos || 0);
   };
   window.onload = init;
 })();
