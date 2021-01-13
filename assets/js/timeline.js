@@ -13,7 +13,7 @@ function carousel() {
     slidesToScroll: 2,
     responsive: [
       {
-        breakpoint: 400,
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
