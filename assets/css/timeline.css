@@ -35,11 +35,12 @@
   margin-bottom: 40px;
   font-weight: 900;
 }
-.timeline-carousel__image {
-  padding-right: 30px;
-}
+/* .timeline-carousel__image {
+  padding-right: 3rem;
+} */
 .timeline-carousel__item {
   cursor: pointer;
+  padding-right: 4rem;
 }
 .timeline-carousel__item .media-wrapper {
   opacity: 0.4;
@@ -97,7 +98,7 @@
   font-size: 12px;
   line-height: 18px;
   color: black;
-  width: 70%;
+  width: 100%;
   font-weight: 400;
   margin-bottom: 15px;
 }
