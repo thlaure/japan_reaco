@@ -96,7 +96,7 @@
                 <!--Timeline item = EDO PERIOD-->
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://cdn-images-1.medium.com/max/2000/1*tjpdoOeFp6PfczMjqh6JEA.jpeg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/castle-edo.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1589 to 1871</span>
@@ -115,7 +115,7 @@
                 <!--Timeline item = IMPERIAL PERIOD-->
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://ichef-1.bbci.co.uk/news/660/media/images/72349000/jpg/_72349652_generals-on-horseback.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/imperial-train.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1871 to 1939</span>
