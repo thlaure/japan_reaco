@@ -101,12 +101,12 @@
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1589 to 1871</span>
                             <span class="month">EDO PERIOD</span>
-                            <p>En 1589, peu de temps avant le début de la période Edo, Mōri Terumoto, chef du puissant et respecté clan Mōri et membre du conseil des cinq anciens de Toyotomi Hideyoshi, ordonne la construction du château d’Hiroshima.
-                                En 1593, le château étant fini, Mōri Terumoto investit les lieux.</p>
-                            <p>À cette période, Hiroshima n’existait pas comme ville à part entière. C’était une zone géographique que l’on nommait Gokamura signifiant “Cinq Villages”.
-                                Malgré le changement d’autorité sur le château, la zone Hiroshima fut une terre de paix jusqu’en 1869, ces années lui ont permis de se développer fortement.</p>
-                            <p>Lors de la période de la restauration de Meiji, le château d’Hiroshima ou le château de la carpe fut protégé et ne fut pas l’un des nombreux châteaux démantelé.
-                                Il est alors transformé en base militaire à la fin de l’ère Edo.</p>
+                            <p>In 1589, not so long after the begining of Edo period, Hiroshima Castle was commissioned by Mōri Terumoto, head of the powerful Mōri clan and a member of Toyotomi Hideyoshi's Council of Five Elders.
+                            In 1593, the castle was finished, Mōri Terumoto moved in.
+                            <p>At this time, Hiroshima did not exist as entire city yet, the are was called Gokamura which means "Five Villages". 
+                            Despite the change of autority on the castle, Hiroshima was a land of peace until 1869, these years of peace helped the city to grow.</p>
+                            <p>During the Meiji Restoration, Hiroshima Castle also named the Carp Castle was saved by the governement and was not one of the numerous castle being dismantled.
+                            It's turned into a military base at the end of Edo era.</p>
                         <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
