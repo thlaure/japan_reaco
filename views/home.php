@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="./assets/js/home.js" defer></script>
-    <script src="../assets/js/timeline.js" defer ></script>
+    <script src="../assets/js/timeline.js" defer></script>
 </head>
 
 <body>
@@ -150,9 +150,14 @@
             </div>
         </article>
 
-        <div id="map">
+        <article>
+            <div class="view parallax-map mb-3">
+                <h2 class="display-4 text-white text-center">Interactive map</h2>
+            </div>
+            <div id="map">
 
-        </div>
+            </div>
+        </article>
 
         <article class="my-5" id="events">
             <div class="view parallax-events mb-3">
