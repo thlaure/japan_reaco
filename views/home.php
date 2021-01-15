@@ -48,17 +48,16 @@
             </div>
         </div>
 
-        <div class="container mt-5">
+        <div class="container my-5">
             <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
         </div>
 
-        <div id="timeline">
+        <article>
             <div class="view parallax-projects mb-3">
                 <h2 class="display-4 text-white text-center">Timeline</h2>
             </div>
-            <section class="timeline-carousel">
+            <div class="timeline-carousel" id="timeline">
                 <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
-                <!--Timeline item = EARLY HISTORY-->
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('https://www.historyonthenet.com/wp-content/uploads/2016/12/135151-004-0D4D550E.jpg') center center; background-size:cover;"></div>
@@ -69,12 +68,10 @@
                             <p>The first traces of population appeared back in Jomon era, period which last from 1300 to 400 BC. However, there is no evidence of human presence before Kofun Period (250-538).
                             <p>Hirsohima was officialy founded in 1589. The name Hiroshima means literaly "Wide island" in japenese.</p>
                             <p>The area was choosen for it's strategic location on the Ôta delta.</p>
-                        <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
-                
-                <!--Timeline item = SENGOKU PERIOD-->
+
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg') center center; background-size:cover;"></div>
@@ -83,17 +80,14 @@
                             <span class="year">From 1477 to 1573 </span>
                             <span class="month">SENGOKU PERIOD</span>
                             <p>Sengoku era is full of military conflict. This period is also called "The Province in War Era".</p>
-                            <p>This era cover half of the Muromachi age wich is from 1336 to 1573. It's the last period before the dynasty of Tokugawa shogun takes place.
-                                It's in this age that the zen culture was born. Buildings were accompanied by those famous dry garden and the tea ceremony raised at this moment. Caractised by harmony, respect, purity and tranquility.</p>
-                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm. 
-                            As a result of trade exchange, cities are developed aroud harbours and internal commercial axes. 
+                            <p>This era cover half of the Muromachi age wich is from 1336 to 1573. It's the last period before the dynasty of Tokugawa shogun takes place. It's in this age that the zen culture was born. Buildings were accompanied by those famous dry garden and the tea ceremony raised at this moment. Caractised by harmony, respect, purity and tranquility.</p>
+                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm.
+                            As a result of trade exchange, cities are developed aroud harbours and internal commercial axes.
                             Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation.  </p>
-                        <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
-                
-                <!--Timeline item = EDO PERIOD-->
+
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/castle-edo.jpg') center center; background-size:cover;"></div>
@@ -103,36 +97,28 @@
                             <span class="month">EDO PERIOD</span>
                             <p>In 1589, not so long after the begining of Edo period, Hiroshima Castle was commissioned by Mōri Terumoto, head of the powerful Mōri clan and a member of Toyotomi Hideyoshi's Council of Five Elders.
                             In 1593, the castle was finished, Mōri Terumoto moved in.
-                            <p>At this time, Hiroshima did not exist as entire city yet, the are was called Gokamura which means "Five Villages". 
+                            <p>At this time, Hiroshima did not exist as entire city yet, the are was called Gokamura which means "Five Villages".
                             Despite the change of autority on the castle, Hiroshima was a land of peace until 1869, these years of peace helped the city to grow.</p>
                             <p>During the Meiji Restoration, Hiroshima Castle also named the Carp Castle was saved by the governement and was not one of the numerous castle being dismantled.
                             It's turned into a military base at the end of Edo era.</p>
-                        <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
 
-                <!--Timeline item = IMPERIAL PERIOD-->
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/imperial-train.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1871 to 1939</span>
-                        <span class="month">IMPERIAL PERIOD</span>
-                            <p>Après que le système des Han ou des domaines soit aboli en 1871, la ville d’Hiroshima devint la capitale de la préfecture d’Hiroshima.
-                                En avril 1888 un nouveau système de municipalité a été mis en place. En répercussion à cela, Hiroshima devient officiellement l’une des plus importantes villes du Japon le 1er Avril 1889.</p>
-                            <p>Le chemin de fer San’yō fut agrandi en 1894, cette extension fut opérationnelle la même année. Une voie de chemin de fer fut créée entre la station principale et le port pour faciliter les transports durant la première guerre Sino-Japonaise.
-                                Lors de cette guerre, le gouvernement japonais déplaça temporairement son quartier général dans le château d’Hiroshima. L’empereur Meiji garda ses quartiers au château du 15 septembre 1894 au 27 avril 1895.
-                                Il faut savoir que les premiers échanges entre les représentants chinois et japonais se déroulèrent à Hiroshima du 1er au 4 février 1895.</p>
-                            <p>Après la guerre Sino-Japonaise, la guerre Russo-Japonaise poussa le Japon dans le monde de l’industrialisation.
-                                Lors de la première guerre mondiale, Hiroshima devint un point important de l’activité militaire.</p>
-                        <a href="#" class="read-more">Read more</a>
+                            <span class="month">IMPERIAL PERIOD</span>
+                            <p>After the Han system of estates was abolished in 1871, the city of Hiroshima became the capital of Hiroshima Prefecture. In April 1888 a new system of municipality was established. As a consequence of this, Hiroshima officially became one of the most important cities in Japan on April 1, 1889.</p>
+                            <p>The San'yō railway was expanded in 1894, this extension was operational in the same year. A railway line was created between the main station and the port to facilitate transportation during the first Sino-Japanese war. During this war, the Japanese government temporarily moved its headquarters to Hiroshima Castle. Emperor Meiji kept his quarters at the castle from September 15, 1894 to April 27, 1895. The first exchanges between Chinese and Japanese representatives took place in Hiroshima from February 1-4, 1895.</p>
+                            <p>After the Sino-Japanese War, the Russo-Japanese War pushed Japan into the world of industrialization. During the First World War, Hiroshima became an important point of military activity.</p>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
-                
-                <!--Timeline item = WORLD WAR II-->
+
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/timeline_ww2.jpg') center center; background-size:cover;"></div>
@@ -140,15 +126,13 @@
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1939 to 1945</span>
                             <span class="month">WORLD WAR II AND THE ATOMIC BOMB</span>
-                            <p>Le 6 août 1945, le bombardier B-29 piloté par Paul Tibbets lâche sur Hiroshima une bombe atomique à l'uranium 235 d'une puissance de 15 kilotonnes, détruisant 62 000 bâtiments et faisant 70 000 morts sur les 350 000 habitants de Hiroshima, première ville de l'histoire à subir ce type de bombardement. Les blessures liées aux radiations porteront le bilan à 140 000 victimes dans les mois et années suivantes.</p>
-                            <p>Selon le musée national de la ville d'Hiroshima, la ville aurait été sciemment épargnée par les américains lors des bombardements conventionnels pour éviter tout dommage préalable, afin de mieux évaluer les effets de la bombe atomique. C'est pour cela qu'après le bombardement, des postes d'études américains furent installés dans la région de Hiroshima pour étudier ses effets, les tests de lancement ayant été faits jusqu'au jour du bombardement n'étaient qu'à petite échelle.</p>
-                            <p>Les japonais souhaitaient se rendre, et les américains souhaitaient arrêter la guerre car il y avait eu assez de massacres. Ces derniers ont donc fait passer une pétition demandant l'arrêt de la guerre, mais cette pétition a été interceptée par Leslie Groves, un général américain, qui voyait un intérêt économique à l'utilisation de la bombe nucléaire. Harry Truman n'ayant jamais reçu cette pétition, ordonna le bombardement de Hiroshima. L'histoire dira simplement qu'il utilisa la bombe atomique pour forcer la reddition japonaise.</p>
-                        <a href="#" class="read-more">Read more</a>
+                            <p>On 6 August 1945, the B-29 bomber piloted by Paul Tibbets dropped a 15-kiloton uranium 235 atomic bomb on Hiroshima, destroying 62,000 buildings and killing 70,000 of the 350,000 inhabitants of Hiroshima, the first city in history to suffer this type of bombardment. Radiation-related injuries will bring the death toll to 140,000 in the months and years that follow.</p>
+                            <p>According to the National Museum of the City of Hiroshima, the city would have been deliberately spared by the Americans during the conventional bombing to avoid any prior damage, in order to better assess the effects of the atomic bomb. That is why, after the bombing, American study stations were set up in the Hiroshima area to study its effects, as the launch tests that were done until the day of the bombing were only on a small scale.</p>
+                            <p>The Japanese wanted to surrender, and the Americans wanted to stop the war because there had been enough massacres. The Americans therefore passed a petition calling for an end to the war, but this petition was intercepted by Leslie Groves, an American general, who saw an economic interest in the use of the nuclear bomb. Since Harry Truman never received this petition, he ordered the bombing of Hiroshima. History will simply say that he used the atomic bomb to force the Japanese surrender.</p>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
-                
-                <!--Timeline item = POST WORLD WAR II-->
+
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/timeline_after_war.jpg') center center; background-size:cover;"></div>
@@ -156,18 +140,15 @@
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1945 to nowadays</span>
                             <span class="month">POSTWAR PERIOD</span>
-                            <p>Passé le traumatisme, un plan de reconstruction d'Hiroshima est lancé, via notamment la Loi de Construction du Mémorial de la Paix de la Ville d'Hiroshima, votée par le gouvernement en 1949 et qui prévoit le financement pour faire renaître la ville. La même année, le Parlement japonais proclame Hiroshima "Cité de la paix".</p>
-                            <p>Le Hall préfectoral de promotion commerciale d'Hiroshima, bâtiment situé à 160 mètres de l'épicentre et ayant résisté à la déflagration, devient le Dôme de la Bombe A. Autour du monument, le [Parc du Mémorial de la Paix](https://www.vivrelejapon.com/ville-hiroshima/parc-du-memorial-de-la-paix) est inauguré en 1954, le Musée du mémorial en 1955. Victime de la guerre, Hiroshima est depuis lors la première ville ambassadrice de la paix, sa mairie promouvant l'abolition des armes nucléaires.</p>
-                            <p>En novembre 2010 lors du sommet d'Hiroshima, le [Dalaï-lama](https://fr.wikipedia.org/wiki/Dala%C3%AF-lama) et cinq autres lauréats du prix ont participé au sommet des [prix Nobel de la Paix](https://fr.wikipedia.org/wiki/Prix_Nobel_de_la_Paix). Ce sommet était consacré au désarmement nucléaire et organisé à Hiroshima.
-                                Hiroshima aussi a changé. La "plaine calcinée" est aujourd'hui une ville de 1,2 million d'habitants, tournée vers l'avenir, à l'image de la nouvelle [Tour Orizuru](https://www.vivrelejapon.com/ville-hiroshima/orizuru-tower) inaugurée à l'été 2016. Une ville résolument engagée dans son rôle de capitale mondiale de la paix</p>
-                        <a href="#" class="read-more">Read more</a>
+                            <p>After the trauma, a plan to rebuild Hiroshima was launched, notably through the Hiroshima City Peace Memorial Construction Law, passed by the government in 1949, which provided funding for the city's rebirth. In the same year, the Japanese Parliament proclaimed Hiroshima "City of Peace".</p>
+                            <p>The Hiroshima Prefectural Trade Promotion Hall, a building located 160 meters from the epicenter and having resisted the blast, becomes the A-Bomb Dome. Around the monument, the Peace Memorial Arch was inaugurated in 1954 and the Memorial Museum in 1955. A victim of war, Hiroshima has since then been the first city to become an ambassador for peace, with its city hall promoting the abolition of nuclear weapons.</p>
+                            <p>In November 2010 at the Hiroshima Summit, the Dalai Lama and five other prize winners attended the Nobel Peace Prize Summit. The summit was dedicated to nuclear disarmament and held in Hiroshima. Hiroshima too has changed. The "calcined plain" is now a forward-looking city of 1.2 million inhabitants, as the new Orizuru Tower inaugurated in the summer of 2016. A city resolutely committed to its role as world capital of peace</p>
+                            <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
-                <!--/Timeline item-->
                 </div>
-            </section>
-            <!--Timeline carousel-->
-        </div>
+            </div>
+        </article>
 
         <div id="map">
 
