@@ -60,7 +60,7 @@
                 <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('https://www.historyonthenet.com/wp-content/uploads/2016/12/135151-004-0D4D550E.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/before_the_castle.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">Before the castle</span>
@@ -77,37 +77,32 @@
                             <div class="media-wrapper media-wrapper--overlay" style="background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
-                            <span class="year">From 1477 to 1573 </span>
+                            <span class="year">From 1477 to 1573</span>
                             <span class="month">SENGOKU PERIOD</span>
                             <p>Sengoku era is full of military conflict. This period is also called "The Province in War Era".</p>
                             <p>This era cover half of the Muromachi age wich is from 1336 to 1573. It's the last period before the dynasty of Tokugawa shogun takes place. It's in this age that the zen culture was born. Buildings were accompanied by those famous dry garden and the tea ceremony raised at this moment. Caractised by harmony, respect, purity and tranquility.</p>
-                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm.
-                            As a result of trade exchange, cities are developed aroud harbours and internal commercial axes.
-                            Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation.  </p>
+                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm. As a result of trade exchange, cities are developed aroud harbours and internal commercial axes. Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation.  </p>
                             <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
 
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/castle-edo.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/castle_edo.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1589 to 1871</span>
                             <span class="month">EDO PERIOD</span>
-                            <p>In 1589, not so long after the begining of Edo period, Hiroshima Castle was commissioned by Mōri Terumoto, head of the powerful Mōri clan and a member of Toyotomi Hideyoshi's Council of Five Elders.
-                            In 1593, the castle was finished, Mōri Terumoto moved in.
-                            <p>At this time, Hiroshima did not exist as entire city yet, the are was called Gokamura which means "Five Villages".
-                            Despite the change of autority on the castle, Hiroshima was a land of peace until 1869, these years of peace helped the city to grow.</p>
-                            <p>During the Meiji Restoration, Hiroshima Castle also named the Carp Castle was saved by the governement and was not one of the numerous castle being dismantled.
-                            It's turned into a military base at the end of Edo era.</p>
+                            <p>In 1589, not so long after the begining of Edo period, Hiroshima Castle was commissioned by Mōri Terumoto, head of the powerful Mōri clan and a member of Toyotomi Hideyoshi's Council of Five Elders. In 1593, the castle was finished, Mōri Terumoto moved in.
+                            <p>At this time, Hiroshima did not exist as entire city yet, the are was called Gokamura which means "Five Villages". Despite the change of autority on the castle, Hiroshima was a land of peace until 1869, these years of peace helped the city to grow.</p>
+                            <p>During the Meiji Restoration, Hiroshima Castle also named the Carp Castle was saved by the governement and was not one of the numerous castle being dismantled. It's turned into a military base at the end of Edo era.</p>
                             <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
 
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/imperial-train.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/imperial_train.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1871 to 1939</span>
