@@ -74,7 +74,7 @@
 
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('http://factsforkids.net/wp-content/uploads/2013/09/13.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/sengoku.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1477 to 1573</span>
@@ -116,7 +116,7 @@
 
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/timeline_ww2.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/ww2.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1939 to 1945</span>
@@ -130,7 +130,7 @@
 
                     <div class="timeline-carousel__item">
                         <div class="timeline-carousel__image">
-                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/timeline_after_war.jpg') center center; background-size:cover;"></div>
+                            <div class="media-wrapper media-wrapper--overlay" style="background: url('../assets/images/timeline/after_war.jpg') center center; background-size:cover;"></div>
                         </div>
                         <div class="timeline-carousel__item-inner">
                             <span class="year">From 1945 to nowadays</span>
