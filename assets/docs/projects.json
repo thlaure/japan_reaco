@@ -3,7 +3,7 @@
         {
             "name": "PAPINI",
             "firstname": "Olivia",
-            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEIZemQN5tjnw/profile-displayphoto-shrink_200_200/0/1538985065561?e=1611187200&v=beta&t=UUUHQPtjYsEXltvzjGwVytY5E0eAue4EeoG--NuELP4",
+            "image": "../assets/images/team/papini_olivia.jpg",
             "role": "CNAM teacher and coordinator",
             "socials": [
                 {
@@ -34,7 +34,7 @@
         {
             "name": "BONFILS",
             "firstname": "Philippe",
-            "image": "https://media-exp1.licdn.com/dms/image/C5103AQEMeFzHWDnO6g/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=tqLDCF8a4I_h-8HN7FVw5l7r_Tqocu_LnLjbFnnZ8Z0",
+            "image": "../assets/images/team/bonfils_philippe.jpg",
             "role": "Ingemedia director and teacher, CNAM teacher",
             "socials": [
                 {
@@ -52,7 +52,7 @@
         {
             "name": "LAURE",
             "firstname": "Thomas",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQHim1Wz3ed4Jg/profile-displayphoto-shrink_200_200/0/1519469768174?e=1611187200&v=beta&t=yPWAOOkvGw9IiN9nGgj1FwRhfg7ii29FD9DA2hgh14w",
+            "image": "../assets/images/team/laure_thomas.jpg",
             "role": "Web project manager / Web developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -78,7 +78,7 @@
         {
             "name": "ANDRES",
             "firstname": "Nicolas",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGN_YLHRimhGg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=GhxZnywO5wKLKCkuH_Bb3cMz_Ex2r0_4OrcTxKflRI0",
+            "image": "../assets/images/team/andres_nicolas.jpg",
             "role": "Web developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -91,7 +91,7 @@
         {
             "name": "ARNOUX",
             "firstname": "Thomas",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQHi5GMSJ2CvMQ/profile-displayphoto-shrink_200_200/0/1520534042033?e=1611187200&v=beta&t=BJbysSDK2dcn-LP8ctU-jJIhg1ENI5itPZkUsJGFZLw",
+            "image": "../assets/images/team/arnoux_thomas.jpg",
             "role": "Web developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -104,7 +104,7 @@
         {
             "name": "NEMR",
             "firstname": "Andrew",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHkA7q95aktUA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=KY74Yhb5UbtWpmquoAiTlVcl-eba78zlFcQ5yTx-Fk8",
+            "image": "../assets/images/team/nemr_andrew.jpg",
             "role": "Graphist / 3D designer",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -117,7 +117,7 @@
         {
             "name": "GOMA",
             "firstname": "Maëva",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHoD6diuBUuKA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=8nvaQgs-SD5E7TxGK474-nFr094zO6sZctv_ov4irXs",
+            "image": "../assets/images/team/goma_maeva.jpg",
             "role": "Graphist / 3D designer",
             "degree": "Ingemedia: communication master",
             "socials": [
@@ -130,7 +130,7 @@
         {
             "name": "BONNARD",
             "firstname": "Lucas",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQG_93clcbwx6Q/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=fq3Shi0iCrQxPkJatR-emkhMUchr_Gdb8b0cLD2GRhk",
+            "image": "../assets/images/team/bonnard_lucas.jpg",
             "role": "Web designer / 3D designer",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -143,7 +143,7 @@
         {
             "name": "BAIBAH",
             "firstname": "Ismail",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQEe25BsnWLzyg/profile-displayphoto-shrink_200_200/0/1604871777314?e=1611187200&v=beta&t=7nNARsRPho9zSsEaD-dQ2ZCtgNV2rOkCWb6kr_4D7bE",
+            "image": "../assets/images/team/baibah_ismail.jpg",
             "role": "Storytelling / Communication",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -158,7 +158,7 @@
         {
             "name": "DE SERNA",
             "firstname": "Nathan",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHSEO2ceZJcwA/profile-displayphoto-shrink_200_200/0/1526117109793?e=1611187200&v=beta&t=lmujRDBahJ5e4wySsemVRDAwka80-4jOWXkuPnNlJ1o",
+            "image": "../assets/images/team/deserna_nathan.jpg",
             "role": "AR project manager",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -171,7 +171,7 @@
         {
             "name": "DECREUX",
             "firstname": "Alexis",
-            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQFLkxmGzvY33Q/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=QnWJgDgsLOJZXPTEDV4mySNc-YS2k9FKKb_WSE-R0vg",
+            "image": "../assets/images/team/decreux_alexis.jpg",
             "role": "Project manager",
             "degree": "Ingemedia: communication",
             "socials": [
@@ -184,7 +184,7 @@
         {
             "name": "MICHELS",
             "firstname": "Paul",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEBg9Ef3gdI6A/profile-displayphoto-shrink_200_200/0/1567445030571?e=1613001600&v=beta&t=iWtchxOZG-stcZ6NVFzhI9sog_tz7xiAKAmsMzI8z8U",
+            "image": "../assets/images/team/michels_paul.jpg",
             "role": "Unity3D lead developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -210,7 +210,7 @@
         {
             "name": "FEBVRE",
             "firstname": "Ludovic",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQERyhE7MRxyLQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=Et9qEgNgVcVgbZcymrb6sedppplqI3ORp5T2ZYDy_vY",
+            "image": "../assets/images/team/febvre_ludovic.jpg",
             "role": "Unity3D developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -223,7 +223,7 @@
         {
             "name": "DUVAUCHELLE",
             "firstname": "Peter",
-            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEE1gs0PrjKzw/profile-displayphoto-shrink_200_200/0/1520783724170?e=1613001600&v=beta&t=vHNfjC_ZJbO1VRsL6ZvX34DgMdtmc95rF6K9jpWm6aY",
+            "image": "../assets/images/team/duvauchelle_peter.jpg",
             "role": "Unity3D developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -249,7 +249,7 @@
         {
             "name": "HAMIDOUCHE",
             "firstname": "Mehdi",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQGOM9HiFFuEWg/profile-displayphoto-shrink_200_200/0/1516838978593?e=1613001600&v=beta&t=x9mmx__5_GV0pvXCOD699fTdSU7d0gdI1YEHRhICTYU",
+            "image": "../assets/images/team/hamidouche_mehdi.jpg",
             "role": "Unity3D developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -283,7 +283,7 @@
         {
             "name": "ALLONS",
             "firstname": "Fanny",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGqt-l4ramIfw/profile-displayphoto-shrink_200_200/0/1600865680838?e=1613001600&v=beta&t=_1S09sYAB913XO3hoZ73ItML9gZGoyXaGa8KUSG1AaI",
+            "image": "../assets/images/team/allons_fanny.jpg",
             "role": "Marketing / Communication",
             "degree": "Ingemedia: communication",
             "socials": [
@@ -296,7 +296,7 @@
         {
             "name": "AMMAD",
             "firstname": "Rayima",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEr8bw-1oUINQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=EOVsKOnjRvmBOUTh5dW16QKb3NgHa_Bad6tmsjV0seI",
+            "image": "../assets/images/team/ammad_rayima.jpg",
             "role": "Marketing / Communication",
             "degree": "Ingemedia: communication",
             "socials": [
@@ -317,7 +317,7 @@
         {
             "name": "AMAZAL",
             "firstname": "Anas",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQH7g2DU9xyLIQ/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=7Hrip5PidhMJyymdWLWsL0zYKxtqa9LEY7MOu9kH4Kc",
+            "image": "../assets/images/team/amazal_anas.jpg",
             "role": "Marketing / Communication",
             "degree": "Ingemedia: communication",
             "socials": [
@@ -330,7 +330,7 @@
         {
             "name": "SELIA",
             "firstname": "Sty-Yecha",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHwSmkbDyEi0g/profile-displayphoto-shrink_200_200/0/1580920915082?e=1613001600&v=beta&t=V75az8bHjQv6ye3ZCACPzvrbJxOE6mSoUc-_0z8IbeI",
+            "image": "../assets/images/team/selia_styyecha.jpg",
             "role": "Marketing / Communication",
             "degree": "Ingemedia: communication",
             "socials": [
@@ -353,7 +353,7 @@
         {
             "name": "ASEJO CASPILLO",
             "firstname": "Vanessa",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQHD-HALvwCbsA/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=qYuqrbNlMdWT0QP8b6QaeExdcN0m9CPdAZYkGwTp6IA",
+            "image": "../assets/images/team/asejocaspillo_vanessa.jpg",
             "role": "VR project manager / Storytelling",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -366,7 +366,7 @@
         {
             "name": "CIANFARANI",
             "firstname": "Thomas",
-            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQHJFu0QlYxIUQ/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=FA0ew_lJm1bq193BkUOIyVlFjd7g8shTuHbTmFbcBV4",
+            "image": "../assets/images/team/cianfarani_thomas.jpg",
             "role": "Lead developer Unity3D",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
@@ -387,7 +387,7 @@
         {
             "name": "CARTEYRADE",
             "firstname": "Alice",
-            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQEmisy-GjzScQ/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=7_0R2kdL7efbUY7ZfkhnKk0mrrDED0qmmjFVCqWadGw",
+            "image": "../assets/images/team/carteyrade_alice.jpg",
             "role": "Communication Project Manager",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -400,7 +400,7 @@
         {
             "name": "BOGANIN",
             "firstname": "Aurore",
-            "image": "https://media-exp1.licdn.com/dms/image/C5603AQEyI1CzRc2b5w/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=nUGVhKDXz5U1ZNur121Utzc5ik2D98OU3EX1WfRM3fY",
+            "image": "../assets/images/team/boganin_aurore.jpg",
             "role": "2D designer",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -417,7 +417,7 @@
         {
             "name": "NOLOT",
             "firstname": "Lauriane",
-            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQH_5omwCBqMQg/profile-displayphoto-shrink_200_200/0?e=1611187200&v=beta&t=lIaZ7G2c9WTqqXcuol7_HCD2bQt8eUAZU5JiuacXAQQ",
+            "image": "../assets/images/team/nolot_lauriane.jpg",
             "role": "3D designer",
             "degree": "Ingemedia: numeric creation master",
             "socials": [
@@ -438,7 +438,7 @@
         {
             "name": "LEFEVRE",
             "firstname": "Lucas",
-            "image": "../assets/images/team/lucaslefevre.jpg",
+            "image": "../assets/images/team/lefevre_lucas.jpg",
             "role": "3D design",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": []

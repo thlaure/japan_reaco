@@ -49,7 +49,7 @@
         </div>
 
         <div class="container my-5">
-            <p class="lead">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+            <p class="lead py-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
         </div>
 
         <article>
@@ -159,10 +159,10 @@
                 <h2 class="display-4 text-white text-center">Events</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-8 border-0 my-3" data-aos="fade-up">
+                <div class="card text-white col-md-8 border-0 my-3"> <!-- data-aos="fade-up" -->
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4" data-aos="fade-right">
-                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0" title="Learn more">Events</a>
+                    <div class="card-img-overlay ml-4"> <!-- data-aos="fade-right" -->
+                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link" title="Learn more">Events</a>
                     </div>
                 </div>
             </div>
@@ -173,22 +173,22 @@
                 <h2 class="display-4 text-white text-center">Discover differently</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
-                        <a href="/projects/ar-project" class="btn btn-danger rounded-0" title="AR project">AR project</a>
+                        <a href="/projects/ar-project" class="btn btn-danger rounded-0 stretched-link" title="AR project">AR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right">
-                        <a href="/projects/vr-project" class="btn btn-danger rounded-0" title="VR project">VR project</a>
+                        <a href="/projects/vr-project" class="btn btn-danger rounded-0 stretched-link" title="VR project">VR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3" data-aos="zoom-in">
+                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
                     <div class="card-img-overlay mr-4 text-center">
-                        <a href="/projects/web-project" class="btn btn-danger rounded-0" title="Web project">Web project</a>
+                        <a href="/projects/web-project" class="btn btn-danger rounded-0 stretched-link" title="Web project">Web project</a>
                     </div>
                 </div>
             </div>
