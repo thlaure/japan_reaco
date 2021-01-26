@@ -168,11 +168,11 @@
             </div>
         </article>
 
-        <article class="my-5" id="projects">
+        <article class="my-5">
             <div class="view parallax-projects mb-3">
                 <h2 class="display-4 text-white text-center">Discover differently</h2>
             </div>
-            <div class="container row mx-auto">
+            <div class="container row mx-auto" id="projects">
                 <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
