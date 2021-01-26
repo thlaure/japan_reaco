@@ -106,7 +106,7 @@
             "firstname": "Andrew",
             "image": "../assets/images/team/nemr_andrew.jpg",
             "role": "Graphist / 3D designer",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: numeric creation",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -119,7 +119,7 @@
             "firstname": "Maëva",
             "image": "../assets/images/team/goma_maeva.jpg",
             "role": "Graphist / 3D designer",
-            "degree": "Ingemedia: communication master",
+            "degree": "Ingemedia: communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -132,7 +132,7 @@
             "firstname": "Lucas",
             "image": "../assets/images/team/bonnard_lucas.jpg",
             "role": "Web designer / 3D designer",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: numeric creation",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -145,7 +145,7 @@
             "firstname": "Ismail",
             "image": "../assets/images/team/baibah_ismail.jpg",
             "role": "Storytelling / Communication",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: numeric creation",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -389,7 +389,7 @@
             "firstname": "Alice",
             "image": "../assets/images/team/carteyrade_alice.jpg",
             "role": "Communication Project Manager",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: project management and communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -402,7 +402,7 @@
             "firstname": "Aurore",
             "image": "../assets/images/team/boganin_aurore.jpg",
             "role": "2D designer",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: numeric creation",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -419,7 +419,7 @@
             "firstname": "Lauriane",
             "image": "../assets/images/team/nolot_lauriane.jpg",
             "role": "3D designer",
-            "degree": "Ingemedia: numeric creation master",
+            "degree": "Ingemedia: numeric creation",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -446,13 +446,58 @@
         {
             "name": "CARPENTIER",
             "firstname": "Océane",
-            "image": "",
+            "image": "../assets/images/team/carpentier_oceane.jpg",
             "role": "3D design",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
                     "link": "https://www.linkedin.com/in/oceanecarpentier/"
+                }
+            ]
+        },
+        {
+            "name": "ARRA",
+            "firstname": "Adrien",
+            "image": "../assets/images/team/arra_adrien.png",
+            "role": "Unity3D developer",
+            "degree": "CNAM: IT and multimedia engineer",
+            "socials": []
+        },
+        {
+            "name": "BONNAMOUR",
+            "firstname": "Adrien",
+            "image": "../assets/images/team/bonnamour_adrien.jpg",
+            "role": "Unity3D developer",
+            "degree": "CNAM: IT and multimedia engineer",
+            "socials": []
+        },
+        {
+            "name": "GENTILINI",
+            "firstname": "Tony",
+            "image": "../assets/images/team/gentilini_tony.jpg",
+            "role": "Storytelling",
+            "degree": "CNAM: IT and multimedia engineer",
+            "socials": []
+        },
+        {
+            "name": "TOMASIA",
+            "firstname": "Alexandre",
+            "image": "../assets/images/team/tomasia_alexandre.jpg",
+            "role": "Sound designer",
+            "degree": "CNAM: IT and multimedia engineer",
+            "socials": []
+        },
+        {
+            "name": "ALILI",
+            "firstname": "Myriam",
+            "image": "../assets/images/team/alili_myriam.jpg",
+            "role": "Graphic designer",
+            "degree": "Ingemedia: numeric creation",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/myriam-alili"
                 }
             ]
         }
