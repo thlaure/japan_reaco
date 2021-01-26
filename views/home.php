@@ -8,11 +8,19 @@
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="./assets/js/home.js" defer></script>
     <script src="../assets/js/timeline.js" defer></script>
+    <script src="../assets/js/jquery.translate.js" defer></script>
 </head>
 
 <body>
     <section>
         <div class="header" id="title">
+            <div class='btn-lang-wrapper row'>
+                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="en">EN</a>
+                <p class="btn-lang-divider btn-lang">|</p>
+                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="fr">FR</a>
+                <p class="btn-lang-divider btn-lang">|</p>
+                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="jp">JP</a>
+            </div>
             <div class="inner-header flex">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまたんけん</h2>
@@ -150,7 +158,6 @@
                 <h2 class="display-4 text-white text-center">Interactive map</h2>
             </div>
             <div id="map">
-
             </div>
         </article>
 
