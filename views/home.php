@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="./assets/js/home.js" defer></script>
     <script src="../assets/js/timeline.js" defer></script>
+    <script src="../assets/js/three/three.js"></script>
+    <script src="../assets/js/three/orbitControl.js"></script>
+    <script src="../assets//js/three/threex.domevent.js"></script>
 </head>
 
 <body>
@@ -81,7 +84,7 @@
                             <span class="month">SENGOKU PERIOD</span>
                             <p>Sengoku era is full of military conflict. This period is also called "The Province in War Era".</p>
                             <p>This era cover half of the Muromachi age wich is from 1336 to 1573. It's the last period before the dynasty of Tokugawa shogun takes place. It's in this age that the zen culture was born. Buildings were accompanied by those famous dry garden and the tea ceremony raised at this moment. Caractised by harmony, respect, purity and tranquility.</p>
-                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm. As a result of trade exchange, cities are developed aroud harbours and internal commercial axes. Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation.  </p>
+                            <p>It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm. As a result of trade exchange, cities are developed aroud harbours and internal commercial axes. Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation. </p>
                             <a href="#" class="read-more">Read more</a>
                         </div>
                     </div>
@@ -150,7 +153,50 @@
                 <h2 class="display-4 text-white text-center">Interactive map</h2>
             </div>
             <div id="map">
+                <script>
+                    const scene = new THREE.Scene();
+                    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+                    const renderer = new THREE.WebGLRenderer();
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+                    document.getElementById("map").appendChild(renderer.domElement);
+
+                    const geometry = new THREE.BoxGeometry();
+                    const material = new THREE.MeshBasicMaterial({
+                        color: 0x00ff00,
+                        wireframe : true,
+                    });
+                    const cube = new THREE.Mesh(geometry, material);
+                    scene.add(cube);
+
+                    camera.position.z = 5;
+                    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+                    const domevent = new THREEx.DomEvents(camera, renderer.domElement);
+
+                    let cubeClciked= false;
+                    domevent.addEventListener(cube,'click',event => {
+                        if(cubeClciked){
+                            material.wireframe = false;
+                            cubeClciked=false;
+                        }else{
+                            material.wireframe = true;
+                            cubeClciked=true;
+                        }
+                    });
+
+                    const animate = function() {
+                        requestAnimationFrame(animate);
+
+                        cube.rotation.x += 0.01;
+                        cube.rotation.y += 0.01;
+
+                        controls.update();
+
+                        renderer.render(scene, camera);
+                    };
+
+                    animate();
+                </script>
             </div>
         </article>
 
@@ -159,9 +205,11 @@
                 <h2 class="display-4 text-white text-center">Events</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-8 border-0 my-3"> <!-- data-aos="fade-up" -->
+                <div class="card text-white col-md-8 border-0 my-3">
+                    <!-- data-aos="fade-up" -->
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4"> <!-- data-aos="fade-right" -->
+                    <div class="card-img-overlay ml-4">
+                        <!-- data-aos="fade-right" -->
                         <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link" title="Learn more">Events</a>
                     </div>
                 </div>
@@ -173,19 +221,22 @@
                 <h2 class="display-4 text-white text-center">Discover differently</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
+                    <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
                         <a href="/projects/ar-project" class="btn btn-danger rounded-0 stretched-link" title="AR project">AR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
+                    <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right">
                         <a href="/projects/vr-project" class="btn btn-danger rounded-0 stretched-link" title="VR project">VR project</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
+                    <!-- data-aos="zoom-in" -->
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
                     <div class="card-img-overlay mr-4 text-center">
                         <a href="/projects/web-project" class="btn btn-danger rounded-0 stretched-link" title="Web project">Web project</a>
