@@ -28,7 +28,7 @@
         </div>
     </section>
 
-    <?php include(__DIR__ . "./footer.inc.php"); ?>
+    <?php include(__DIR__ . "/footer.inc.php"); ?>
 </body>
 
 </html>
