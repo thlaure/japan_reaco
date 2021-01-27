@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="./assets/js/home.js" defer></script>
     <script src="../assets/js/timeline.js" defer></script>
-    <script src="../assets/js/three/three.js"></script>
+    <script src="../assets/js/three/three.js" ></script>
     <script src="../assets/js/three/orbitControl.js"></script>
-    <script src="../assets//js/three/threex.domevent.js"></script>
+    <script src="../assets/js/three/inflate.min.js"></script>
+    <script src="../assets/js/three/FBXLoader.js"></script>
+    <script src="../assets/js/three/threex.domevent.js"></script>
 </head>
 
 <body>
@@ -153,13 +155,58 @@
                 <h2 class="display-4 text-white text-center">Interactive map</h2>
             </div>
             <div id="map">
+                <!-- // Resize auto canvas  // -->
+                <canvas class="map" id="canvas-div"></canvas>
+                <!-- // ------------------  // -->
+            </div>
                 <script>
                     const scene = new THREE.Scene();
+                    // SCENE FOND BLANC //
+                    scene.background = new THREE.Color( 0xFFFFFFF );
+                    // _--------------_ //
+                    
                     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-                    const renderer = new THREE.WebGLRenderer();
-                    renderer.setSize(window.innerWidth, window.innerHeight);
-                    document.getElementById("map").appendChild(renderer.domElement);
+                    // Resize auto canvas  // 
+                    const canvas = document.querySelector('#canvas-div');
+                    const renderer = new THREE.WebGLRenderer({canvas});
+                    // -----------------  //
+
+                    // PAS DE PIXELISATION //
+                    renderer.setPixelRatio( window.devicePixelRatio );
+                    // ------------------- //
+
+                    renderer.setSize( innerWidth, innerHeight );
+
+                    // AJOUT DE LUMIERE AMBIANTE  //
+                    const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+                    scene.add( light );
+                    // -------------------------- //
+
+                    // FBX LOADING  //
+                    const loader = new THREE.FBXLoader();
+                    loader.load(
+                        '../assets/fbx/Temple.FBX',
+                        (object) => {
+                            // object.traverse(function (child) {
+                            //     if ((<THREE.Mesh>child).isMesh) {
+                            //         (<THREE.Mesh>child).material = material
+                            //         if ((<THREE.Mesh>child).material) {
+                            //             ((<THREE.Mesh>child).material as THREE.MeshBasicMaterial).transparent = false
+                            //         }
+                            //     }
+                            // })
+                            //object.scale.set(.01, .01, .01)
+                            scene.add(object);
+                        },
+                        (xhr) => {
+                            console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                        },
+                        (error) => {
+                            console.log(error);
+                        }
+                    )
+                    // ------------------------  //
 
                     const geometry = new THREE.BoxGeometry();
                     const material = new THREE.MeshBasicMaterial({
@@ -197,7 +244,6 @@
 
                     animate();
                 </script>
-            </div>
         </article>
 
         <article class="my-5" id="events">
