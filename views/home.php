@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="./assets/js/home.js" defer></script>
-    <script src="../assets/js/timeline.js" defer></script>
-    <script src="../assets/js/jquery.translate.js" defer></script>
+    <script src="./assets/js/timeline.js" defer></script>
 </head>
 
 <body class="lang-wrapper">
     <section>
         <div class="header" id="title">
-            <div class='btn-lang-wrapper row'>
-                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="en">EN</a>
-                <p class="btn-lang-divider btn-lang">|</p>
-                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="fr">FR</a>
-                <p class="btn-lang-divider btn-lang">|</p>
-                <a class="btn btn-lang lang_selector" href="#" role="button" data-value="jp">JP</a>
+            <div class="row">
+                <div class="btn-group lang-wrapper position-absolute mr-md-3 mt-md-2" role="group" aria-label="Change language">
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
+                    </div>
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
+                    </div>
+                </div>
             </div>
-            <div class="inner-header flex">
+            <div class="inner-header flex mt-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまたんけん</h2>
                 <hr class="sm-separator w-25 my-md-5">
@@ -201,7 +206,7 @@
             </div>
 
             <div class="mt-3 text-center">
-                <a href="/team" class="btn btn-danger rounded-0 p-3" title="Go to the team"><i class="fas fa-users"></i><span class='trn'>project_team</span></a>
+                <a href="/team" class="btn btn-danger rounded-0 p-3" title="Go to the team"><i class="fas fa-users"></i> <span class='trn'>project_team</span></a>
             </div>
         </article>
 
