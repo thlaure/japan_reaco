@@ -171,9 +171,9 @@
                 <h2 class="display-4 text-white text-center trn">event_title</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-8 border-0 my-3"> <!-- data-aos="fade-up" -->
+                <div class="card text-white col-md-8 border-0 my-3">
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4"> <!-- data-aos="fade-right" -->
+                    <div class="card-img-overlay ml-4">
                         <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
                     </div>
                 </div>
@@ -185,19 +185,19 @@
                 <h2 class="display-4 text-white text-center trn">discover_title</h2>
             </div>
             <div class="container row mx-auto" id="projects">
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
                         <a href="/projects/ar-project" class="btn btn-danger rounded-0 stretched-link trn" title="AR project">ar_title</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right">
                         <a href="/projects/vr-project" class="btn btn-danger rounded-0 stretched-link trn" title="VR project">vr_title</a>
                     </div>
                 </div>
-                <div class="card text-white col-md-6 border-0 mx-auto my-3"> <!-- data-aos="zoom-in" -->
+                <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
                     <div class="card-img-overlay mr-4 text-center">
                         <a href="/projects/web-project" class="btn btn-danger rounded-0 stretched-link trn" title="Web project">web_title</a>
