@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
-    <script src="./assets/js/home.js" defer></script>
     <script src="../assets/js/timeline.js" defer></script>
-    <script src="../assets/js/three/three.js" ></script>
+    <script src="./assets/js/home.js" defer></script>
+    <!--<script src="../assets/js/three/FBXLoader.js"></script>
+    <script src="../assets/js/three/three.js"></script>
     <script src="../assets/js/three/orbitControl.js"></script>
     <script src="../assets/js/three/inflate.min.js"></script>
-    <script src="../assets/js/three/FBXLoader.js"></script>
-    <script src="../assets/js/three/threex.domevent.js"></script>
+    <script src="../assets/js/three/threex.domevent.js"></script>-->
 </head>
 
 <body>
@@ -159,91 +159,346 @@
                 <canvas class="map" id="canvas-div"></canvas>
                 <!-- // ------------------  // -->
             </div>
-                <script>
-                    const scene = new THREE.Scene();
-                    // SCENE FOND BLANC //
-                    scene.background = new THREE.Color( 0xFFFFFFF );
-                    // _--------------_ //
-                    
-                    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            <script type="module">
+                import * as THREE from '../assets/js/three/three.module.js';
+                import {
+                    OrbitControls
+                } from '../assets/js/copy_threejs/jsm/controls/OrbitControls.js';
+                import {
+                    FBXLoader
+                } from '../assets/js/copy_threejs/jsm/loaders/FBXLoader.js';
 
-                    // Resize auto canvas  // 
-                    const canvas = document.querySelector('#canvas-div');
-                    const renderer = new THREE.WebGLRenderer({canvas});
-                    // -----------------  //
+                let container, stats;
+                let camera, scene, raycaster, renderer;
 
-                    // PAS DE PIXELISATION //
-                    renderer.setPixelRatio( window.devicePixelRatio );
-                    // ------------------- //
+                let INTERSECTED;
+                let theta = 0;
 
-                    renderer.setSize( innerWidth, innerHeight );
+                const mouse = new THREE.Vector2();
+                const radius = 100;
 
-                    // AJOUT DE LUMIERE AMBIANTE  //
-                    const light = new THREE.AmbientLight( 0x404040 ); // soft white light
-                    scene.add( light );
-                    // -------------------------- //
+                console.log("import 1");
+                scene = new THREE.Scene();
+                // SCENE FOND BLANC //
+                scene.background = new THREE.Color(0xFFFFFFF);
+                // _--------------_ //
 
-                    // FBX LOADING  //
-                    const loader = new THREE.FBXLoader();
-                    loader.load(
-                        '../assets/fbx/Temple.FBX',
-                        (object) => {
-                            // object.traverse(function (child) {
-                            //     if ((<THREE.Mesh>child).isMesh) {
-                            //         (<THREE.Mesh>child).material = material
-                            //         if ((<THREE.Mesh>child).material) {
-                            //             ((<THREE.Mesh>child).material as THREE.MeshBasicMaterial).transparent = false
-                            //         }
-                            //     }
-                            // })
-                            //object.scale.set(.01, .01, .01)
-                            scene.add(object);
-                        },
-                        (xhr) => {
-                            console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                        },
-                        (error) => {
-                            console.log(error);
+                camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+                // Resize auto canvas  // 
+                const canvas = document.querySelector('#canvas-div');
+                renderer = new THREE.WebGLRenderer({
+                    canvas
+                });
+                // -----------------  //
+
+                // PAS DE PIXELISATION //
+                renderer.setPixelRatio(window.devicePixelRatio);
+                // ------------------- //
+
+                renderer.setSize(innerWidth, innerHeight);
+
+                // AJOUT DE LUMIERE AMBIANTE  //
+                const light = new THREE.AmbientLight(0x404040); // soft white light
+                scene.add(light);
+                // -------------------------- //
+
+                // FBX LOADING  //
+                /*const loader = new FBXLoader();
+                loader.load(
+                    '../assets/fbx/Temple.fbx',
+                    (object) => {
+                        // object.traverse(function (child) {
+                        //     if ((<THREE.Mesh>child).isMesh) {
+                        //         (<THREE.Mesh>child).material = material
+                        //         if ((<THREE.Mesh>child).material) {
+                        //             ((<THREE.Mesh>child).material as THREE.MeshBasicMaterial).transparent = false
+                        //         }
+                        //     }
+                        // })
+                        //object.scale.set(.01, .01, .01)
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )*/
+                const loader = new FBXLoader();
+                loader.load('../assets/fbx/Temple.fbx', function(object) {
+
+                    let mixer = new THREE.AnimationMixer(object);
+
+                    const action = mixer.clipAction(object.animations[0]);
+                    action.play();
+
+                    object.traverse(function(child) {
+
+                        if (child.isMesh) {
+
+                            child.castShadow = true;
+                            child.receiveShadow = true;
+
                         }
-                    )
-                    // ------------------------  //
 
-                    const geometry = new THREE.BoxGeometry();
-                    const material = new THREE.MeshBasicMaterial({
-                        color: 0x00ff00,
-                        wireframe : true,
+
                     });
-                    const cube = new THREE.Mesh(geometry, material);
-                    scene.add(cube);
 
-                    camera.position.z = 5;
-                    const controls = new THREE.OrbitControls(camera, renderer.domElement);
-                    const domevent = new THREEx.DomEvents(camera, renderer.domElement);
+                    scene.add(object);
 
-                    let cubeClciked= false;
-                    domevent.addEventListener(cube,'click',event => {
-                        if(cubeClciked){
-                            material.wireframe = false;
-                            cubeClciked=false;
-                        }else{
-                            material.wireframe = true;
-                            cubeClciked=true;
+                });
+                // ------------------------  //
+
+                const geometry = new THREE.BoxGeometry();
+                const material = new THREE.MeshBasicMaterial({
+                    color: 0x00ff00,
+                    wireframe: true,
+                });
+                const cube = new THREE.Mesh(geometry, material);
+                scene.add(cube);
+
+                camera.position.z = 5;
+                const controls = new OrbitControls(camera, renderer.domElement);
+                /*const domevent = new THREEx.DomEvents(camera, renderer.domElement);
+
+                let cubeClciked = false;
+                domevent.addEventListener(cube, 'click', event => {
+                    if (cubeClciked) {
+                        material.wireframe = false;
+                        cubeClciked = false;
+                    } else {
+                        material.wireframe = true;
+                        cubeClciked = true;
+                    }
+                });*/
+
+                //RAYCASTER ----//
+                raycaster = new THREE.Raycaster();
+                //--------------//
+
+
+                document.addEventListener('mousemove', onDocumentMouseMove);
+                document.addEventListener('click', onmouseClick);
+
+                function onDocumentMouseMove(event) {
+
+                    event.preventDefault();
+
+                    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+                }
+
+                function onmouseClick(event) {
+
+                    event.preventDefault();
+
+                    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+                    raycaster.setFromCamera(mouse, camera);
+                    var intersects = raycaster.intersectObjects(scene.children, true);
+                    if (intersects.length > 0) {
+                        console.log('Intersection:', intersects[0]);
+                    }
+
+                }
+
+                const animate = function() {
+                    requestAnimationFrame(animate);
+
+                    cube.rotation.x += 0.01;
+                    cube.rotation.y += 0.01;
+
+                    //controls.update();
+
+
+                    //render();
+
+                    renderer.render(scene, camera);
+                };
+
+                function render() {
+
+
+                    // find intersections
+
+                    raycaster.setFromCamera(mouse, camera);
+
+                    var intersects = raycaster.intersectObjects(scene.children, true);
+                    if (intersects.length > 0) {
+                        console.log('Intersection:', intersects[0]);
+                        if (INTERSECTED != intersects[0].object) {
+
+                            //if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+                            INTERSECTED = intersects[0].object;
+                            //INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+                            //INTERSECTED.material.emissive.setHex(0xff0000);
+
                         }
-                    });
 
-                    const animate = function() {
-                        requestAnimationFrame(animate);
+                    } else {
 
-                        cube.rotation.x += 0.01;
-                        cube.rotation.y += 0.01;
+                        //if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 
-                        controls.update();
+                        INTERSECTED = null;
 
-                        renderer.render(scene, camera);
-                    };
+                    }
 
-                    animate();
-                </script>
+                    renderer.render(scene, camera);
+
+                }
+
+                animate();
+            </script>
+
+            <!-- <script type="module">
+                import * as THREE from '../assets/js/three/three.module.js';
+
+                //import Stats from './jsm/libs/stats.module.js';
+
+                let container, stats;
+                let camera, scene, raycaster, renderer;
+
+                let INTERSECTED;
+                let theta = 0;
+
+                const mouse = new THREE.Vector2();
+                const radius = 100;
+
+                init();
+                animate();
+
+                function init() {
+
+                    container = document.createElement('div');
+                    document.getElementById("map").appendChild(container);
+
+                    camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
+
+                    scene = new THREE.Scene();
+                    scene.background = new THREE.Color(0xf0f0f0);
+
+                    const light = new THREE.DirectionalLight(0xffffff, 1);
+                    light.position.set(1, 1, 1).normalize();
+                    scene.add(light);
+
+                    const geometry = new THREE.BoxGeometry(20, 20, 20);
+
+                    for (let i = 0; i < 2000; i++) {
+
+                        const object = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial({
+                            color: Math.random() * 0xffffff
+                        }));
+
+                        object.position.x = Math.random() * 800 - 400;
+                        object.position.y = Math.random() * 800 - 400;
+                        object.position.z = Math.random() * 800 - 400;
+
+                        object.rotation.x = Math.random() * 2 * Math.PI;
+                        object.rotation.y = Math.random() * 2 * Math.PI;
+                        object.rotation.z = Math.random() * 2 * Math.PI;
+
+                        object.scale.x = Math.random() + 0.5;
+                        object.scale.y = Math.random() + 0.5;
+                        object.scale.z = Math.random() + 0.5;
+
+                        scene.add(object);
+
+                    }
+
+                    raycaster = new THREE.Raycaster();
+
+                    renderer = new THREE.WebGLRenderer();
+                    renderer.setPixelRatio(window.devicePixelRatio);
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+                    container.appendChild(renderer.domElement);
+
+                    //stats = new Stats();
+                    //container.appendChild(stats.dom);
+
+                    document.addEventListener('mousemove', onDocumentMouseMove);
+
+                    //
+
+                    window.addEventListener('resize', onWindowResize);
+
+                }
+
+                function onWindowResize() {
+
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+
+                    renderer.setSize(window.innerWidth, window.innerHeight);
+
+                }
+
+                function onDocumentMouseMove(event) {
+
+                    event.preventDefault();
+
+                    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+                    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+                }
+
+                //
+
+                function animate() {
+
+                    requestAnimationFrame(animate);
+
+                    render();
+                    //stats.update();
+
+                }
+
+                function render() {
+
+                    theta += 0.1;
+
+                    camera.position.x = radius * Math.sin(THREE.MathUtils.degToRad(theta));
+                    camera.position.y = radius * Math.sin(THREE.MathUtils.degToRad(theta));
+                    camera.position.z = radius * Math.cos(THREE.MathUtils.degToRad(theta));
+                    camera.lookAt(scene.position);
+
+                    camera.updateMatrixWorld();
+
+                    // find intersections
+
+                    raycaster.setFromCamera(mouse, camera);
+
+                    const intersects = raycaster.intersectObjects(scene.children);
+
+                    if (intersects.length > 0) {
+
+                        if (INTERSECTED != intersects[0].object) {
+
+                            if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+                            INTERSECTED = intersects[0].object;
+                            INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
+                            INTERSECTED.material.emissive.setHex(0xff0000);
+
+                        }
+
+                    } else {
+
+                        if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
+
+                        INTERSECTED = null;
+
+                    }
+
+                    renderer.render(scene, camera);
+
+                }
+            </script>
+       -->
         </article>
 
         <article class="my-5" id="events">
