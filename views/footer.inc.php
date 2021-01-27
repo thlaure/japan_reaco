@@ -1,3 +1,3 @@
 <footer class="text-center container">
-    <p class="mb-1 text-muted">Developed by CNAM students in collaboration with Ingemedia students, french schools</p>
+    <p class="mb-1 text-muted trn">footer</p>
 </footer>
