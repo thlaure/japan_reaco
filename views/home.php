@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="container my-5">
+        <div class="container my-5 text-justify">
             <p class="lead py-5 trn">text_intro</p>
         </div>
 
@@ -174,7 +174,8 @@
                 <div class="card text-white col-md-8 border-0 my-3">
                     <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
-                        <a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
+                        <!--<a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>-->
+                        <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
                     </div>
                 </div>
             </div>

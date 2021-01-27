@@ -92,9 +92,9 @@ var dict = {
     jp: "Discover differently",
   },
   text_intro: {
-    en: "Intro EN",
-    fr: "Intro FR",
-    jp: "Intro JP",
+    en: "Here begins your journey, on the island of millennial Japan, from traditional arts to age-old crafts, discovering ephemeral beauties and living treasures. Thanks to the immersive projects of our students, there are no more borders, you are in JAPAN, on the road of ancient Yamato, the Saigoku road tells you and makes you live its history, link between the capital and the pearl of Hiroshima. Welcome, dear visitors, to the floating world...",
+    fr: "Ici commence votre voyage, sur l'île du Japon millénaire, des arts traditionnels aux métiers séculaires, découvertes des beautés éphémères et des trésors vivants. Grâce aux projets immersifs de nos étudiants, il n'y a plus de frontières, vous êtes au JAPON, sur la route de l'ancien Yamato, la Saigoku road vous raconte et vous fait vivre son histoire, lien entre la capitale et la perle d'Hiroshima. Bienvenue, chers visiteurs, dans le monde flottant...",
+    jp: "Here begins your journey, on the island of millennial Japan, from traditional arts to age-old crafts, discovering ephemeral beauties and living treasures. Thanks to the immersive projects of our students, there are no more borders, you are in JAPAN, on the road of ancient Yamato, the Saigoku road tells you and makes you live its history, link between the capital and the pearl of Hiroshima. Welcome, dear visitors, to the floating world...",
   },
   //TIMELINE CONTENT 1//
   uptitle_early: {

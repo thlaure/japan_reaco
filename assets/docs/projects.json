@@ -195,19 +195,6 @@
             ]
         },
         {
-            "name": "ARRA",
-            "firstname": "Adrien",
-            "image": "",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
-            "socials": [
-                {
-                    "icon": "fab fa-linkedin-in",
-                    "link": "https://www.linkedin.com/in/adrien-arra-442a97164/"
-                }
-            ]
-        },
-        {
             "name": "FEBVRE",
             "firstname": "Ludovic",
             "image": "../assets/images/team/febvre_ludovic.jpg",
@@ -439,7 +426,7 @@
             "name": "LEFEVRE",
             "firstname": "Lucas",
             "image": "../assets/images/team/lefevre_lucas.jpg",
-            "role": "3D design",
+            "role": "3D designer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": []
         },
@@ -447,7 +434,7 @@
             "name": "CARPENTIER",
             "firstname": "Océane",
             "image": "../assets/images/team/carpentier_oceane.jpg",
-            "role": "3D design",
+            "role": "3D designer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": [
                 {
@@ -467,7 +454,7 @@
         {
             "name": "BONNAMOUR",
             "firstname": "Adrien",
-            "image": "../assets/images/team/bonnamour_adrien.jpg",
+            "image": "",
             "role": "Unity3D developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": []
@@ -475,7 +462,7 @@
         {
             "name": "GENTILINI",
             "firstname": "Tony",
-            "image": "../assets/images/team/gentilini_tony.jpg",
+            "image": "",
             "role": "Storytelling",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": []
@@ -484,7 +471,7 @@
             "name": "TOMASIA",
             "firstname": "Alexandre",
             "image": "../assets/images/team/tomasia_alexandre.jpg",
-            "role": "Sound designer",
+            "role": "Unity3D developer",
             "degree": "CNAM: IT and multimedia engineer",
             "socials": []
         },
