@@ -6,20 +6,21 @@
     <link rel="stylesheet" href="../assets/css/team.css">
 </head>
 
-<body>
+<body class="lang-wrapper">
     <section>
         <header class="parallax-header-team text-white">
+            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
             <div class="container-fluid">
                 <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
             </div>
             <h1 class="text-center mt-4 display-4">Hiroshima Exploration</h1>
             <hr class="sm-separator w-25">
-            <h2 class="text-center font-italic">Project participants</h2>
+            <h2 class="text-center font-italic trn">title_participants</h2>
         </header>
 
         <div class="container mt-5">
             <blockquote class="blockquote">
-                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.</p>
+                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> <span class="trn">intro_participants</span></p>
             </blockquote>
         </div>
 
@@ -36,9 +37,9 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h5>
-                                        <p class="card-text"><?= $participant->role ?></p>
+                                        <p class="card-text trn"><?= $participant->role ?></p>
                                         <?php if (isset($participant->degree)) : ?>
-                                            <p class="card-text font-italic text-muted"><?= $participant->degree ?></p>
+                                            <p class="card-text font-italic text-muted trn"><?= $participant->degree ?></p>
                                         <?php endif ?>
                                         <?php foreach ($participant->socials as $social) : ?>
                                             <div class="d-inline mx-2">
