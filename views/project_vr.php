@@ -1,7 +1,7 @@
-<h3 class="display-4 text-center">Hiroshima Castle town immersion: On the traces of the Saigoku Kaido</h3>
+<h3 class="display-4 text-center trn">vr_title</h3>
 <div class="text-justify mt-5">
-    <p class="lead">This project immerses you in the Edo period, in the old streets of Hiroshima and more particularly known as Hondori street today. You are accompanied by a descendant of a famous merchant family of the time who is proud to tell the story of his city.  Equip yourself with the virtual helmet, let yourself be guided and immerse yourself in the stories that blend into the pilgrimage of the Saigoku road.</p>
-    <p class="lead">We wish you a good exploration !</p>
+    <p class="lead trn">vr_desc1</p>
+    <p class="lead trn">vr_desc2</p>
 </div>
 <div class="mt-5">
     <div class="row">
