@@ -173,7 +173,7 @@
                 <h2 class="display-4 text-white text-center trn">event_title</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card mb-3 border-0">
+                <div class="card mb-3 mt-5 border-0">
                     <div class="row no-gutters">
                         <div class="col-md-6">
                             <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
