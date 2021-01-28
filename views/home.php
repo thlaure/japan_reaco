@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="./assets/css/timeline.css">
     <script src="../assets/js/timeline.js" defer></script>
     <script src="./assets/js/home.js" defer></script>
-    <!--<script src="../assets/js/three/FBXLoader.js"></script>
-    <script src="../assets/js/three/three.js"></script>
-    <script src="../assets/js/three/orbitControl.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.js" integrity="sha512-1k30ak5bRjdWRjgzWKvGH36UXuWxLsw0QzoXdghXbgVu2Ur71UdLDPpwPcUPiLwvkZBJF/daLxkIH/idYW7UAg==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://rawgit.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js"></script>
+    <script src="../assets/js/three/FBXLoader.js"></script>
     <script src="../assets/js/three/inflate.min.js"></script>
+    <script src="./assets/js/map.js" defer></script> -->
+   <!-- <script src="../assets/js/three/three.js"></script>
     <script src="../assets/js/three/threex.domevent.js"></script>-->
 </head>
 
@@ -159,6 +161,25 @@
                 <canvas class="map" id="canvas-div"></canvas>
                 <!-- // ------------------  // -->
             </div>
+
+            <!-- à garder very important
+             <script id="vertexShader" type="x-shader/x-vertex">
+                varying vec3 vNormal;
+                void main() 
+                {
+                    vNormal = normalize( normalMatrix * normal );
+                    gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+                }
+            </script>
+            <script id="fragmentShader" type="x-shader/x-vertex"> 
+                varying vec3 vNormal;
+                void main() 
+                {
+                    float intensity = pow( 0.7 - dot( vNormal, vec3( 0.0, 0.0, 1.0 ) ), 4.0 ); 
+                    gl_FragColor = vec4( 1.0, 1.0, 0.0, 0.1 ) * intensity;
+                }
+            </script> -->
+            <!-- <script src="./assets/js/map.js"></script> -->
             <script type="module">
                 import * as THREE from '../assets/js/three/three.module.js';
                 import {
@@ -167,17 +188,24 @@
                 import {
                     FBXLoader
                 } from '../assets/js/copy_threejs/jsm/loaders/FBXLoader.js';
+                import {
+                    SVGLoader
+                } from '../assets/js/copy_threejs/jsm/loaders/SVGLoader.js';
+
+                
+
 
                 let container, stats;
                 let camera, scene, raycaster, renderer;
 
                 let INTERSECTED;
                 let theta = 0;
-
+                let temple;
+                let templePanel;
+                let objectOVERED,objectSELECTED;
                 const mouse = new THREE.Vector2();
                 const radius = 100;
 
-                console.log("import 1");
                 scene = new THREE.Scene();
                 // SCENE FOND BLANC //
                 scene.background = new THREE.Color(0xFFFFFFF);
@@ -199,24 +227,108 @@
                 renderer.setSize(innerWidth, innerHeight);
 
                 // AJOUT DE LUMIERE AMBIANTE  //
-                const light = new THREE.AmbientLight(0x404040); // soft white light
+                const light = new THREE.AmbientLight(0xFFFFFF,0.5); // soft white light
                 scene.add(light);
+                
+                const lightt = new THREE.DirectionalLight(0xFFFFFF,0.5); // soft white light
+                scene.add(lightt);
+                //spotlight over
+                let spotLight = new THREE.SpotLight(0xFFFF00,5,5, Math.PI / 8);  // <============
+                spotLight.position.set(0, 3, 0);
+                spotLight.target.position.set(0, 0, 0);
+                scene.add(spotLight);
                 // -------------------------- //
 
+
+                // SHADER GLOW A GARDER
+                // var customMaterial = new THREE.ShaderMaterial( 
+                // {
+                //     uniforms: {  },
+                //     vertexShader:   document.getElementById( 'vertexShader').textContent,
+                //     fragmentShader: document.getElementById( 'fragmentShader').textContent,
+                //     side: THREE.BackSide,
+                //     blending: THREE.AdditiveBlending,
+                //     transparent: true
+                // }   );
+                    
+               
                 // FBX LOADING  //
-                /*const loader = new FBXLoader();
+                const loader = new FBXLoader();
+
+                //MAP
+                // loader.load(
+                //     '../assets/fbx/map_2.FBX',
+                //     (object) => {
+                //         object.scale.set(.0001, .0001, .0001)
+                //         object.position.set(4,-0.5,-2)
+                //         object.updateMatrix();
+                //         scene.add(object);
+                //     },
+                //     (xhr) => {
+                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                //     },
+                //     (error) => {
+                //         console.log(error);
+                //     }
+                // )
+
+                //BRIDGE
+                // loader.load(
+                //     '../assets/fbx/bridge.FBX',
+                //     (object) => {
+                //         object.scale.set(.01, .01, .01)
+                //         object.position.set(4,0,-2)
+                //         object.updateMatrix();
+                //         scene.add(object);
+                //     },
+                //     (xhr) => {
+                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                //     },
+                //     (error) => {
+                //         console.log(error);
+                //     }
+                // )
+                //PARK
+                // loader.load(
+                //     '../assets/fbx/park.fbx',
+                //     (object) => {
+                //         object.scale.set(.01, .01, .01)
+                //         object.position.set(-2,0,-2)
+                //         object.updateMatrix();
+                //         scene.add(object);
+                //     },
+                //     (xhr) => {
+                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                //     },
+                //     (error) => {
+                //         console.log(error);
+                //     }
+                // )
+
+                //PHARMACY
+                // loader.load(
+                //     '../assets/fbx/pharmacy.fbx',
+                //     (object) => {
+                //         object.scale.set(.003, .003, .003)
+                //         object.position.set(2,0,-2)
+                //         object.updateMatrix();
+                //         scene.add(object);
+                //     },
+                //     (xhr) => {
+                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                //     },
+                //     (error) => {
+                //         console.log(error);
+                //     }
+                // )
+
+                //TEMPLE
                 loader.load(
-                    '../assets/fbx/Temple.fbx',
+                    '../assets/fbx/Temples.fbx',
                     (object) => {
-                        // object.traverse(function (child) {
-                        //     if ((<THREE.Mesh>child).isMesh) {
-                        //         (<THREE.Mesh>child).material = material
-                        //         if ((<THREE.Mesh>child).material) {
-                        //             ((<THREE.Mesh>child).material as THREE.MeshBasicMaterial).transparent = false
-                        //         }
-                        //     }
-                        // })
-                        //object.scale.set(.01, .01, .01)
+                        temple=object;
+                        object.position.set(0,0,0)
+                        object.updateMatrix();
                         scene.add(object);
                     },
                     (xhr) => {
@@ -225,54 +337,37 @@
                     (error) => {
                         console.log(error);
                     }
-                )*/
-                const loader = new FBXLoader();
-                loader.load('../assets/fbx/Temple.fbx', function(object) {
+                )
 
-                    let mixer = new THREE.AnimationMixer(object);
+                // FOR TEMPLE
+                
+                templePanel = createPanel('Temple', 'Ceci est un temple',0,0,0,15);
+                templePanel.visible = false;
+                scene.add(templePanel)
+                ///
+                //UNIVERSITY
+                // loader.load(
+                //     '../assets/fbx/university.FBX',
+                //     (object) => {
+                //         object.scale.set(.01, .01, .01)
+                //         object.position.set(-2,0,2)
+                //         object.updateMatrix();
+                //         scene.add(object);
+                //     },
+                //     (xhr) => {
+                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                //     },
+                //     (error) => {
+                //         console.log(error);
+                //     }
+                // )
+               // ------------------------  //
 
-                    const action = mixer.clipAction(object.animations[0]);
-                    action.play();
+               
 
-                    object.traverse(function(child) {
-
-                        if (child.isMesh) {
-
-                            child.castShadow = true;
-                            child.receiveShadow = true;
-
-                        }
-
-
-                    });
-
-                    scene.add(object);
-
-                });
-                // ------------------------  //
-
-                const geometry = new THREE.BoxGeometry();
-                const material = new THREE.MeshBasicMaterial({
-                    color: 0x00ff00,
-                    wireframe: true,
-                });
-                const cube = new THREE.Mesh(geometry, material);
-                scene.add(cube);
-
-                camera.position.z = 5;
+                camera.position.z = 350;
+                camera.position.y = 350;
                 const controls = new OrbitControls(camera, renderer.domElement);
-                /*const domevent = new THREEx.DomEvents(camera, renderer.domElement);
-
-                let cubeClciked = false;
-                domevent.addEventListener(cube, 'click', event => {
-                    if (cubeClciked) {
-                        material.wireframe = false;
-                        cubeClciked = false;
-                    } else {
-                        material.wireframe = true;
-                        cubeClciked = true;
-                    }
-                });*/
 
                 //RAYCASTER ----//
                 raycaster = new THREE.Raycaster();
@@ -301,204 +396,155 @@
                     raycaster.setFromCamera(mouse, camera);
                     var intersects = raycaster.intersectObjects(scene.children, true);
                     if (intersects.length > 0) {
-                        console.log('Intersection:', intersects[0]);
+                            objectSELECTED = intersects[0].object.parent;
+                            console.log(objectSELECTED);
+                            if(temple === objectSELECTED){
+                            templePanel.visible = true;
+                            }
+                            // objectSELECTED.scale.set(.02, .02, .02  );
+                    } else {
+                        if(temple === objectSELECTED){
+                            templePanel.visible = false;
+                        }
+                            // objectSELECTED.scale.set(.01, .01, .01  );
                     }
 
                 }
+             
 
                 const animate = function() {
                     requestAnimationFrame(animate);
-
-                    cube.rotation.x += 0.01;
-                    cube.rotation.y += 0.01;
-
-                    //controls.update();
-
-
-                    //render();
-
-                    renderer.render(scene, camera);
+                    update();
+                    render();
                 };
 
-                function render() {
-
+                function update(){
 
                     // find intersections
 
                     raycaster.setFromCamera(mouse, camera);
 
                     var intersects = raycaster.intersectObjects(scene.children, true);
+
                     if (intersects.length > 0) {
-                        console.log('Intersection:', intersects[0]);
-                        if (INTERSECTED != intersects[0].object) {
-
-                            //if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-                            INTERSECTED = intersects[0].object;
-                            //INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-                            //INTERSECTED.material.emissive.setHex(0xff0000);
-
-                        }
+                        objectOVERED = intersects[0].object.parent;
+                        spotLight.position.set(objectOVERED.position.x, 3,objectOVERED.position.z)
+                        spotLight.target.position.set(objectOVERED.position.x, objectOVERED.position.y, objectOVERED.position.z)
+                        spotLight.intensity = 5;
+                        spotLight.target.updateMatrixWorld();
 
                     } else {
-
-                        //if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-                        INTERSECTED = null;
-
+                        spotLight.intensity = 0;
                     }
-
-                    renderer.render(scene, camera);
-
                 }
-
-                animate();
-            </script>
-
-            <!-- <script type="module">
-                import * as THREE from '../assets/js/three/three.module.js';
-
-                //import Stats from './jsm/libs/stats.module.js';
-
-                let container, stats;
-                let camera, scene, raycaster, renderer;
-
-                let INTERSECTED;
-                let theta = 0;
-
-                const mouse = new THREE.Vector2();
-                const radius = 100;
-
-                init();
-                animate();
-
-                function init() {
-
-                    container = document.createElement('div');
-                    document.getElementById("map").appendChild(container);
-
-                    camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 1, 10000);
-
-                    scene = new THREE.Scene();
-                    scene.background = new THREE.Color(0xf0f0f0);
-
-                    const light = new THREE.DirectionalLight(0xffffff, 1);
-                    light.position.set(1, 1, 1).normalize();
-                    scene.add(light);
-
-                    const geometry = new THREE.BoxGeometry(20, 20, 20);
-
-                    for (let i = 0; i < 2000; i++) {
-
-                        const object = new THREE.Mesh(geometry, new THREE.MeshLambertMaterial({
-                            color: Math.random() * 0xffffff
-                        }));
-
-                        object.position.x = Math.random() * 800 - 400;
-                        object.position.y = Math.random() * 800 - 400;
-                        object.position.z = Math.random() * 800 - 400;
-
-                        object.rotation.x = Math.random() * 2 * Math.PI;
-                        object.rotation.y = Math.random() * 2 * Math.PI;
-                        object.rotation.z = Math.random() * 2 * Math.PI;
-
-                        object.scale.x = Math.random() + 0.5;
-                        object.scale.y = Math.random() + 0.5;
-                        object.scale.z = Math.random() + 0.5;
-
-                        scene.add(object);
-
-                    }
-
-                    raycaster = new THREE.Raycaster();
-
-                    renderer = new THREE.WebGLRenderer();
-                    renderer.setPixelRatio(window.devicePixelRatio);
-                    renderer.setSize(window.innerWidth, window.innerHeight);
-                    container.appendChild(renderer.domElement);
-
-                    //stats = new Stats();
-                    //container.appendChild(stats.dom);
-
-                    document.addEventListener('mousemove', onDocumentMouseMove);
-
-                    //
-
-                    window.addEventListener('resize', onWindowResize);
-
-                }
-
-                function onWindowResize() {
-
-                    camera.aspect = window.innerWidth / window.innerHeight;
-                    camera.updateProjectionMatrix();
-
-                    renderer.setSize(window.innerWidth, window.innerHeight);
-
-                }
-
-                function onDocumentMouseMove(event) {
-
-                    event.preventDefault();
-
-                    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-                    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-
-                }
-
-                //
-
-                function animate() {
-
-                    requestAnimationFrame(animate);
-
-                    render();
-                    //stats.update();
-
-                }
-
                 function render() {
-
-                    theta += 0.1;
-
-                    camera.position.x = radius * Math.sin(THREE.MathUtils.degToRad(theta));
-                    camera.position.y = radius * Math.sin(THREE.MathUtils.degToRad(theta));
-                    camera.position.z = radius * Math.cos(THREE.MathUtils.degToRad(theta));
-                    camera.lookAt(scene.position);
-
-                    camera.updateMatrixWorld();
-
-                    // find intersections
-
-                    raycaster.setFromCamera(mouse, camera);
-
-                    const intersects = raycaster.intersectObjects(scene.children);
-
-                    if (intersects.length > 0) {
-
-                        if (INTERSECTED != intersects[0].object) {
-
-                            if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-                            INTERSECTED = intersects[0].object;
-                            INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-                            INTERSECTED.material.emissive.setHex(0xff0000);
-
-                        }
-
-                    } else {
-
-                        if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-
-                        INTERSECTED = null;
-
-                    }
-
                     renderer.render(scene, camera);
 
                 }
+
+                function createPanel(titre, description,x_panel,y_panel,z_panel,text_size) {
+                    const groupObject = new THREE.Group();
+                        //PANEL
+                        const geometry = new THREE.BoxGeometry(300, 300, 0.2);
+                        const material = new THREE.MeshBasicMaterial({
+                            color: 0xDCDCDC,
+                            opacity: 0.7,
+                        });
+                        const cube = new THREE.Mesh(geometry, material);
+                        cube.position.x = x_panel;//-250;
+                        cube.position.z = z_panel;//99;
+                        cube.position.y = y_panel;//0
+                        groupObject.add(cube);
+                        //FONT PANEL
+                        const fontloader = new THREE.FontLoader();
+                        fontloader.load('../assets/helvetiker_regular.typeface.json', function(font) {
+
+                            const color = new THREE.Color(0x000000);
+
+                            const matDark = new THREE.MeshBasicMaterial({
+                                color: color,
+                                side: THREE.DoubleSide
+                            });
+
+                            const matLite = new THREE.MeshBasicMaterial({
+                                color: color,
+                                transparent: true,
+                                opacity: 1,
+                                side: THREE.DoubleSide
+                            });
+
+                            const message = titre;
+
+                            //15 = taille texte
+                            const shapes = font.generateShapes(message, text_size);
+
+                            const geometry = new THREE.ShapeGeometry(shapes);
+
+                            geometry.computeBoundingBox();
+
+                            const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+
+                            geometry.translate(xMid, 0, 0);
+
+                            // make shape ( N.B. edge view not visible )
+
+                            //Position du texte 
+                            const title = new THREE.Mesh(geometry, matLite);
+                            title.position.z = z_panel +1; //100;
+                            title.position.x = x_panel - 60;//-310;
+                            title.position.y = y_panel+120;//120;
+                            groupObject.add(title);
+
+                        });
+
+
+                        //Font description
+
+                        fontloader.load('../assets/helvetiker_regular.typeface.json', function(font) {
+
+                            const color = new THREE.Color(0x000000);
+
+                            const matDark = new THREE.MeshBasicMaterial({
+                                color: color,
+                                side: THREE.DoubleSide
+                            });
+
+                            const matLite = new THREE.MeshBasicMaterial({
+                                color: color,
+                                transparent: true,
+                                opacity: 1,
+                                side: THREE.DoubleSide
+                            });
+                            
+                            
+                            const message = description;
+                            //10 = taille texte
+                            const shapes = font.generateShapes(message, text_size-5);
+
+                            const geometry = new THREE.ShapeGeometry(shapes);
+
+                            geometry.computeBoundingBox();
+
+                            const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+
+                            geometry.translate(xMid, 0, 0);
+
+                            // make shape ( N.B. edge view not visible )
+
+                            //Position du texte 
+                            const descri = new THREE.Mesh(geometry, matLite);
+                            descri.position.z = z_panel+1;//100;
+                            descri.position.x = x_panel-10;//-260;
+                            descri.position.y = y_panel+90;//90;
+                            groupObject.add(descri);
+
+                        });
+
+                        return groupObject;
+                        }
+
+                animate();
             </script>
-       -->
         </article>
 
         <article class="my-5" id="events">
