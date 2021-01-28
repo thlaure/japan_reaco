@@ -304,17 +304,6 @@ var dict = {
     fr: "Projets",
     jp: "Projects"
   },
-  // Projects participants
-  title_participants: {
-    en: "Project participants",
-    fr: "Participants du projet",
-    jp: "Project participants"
-  },
-  intro_participants: {
-    en: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.",
-    fr: "Il s'agit d'un projet multidisciplinaire (web/AR/VR) développé par les élèves de deux écoles françaises toulonnaises, le CNAM et Ingémédia, afin d'encourager le tourisme au Japon mais plus spécifiquement dans la région d'Hiroshima par la route de Saigoku.",
-    jp: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road."
-  },
   // VR
   vr_title: {
     en: "Hiroshima Castle town immersion: On the traces of the Saigoku Kaido",
@@ -367,7 +356,134 @@ var dict = {
     en: "The timeline describes the main periods of the Hiroshima region, and the interactive map presents some monuments of the Saigoku road.",
     fr: "La timeline décrit les principales périodes de la région d'Hiroshima, et la carte interactive présente quelques monuments de la route de Saigoku.",
     jp: "The timeline describes the main periods of the Hiroshima region, and the interactive map presents some monuments of the Saigoku road."
+  },
+  // Projects participants
+  title_participants: {
+    en: "Project participants",
+    fr: "Participants du projet",
+    jp: "Project participants"
+  },
+  intro_participants: {
+    en: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.",
+    fr: "Il s'agit d'un projet multidisciplinaire (web/AR/VR) développé par les élèves de deux écoles françaises toulonnaises, le CNAM et Ingémédia, afin d'encourager le tourisme au Japon mais plus spécifiquement dans la région d'Hiroshima par la route de Saigoku.",
+    jp: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road."
+  },
+  cnam_teacher_coordinator: {
+    en: "CNAM teacher and coordinator",
+    fr: "Enseignante et coordinatrice au CNAM",
+    jp: "CNAM teacher and coordinator"
+  },
+  cnam_teacher: {
+    en: "CNAM teacher",
+    fr: "Enseignant au CNAM",
+    jp: "CNAM teacher"
+  },
+  cnam_ingemedia_teacher: {
+    en: "CNAM and Ingemedia teacher",
+    fr: "Enseignant au CNAM et à Ingémédia",
+    jp: "CNAM and Ingemedia teacher"
+  },
+  ingemedia_director: {
+    en: "Ingemedia director and teacher, CNAM teacher",
+    fr: "Directeur d'Ingémédia / enseignant à Ingémédia et au CNAM",
+    jp: "Ingemedia director and teacher, CNAM teacher"
+  },
+  web_manager: {
+    en: "Web project manager / Web developer",
+    fr: "Chef de projet web / Développeur web",
+    jp: "Web project manager / Web developer"
+  },
+  web_dev: {
+    en: "Web developer",
+    fr: "Développeur web",
+    jp: "Web developer"
+  },
+  graph_3D: {
+    en: "Graphist / 3D designer",
+    fr: "Graphiste / Designer 3D",
+    jp: "Graphist / 3D designer"
+  },
+  web_3D: {
+    en: "Web designer / 3D designer",
+    fr: "Designer web / 3D",
+    jp: "Web designer / 3D designer"
+  },
+  storytelling: {
+    en: "Storytelling / Communication",
+    fr: "Storytelling / Communication",
+    jp: "Storytelling / Communication"
+  },
+  ar_manager: {
+    en: "AR project manager",
+    fr: "Chef de projet AR",
+    jp: "AR project manager"
+  },
+  com_manager: {
+    en: "Communication Project Manager",
+    fr: "Responsable communication",
+    jp: "Communication Project Manager"
+  },
+  unity_lead: {
+    en: "Unity3D lead developer",
+    fr: "Lead développeur Unity3D",
+    jp: "Unity3D lead developer"
+  },
+  unity: {
+    en: "Unity3D developer",
+    fr: "Développeur Unity3D",
+    jp: "Unity3D developer"
+  },
+  marketing: {
+    en: "Marketing / Communication",
+    fr: "Marketing / Communication",
+    jp: "Marketing / Communication"
+  },
+  cpt_design: {
+    en: "Computer graphic designer",
+    fr: "Infographiste",
+    jp: "Computer graphic designer"
+  },
+  graph_design: {
+    en: "Graphic designer",
+    fr: "Designer graphique",
+    jp: "Graphic designer"
+  },
+  design_3d: {
+    en: "3D designer",
+    fr: "Designer 3D",
+    jp: "3D designer"
+  },
+  design_2d: {
+    en: "2D designer",
+    fr: "Designer 2D",
+    jp: "2D designer"
+  },
+  lead_3d: {
+    en: "Lead 3D designer",
+    fr: "Responsable design 3D",
+    jp: "Lead 3D designer"
+  },
+  cnam: {
+    en: "CNAM: IT and multimedia engineer",
+    fr: "Ingénieur informatique au CNAM",
+    jp: "CNAM: IT and multimedia engineer"
+  },
+  ingemedia: {
+    en: "Ingemedia",
+    fr: "Ingémédia",
+    jp: "Ingemedia"
+  },
+  num_creat: {
+    en: "Ingemedia: numeric creation",
+    fr: "Ingémédia : Création numérique",
+    jp: "Ingemedia: numeric creation"
+  },
+  ing_communication: {
+    en: "Ingemedia: project management and communication",
+    fr: "Ingémédia : Communication et management de projet",
+    jp: "Ingemedia: project management and communication"
   }
+
 };
 
 if (!localStorage.getItem("lang")) {

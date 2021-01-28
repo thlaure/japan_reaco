@@ -15,19 +15,7 @@
 <body class="lang-wrapper">
     <section>
         <div class="header" id="title">
-            <div class="text-right">
-                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
-                    </div>
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
-                    </div>
-                </div>
-            </div>
+            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
             <div class="inner-header flex mt-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまたんけん</h2>

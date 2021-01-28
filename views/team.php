@@ -9,19 +9,7 @@
 <body class="lang-wrapper">
     <section>
         <header class="parallax-header-team text-white">
-            <div class="text-right">
-                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
-                    </div>
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
-                    </div>
-                </div>
-            </div>
+            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
             <div class="container-fluid">
                 <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
             </div>
@@ -32,7 +20,7 @@
 
         <div class="container mt-5">
             <blockquote class="blockquote">
-                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i><span class="trn">intro_participants</span></p>
+                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> <span class="trn">intro_participants</span></p>
             </blockquote>
         </div>
 
@@ -49,9 +37,9 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h5>
-                                        <p class="card-text"><?= $participant->role ?></p>
+                                        <p class="card-text trn"><?= $participant->role ?></p>
                                         <?php if (isset($participant->degree)) : ?>
-                                            <p class="card-text font-italic text-muted"><?= $participant->degree ?></p>
+                                            <p class="card-text font-italic text-muted trn"><?= $participant->degree ?></p>
                                         <?php endif ?>
                                         <?php foreach ($participant->socials as $social) : ?>
                                             <div class="d-inline mx-2">
