@@ -6,16 +6,16 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="title" content="Hiroshima Exploration">
 <meta name="author" content="CNAM / Ingemedia">
-<meta name="description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
+<meta name="description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road, and visit Japan">
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
 <meta property="og:title" content="Hiroshima Exploration">
-<meta property="og:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
+<meta property="og:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road, and visit Japan">
 <meta property="og:image" content="../assets/images/social_cover.png">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="">
 <meta property="twitter:title" content="Hiroshima Exploration">
-<meta property="twitter:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road">
+<meta property="twitter:description" content="A tourism website for the city of Hiroshima and the Saigoku road, help to discover the story of the city and the important monuments of the Saigoku road, and visit Japan">
 <meta property="twitter:image" content="../assets/images/social_cover.png">
 <link rel="shortcut icon" href="../assets/images/favicon.png">
 <link rel="apple-touch-icon" href="../assets/images/favicon.png">
