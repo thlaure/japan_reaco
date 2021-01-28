@@ -385,6 +385,23 @@
             ]
         },
         {
+            "name": "LAZREG",
+            "firstname": "Slim",
+            "image": "../assets/images/team/lazreg_slim.jpg",
+            "role": "Lead 3D designer",
+            "degree": "Ingemedia: numeric creation",
+            "socials": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "https://www.linkedin.com/in/slimlazreg/"
+                },
+                {
+                    "icon": "fas fa-globe",
+                    "link": "https://www.behance.net/slimlazreg"
+                }
+            ]
+        },
+        {
             "name": "BOGANIN",
             "firstname": "Aurore",
             "image": "../assets/images/team/boganin_aurore.jpg",

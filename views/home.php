@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="./assets/js/home.js" defer></script>
     <script src="./assets/js/timeline.js" defer></script>
 </head>
@@ -13,8 +15,8 @@
 <body class="lang-wrapper">
     <section>
         <div class="header" id="title">
-            <div class="row">
-                <div class="btn-group lang-wrapper position-absolute mr-md-3 mt-md-2" role="group" aria-label="Change language">
+            <div class="text-right">
+                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
                     <div class="border-right">
                         <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
                     </div>
@@ -52,7 +54,7 @@
                         <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                     </defs>
                     <g class="parallax">
-                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
                         <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
                         <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
                         <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
@@ -171,11 +173,23 @@
                 <h2 class="display-4 text-white text-center trn">event_title</h2>
             </div>
             <div class="container row mx-auto">
-                <div class="card text-white col-md-8 border-0 my-3">
-                    <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
-                    <div class="card-img-overlay ml-4">
-                        <!--<a href="https://www.h-saigoku.town/chaya-bar/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>-->
-                        <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
+                <div class="card mb-3 border-0">
+                    <div class="row no-gutters">
+                        <div class="col-md-6">
+                            <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
+                            <div class="card-img-overlay ml-4">
+                                <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5 class="card-title trn">event_title</h5>
+                                <p class="card-text text-justify trn">event_desc</p>
+                                <div class="text-right">
+                                    <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 trn" title="Learn more">discover_events</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

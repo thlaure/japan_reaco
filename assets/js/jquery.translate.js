@@ -16,8 +16,7 @@
 
     var settings = {
       css: "trn",
-      lang:
-        "en",
+      lang: "en",
     };
     settings = $.extend(settings, options || {});
     if (settings.css.lastIndexOf(".", 0) !== 0) {
@@ -27,7 +26,7 @@
 
     var t = settings.t;
 
-    //public methods
+    // public methods
     this.lang = function (l) {
       if (l) {
         settings.lang = l;
@@ -47,8 +46,11 @@
         return index;
       }
 
-      if (res) return res;
-      else return index;
+      if (res) {
+        return res;
+      } else {
+        return index;
+      }
     };
 
     this.g = this.get;
@@ -71,32 +73,19 @@
 })(jQuery);
 
 var dict = {
-  timeline_title: {
-    en: "Timeline",
-    fr: "Chronologie",
-    jp: "Timeline",
-  },
-  interactive_title: {
-    en: "Interactive map",
-    fr: "Carte interactive",
-    jp: "Interactive map",
-  },
-  event_title: {
-    en: "Events",
-    fr: "Événements",
-    jp: "Events",
-  },
-  discover_title: {
-    en: "Discover differently",
-    fr: "Découvrir différemment",
-    jp: "Discover differently",
-  },
+  // INTRODUCTION
   text_intro: {
     en: "Here begins your journey, on the island of millennial Japan, from traditional arts to age-old crafts, discovering ephemeral beauties and living treasures. Thanks to the immersive projects of our students, there are no more borders, you are in JAPAN, on the road of ancient Yamato, the Saigoku road tells you and makes you live its history, link between the capital and the pearl of Hiroshima. Welcome, dear visitors, to the floating world...",
     fr: "Ici commence votre voyage, sur l'île du Japon millénaire, des arts traditionnels aux métiers séculaires, découvertes des beautés éphémères et des trésors vivants. Grâce aux projets immersifs de nos étudiants, il n'y a plus de frontières, vous êtes au JAPON, sur la route de l'ancien Yamato, la Saigoku road vous raconte et vous fait vivre son histoire, lien entre la capitale et la perle d'Hiroshima. Bienvenue, chers visiteurs, dans le monde flottant...",
     jp: "Here begins your journey, on the island of millennial Japan, from traditional arts to age-old crafts, discovering ephemeral beauties and living treasures. Thanks to the immersive projects of our students, there are no more borders, you are in JAPAN, on the road of ancient Yamato, the Saigoku road tells you and makes you live its history, link between the capital and the pearl of Hiroshima. Welcome, dear visitors, to the floating world...",
   },
-  //TIMELINE CONTENT 1//
+  // TIMELINE
+  timeline_title: {
+    en: "Timeline",
+    fr: "Chronologie",
+    jp: "Timeline",
+  },
+  // TIMELINE CONTENT 1
   uptitle_early: {
     en: "Before the castle",
     fr: "Avant le château",
@@ -122,7 +111,7 @@ var dict = {
     fr: "Le choix de l'emplacement de la ville est dû à son emplacement stratégique sur le delta d'Ôta.",
     jp: "The area was choosen for it's strategic location on the Ôta delta.",
   },
-  //TIMELINE CONTENT 2//
+  // TIMELINE CONTENT 2
   uptitle_sengoku: {
     en: "From 1477 to 1573",
     fr: "De 1477 à 1573",
@@ -148,7 +137,7 @@ var dict = {
     fr: "La période Sengoku correspond également à l'arrivée des premiers occidentaux sur le territoire et notamment un navire portugais qui s'est réfugié au Japon pour éviter une tempête. Sous l'impulsion des échanges commerciaux, les villes se développent principalement autour des ports et sur les grands axes commerciaux intérieurs. Le Japon développe aussi fortement ses exploitations minières principalement d'or et d'argent, mais aussi son exploitation agricole.",
     jp: "It's during the Sengoku Period that the West arrived on the area for exemple a portuguese ship took refuge in Japan to avoid a storm. As a result of trade exchange, cities are developed aroud harbours and internal commercial axes. Japan is also strongly developing its mining operations, mainly of gold and iron, but also its agricultural exploitation.",
   },
-  //TIMELINE CONTENT 3//
+  // TIMELINE CONTENT 3
   uptitle_edo: {
     en: "From 1589 to 1871",
     fr: "De 1589 à 1871",
@@ -174,7 +163,7 @@ var dict = {
     fr: "Lors de la période de la restauration de Meiji, le château d’Hiroshima ou le château de la carpe fut protégé et ne fut pas l’un des nombreux châteaux démantelé. Il est alors transformé en base militaire à la fin de l’ère Edo.",
     jp: "During the Meiji Restoration, Hiroshima Castle also named the Carp Castle was saved by the governement and was not one of the numerous castle being dismantled. It's turned into a military base at the end of Edo era.",
   },
-  //TIMELINE CONTENT 4//
+  // TIMELINE CONTENT 4
   uptitle_imperial: {
     en: "From 1871 to 1939",
     fr: "De 1871 à 1939",
@@ -200,7 +189,7 @@ var dict = {
     fr: "Après la guerre Sino-Japonaise, la guerre Russo-Japonaise poussa le Japon dans le monde de l’industrialisation. Lors de la première guerre mondiale, Hiroshima devint un point important de l’activité militaire.",
     jp: "After the Sino-Japanese War, the Russo-Japanese War pushed Japan into the world of industrialization. During the First World War, Hiroshima became an important point of military activity.",
   },
-  //TIMELINE CONTENT 5//
+  // TIMELINE CONTENT 5
   uptitle_WWII: {
     en: "From 1939 to 1945",
     fr: "De 1939 à 1945",
@@ -226,7 +215,7 @@ var dict = {
     fr: "Les japonais souhaitaient se rendre, et les américains souhaitaient arrêter la guerre car il y avait eu assez de massacres. Ces derniers ont donc fait passer une pétition demandant l'arrêt de la guerre, mais cette pétition a été interceptée par Leslie Groves, un général américain, qui voyait un intérêt économique à l'utilisation de la bombe nucléaire. Harry Truman n'ayant jamais reçu cette pétition, ordonna le bombardement d'Hiroshima. L'histoire dira simplement qu'il utilisa la bombe atomique pour forcer la reddition japonaise.",
     jp: "The Japanese wanted to surrender, and the Americans wanted to stop the war because there had been enough massacres. The Americans therefore passed a petition calling for an end to the war, but this petition was intercepted by Leslie Groves, an American general, who saw an economic interest in the use of the nuclear bomb. Since Harry Truman never received this petition, he ordered the bombing of Hiroshima. History will simply say that he used the atomic bomb to force the Japanese surrender.",
   },
-  //TIMELINE CONTENT 6//
+  // TIMELINE CONTENT 6
   uptitle_postwar: {
     en: "From 1945 to nowadays",
     fr: "De 1945 à aujourd'hui",
@@ -251,6 +240,34 @@ var dict = {
     en: "In November 2010 at the Hiroshima Summit, the Dalai Lama and five other prize winners attended the Nobel Peace Prize Summit. The summit was dedicated to nuclear disarmament and held in Hiroshima. Hiroshima too has changed. The \"calcined plain\" is now a forward-looking city of 1.2 million inhabitants, as the new Orizuru Tower inaugurated in the summer of 2016. A city resolutely committed to its role as world capital of peace",
     fr: "En novembre 2010 lors du sommet d'Hiroshima, le Dalaï-lama] et cinq autres lauréats du prix ont participé au sommet des prix Nobel de la Paix. Ce sommet était consacré au désarmement nucléaire et organisé à Hiroshima. Hiroshima aussi a changé. La \"plaine calcinée\" est aujourd'hui une ville de 1,2 million d'habitants, tournée vers l'avenir, à l'image de la nouvelle Tour Orizuru inaugurée à l'été 2016. Une ville résolument engagée dans son rôle de capitale mondiale de la paix.",
     jp: "In November 2010 at the Hiroshima Summit, the Dalai Lama and five other prize winners attended the Nobel Peace Prize Summit. The summit was dedicated to nuclear disarmament and held in Hiroshima. Hiroshima too has changed. The \"calcined plain\" is now a forward-looking city of 1.2 million inhabitants, as the new Orizuru Tower inaugurated in the summer of 2016. A city resolutely committed to its role as world capital of peace",
+  },
+  // INTERACTIVE MAP
+  interactive_title: {
+    en: "Interactive map",
+    fr: "Carte interactive",
+    jp: "Interactive map",
+  },
+  // EVENT
+  event_title: {
+    en: "Events",
+    fr: "Événements",
+    jp: "Events",
+  },
+  event_desc: {
+    en: "The Machinaka West National Highway Promotion Council is an association in charge of the promotion of the Saigoku road around Hiroshima. They organize a large amount of cultural events like music concerts, festivals and gastronomic discoveries. Discover all their events on their own website and learn more about the association.",
+    fr: "Le Machinaka West National Highway Promotion Council est une association en charge de la promotion de la route de Saigoku autour d’Hiroshima. Ils organisent une grande variété d’interventions culturelles comme des concerts de musique traditionnelle, des festivals ou encore des découvertes gastronomiques. Découvrez tous leurs évènements sur leur propre site et apprenez en plus sur l’association.",
+    jp: "The Machinaka West National Highway Promotion Council is an association in charge of the promotion of the Saigoku road around Hiroshima. They organize a large amount of cultural events like music concerts, festivals and gastronomic discoveries. Discover all their events on their own website and learn more about the association."
+  },
+  discover_events: {
+    en: "Discover all events",
+    fr: "Découvrir les événements",
+    jp: "Discover all events"
+  },
+  // PROJECTS
+  discover_title: {
+    en: "Discover differently",
+    fr: "Découvrir différemment",
+    jp: "Discover differently",
   },
   ar_title: {
     en: "AR project",

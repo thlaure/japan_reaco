@@ -16,7 +16,7 @@ h1 {
     ),
     url(../images/cover_projects.jpg) no-repeat fixed center 0;
   background-size: cover;
-  min-height: 360px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ h1 {
     ),
     url(../images/cover_map.jpg) no-repeat fixed center 0;
   background-size: cover;
-  min-height: 360px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +46,7 @@ h1 {
     ),
     url(../images/cover_events.jpg) no-repeat fixed center 0;
   background-size: cover;
-  min-height: 360px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
