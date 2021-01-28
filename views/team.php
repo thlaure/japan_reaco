@@ -6,20 +6,33 @@
     <link rel="stylesheet" href="../assets/css/team.css">
 </head>
 
-<body>
+<body class="lang-wrapper">
     <section>
         <header class="parallax-header-team text-white">
+            <div class="text-right">
+                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
+                    </div>
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
             </div>
             <h1 class="text-center mt-4 display-4">Hiroshima Exploration</h1>
             <hr class="sm-separator w-25">
-            <h2 class="text-center font-italic">Project participants</h2>
+            <h2 class="text-center font-italic trn">title_participants</h2>
         </header>
 
         <div class="container mt-5">
             <blockquote class="blockquote">
-                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.</p>
+                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i><span class="trn">intro_participants</span></p>
             </blockquote>
         </div>
 

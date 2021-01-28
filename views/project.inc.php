@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="../assets/css/projects.css">
 </head>
 
-<body>
+<body class="lang-wrapper">
     <section>
         <header class="parallax-project-ar text-white">
+            <div class="text-right">
+                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
+                    </div>
+                    <div class="border-right">
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
+                    </div>
+                </div>
+            </div>
             <div class="container-fluid">
                 <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> <span class="trn">back_button</span></a>
             </div>
