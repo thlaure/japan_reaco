@@ -247,6 +247,96 @@ var dict = {
     fr: "Carte interactive",
     jp: "Interactive map",
   },
+  kb_title: {
+    en: "Kyobashi bridge",
+    fr: "Pont Kyobashi",
+    jp: "Kyobashi bridge"
+  },
+  kb_address: {
+    en: "Minami Ward, 732-0828 Hiroshima, Japan",
+    fr: "Minami Ward, 732-0828 Hiroshima, Japon",
+    jp: "Minami Ward, 732-0828 Hiroshima, Japan"
+  },
+  kb_desc: {
+    en: "Kyobashi Bridge was constructed as a national bridge across the Kyobashi River and completed in August 1927. Steel plates were originally used for the bridge girders, but they were requisitioned by the government during the war. On August 6, 1945, the bridge was exposed to the atomic bomb 1,380 meters from the hypocenter. Although the bridge's newel post was broken at the upper section, the function of the bridge was not in any way affected. The bridge was used as an evacuation route and for relief efforts for the injured.",
+    fr: "Le pont de Kyobashi a été construit comme un pont national sur la rivière Kyobashi et a été achevé en août 1927. Des plaques d'acier ont été utilisées à l'origine pour les poutres du pont, mais elles ont été réquisitionnées par le gouvernement pendant la guerre. Le 6 août 1945, le pont a été exposé à la bombe atomique à 1380 mètres de l'hypocentre. Bien que le poteau du pont ait été cassé dans la partie supérieure, la fonction du pont n'a été en rien affectée. Le pont a été utilisé comme voie d'évacuation et pour les secours aux blessés.",
+    jp: "Kyobashi Bridge was constructed as a national bridge across the Kyobashi River and completed in August 1927. Steel plates were originally used for the bridge girders, but they were requisitioned by the government during the war. On August 6, 1945, the bridge was exposed to the atomic bomb 1,380 meters from the hypocenter. Although the bridge's newel post was broken at the upper section, the function of the bridge was not in any way affected. The bridge was used as an evacuation route and for relief efforts for the injured."
+  },
+  eb_title: {
+    en: "Enkobashi bridge",
+    fr: "Pont Enkobashi",
+    jp: "Enkobashi bridge"
+  },
+  eb_address: {
+    en: "Enkobashicho, Minami Ward, Hiroshima, 732-0823, Japan",
+    fr: "Enkobashicho, Minami Ward, Hiroshima, 732-0823, Japon",
+    jp: "Enkobashicho, Minami Ward, Hiroshima, 732-0823, Japan"
+  },
+  eb_desc: {
+    en: "In Hiroshima, kappa, a water goblin or an imaginary amphibious animal, is called \"enko.\" Enkobashi Bridge which was built across the Enko River had been an important bridge on the route connecting Kyoto with Kyushu ever since the Edo Period. The bridge was rebuilt as a permanent bridge in 1926 by the Hiroshima Prefectural government. It was a very ornate bridge and had a monkey engraved on the bridge railing and a statue of an eagle flapping its wings attached to a model of a globe on the newel post. As the war intensified, however, these ornaments were requisitioned by the government, and a bridge railing and newel post made of stone were installed instead. On August 6, 1945, the bridge was exposed to the atomic bomb 1,820 meters from the hypocenter, but it survived the blast caused by the atomic bomb and ensuing fires and was subsequently used as an evacuation route.",
+    fr: "À Hiroshima, le kappa, un gobelin d'eau ou un animal amphibie imaginaire, est appelé \"enko\". Le pont Enkobashi, qui a été construit sur la rivière Enko, était un pont important sur la route reliant Kyoto à Kyushu depuis la période Edo. Le pont a été reconstruit comme un pont permanent en 1926 par le gouvernement de la préfecture d'Hiroshima. C'était un pont très orné, avec un singe gravé sur la balustrade du pont et une statue d'un aigle battant des ailes, attachée à un modèle de globe terrestre sur le poteau du pont. Cependant, comme la guerre s'intensifiait, ces ornements ont été réquisitionnés par le gouvernement, et une balustrade de pont et un poteau en pierre ont été installés à la place. Le 6 août 1945, le pont fut exposé à la bombe atomique à 1 820 mètres de l'hypocentre, mais il survécut à l'explosion de la bombe atomique et aux incendies qui s'ensuivirent et fut ensuite utilisé comme voie d'évacuation.",
+    jp: "In Hiroshima, kappa, a water goblin or an imaginary amphibious animal, is called \"enko.\" Enkobashi Bridge which was built across the Enko River had been an important bridge on the route connecting Kyoto with Kyushu ever since the Edo Period. The bridge was rebuilt as a permanent bridge in 1926 by the Hiroshima Prefectural government. It was a very ornate bridge and had a monkey engraved on the bridge railing and a statue of an eagle flapping its wings attached to a model of a globe on the newel post. As the war intensified, however, these ornaments were requisitioned by the government, and a bridge railing and newel post made of stone were installed instead. On August 6, 1945, the bridge was exposed to the atomic bomb 1,820 meters from the hypocenter, but it survived the blast caused by the atomic bomb and ensuing fires and was subsequently used as an evacuation route."
+  },
+  st_title: {
+    en: "Shoko-ji temple",
+    fr: "Temple Shoko-ji",
+    jp: "Shoko-ji temple"
+  },
+  st_address: {
+    en: "Yamanecho, Higashi Ward, Hiroshima, 732-0048, Japan",
+    fr: "Yamanecho, Higashi Ward, Hiroshima, 732-0048, Japon",
+    jp: "Yamanecho, Higashi Ward, Hiroshima, 732-0048, Japan"
+  },
+  st_desc: {
+    en: "The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.",
+    fr: "Le temple de Shokoji a une histoire ancienne - les dates d'origine ne sont pas connues, mais on sait que le temple est antérieur à la ville elle-même. En fait, le temple a servi de logement au seigneur Mori Terumoto en 1589, alors qu'il était en train d'étudier le site qui allait devenir le château d'Hiroshima. Bien que certaines histoires suggèrent que le chef du célèbre 47 ronin - Oishi - est enterré ici, c'est un peu exagéré. En fait, l'un des serviteurs a pris une mèche de cheveux d'Oishi et l'a achetée pour l'enterrer à Hiroshima. Elle a d'abord été transportée au temple Kokuzenji, situé à proximité, car c'était le temple familial du seigneur Asano que le ronin avait vengé, mais elle a été détournée. Au lieu de cela, les cheveux furent enterrés à Shokoji. Le temple Shokoji est l'une des étapes du sentier de randonnée historique de Futabanosato.",
+    jp: "The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail."
+  },
+  tt_title: {
+    en: "Tokuei-ji temple",
+    fr: "Temple Tokuei-ji",
+    jp: "Tokuei-ji temple"
+  },
+  tt_address: {
+    en: "Kanayamacho, Naka Ward, Hiroshima, 730-0022, Japan",
+    fr: "Kanayamacho, Naka Ward, Hiroshima, 730-0022, Japon",
+    jp: "Kanayamacho, Naka Ward, Hiroshima, 730-0022, Japan"
+  },
+  tt_desc: {
+    en: "This shows the Tokueiji Buddhist Temple in Hiroshima, Japan. It was destroyed by the United States' Atomic bombings of Hiroshima in 1945. Which costs 166.000 people their lives, and destroyed about 90 Percent of the whole city. About 60.000 Buildings from 90.000 are lost forever.",
+    fr: "Cette photo montre le temple bouddhiste Tokueiji à Hiroshima, au Japon. Il a été détruit par les bombardements atomiques des États-Unis sur Hiroshima en 1945. Ce qui a coûté la vie à 166 000 personnes et détruit environ 90 % de la ville. Environ 60.000 bâtiments sur 90.000 sont perdus à jamais.",
+    jp: "This shows the Tokueiji Buddhist Temple in Hiroshima, Japan. It was destroyed by the United States' Atomic bombings of Hiroshima in 1945. Which costs 166.000 people their lives, and destroyed about 90 Percent of the whole city. About 60.000 Buildings from 90.000 are lost forever."
+  },
+  som_title: {
+    en: "School of Medicine",
+    fr: "Ecole de médecine",
+    jp: "School of Medicine"
+  },
+  som_address: {
+    en: "1 Chome-2-3 Kasumi, Minami Ward, Hiroshima, 734-8553, Japan",
+    fr: "1 Chome-2-3 Kasumi, Minami Ward, Hiroshima, 734-8553, Japon",
+    jp: "1 Chome-2-3 Kasumi, Minami Ward, Hiroshima, 734-8553, Japan"
+  },
+  som_desc: {
+    en: "The School of Medicine shares a common philosophy to cultivate the following personnel in medicine and health sciences: those who acquire a rich sense of humanity and broad knowledge appropriate for practitioners of medicine, health and welfare; basic knowledge, skills and attitude for professional practice; scientific and creative thinking abilities; a deep interest in regional medicine; global awareness.",
+    fr: "L'École de médecine partage une philosophie commune visant à former le personnel suivant en médecine et en sciences de la santé : ceux qui acquièrent un riche sens de l'humanité et de vastes connaissances adaptées aux praticiens de la médecine, de la santé et du bien-être ; des connaissances, des compétences et une attitude de base pour la pratique professionnelle ; des capacités de réflexion scientifique et créative ; un profond intérêt pour la médecine régionale ; une conscience mondiale.",
+    jp: "The School of Medicine shares a common philosophy to cultivate the following personnel in medicine and health sciences: those who acquire a rich sense of humanity and broad knowledge appropriate for practitioners of medicine, health and welfare; basic knowledge, skills and attitude for professional practice; scientific and creative thinking abilities; a deep interest in regional medicine; global awareness."
+  },
+  ap_title: {
+    en: "Akamatsu pharmacy",
+    fr: "Pharmacie Akamatsu",
+    jp: "Akamatsu pharmacy"
+  },
+  ap_address: {
+    en: "8-29 Hondori, Naka Ward, Hiroshima, 730-0035, Japan",
+    fr: "8-29 Hondori, Naka Ward, Hiroshima, 730-0035, Japon",
+    jp: "8-29 Hondori, Naka Ward, Hiroshima, 730-0035, Japan"
+  },
+  ap_desc: {
+    en: "Akamatsu Pharmacy is an old drugstore established about 400 years ago. In July 1945, Mr. Akamatsu started his studies at a pharmaceutical college in Gifu Prefecture to become a pharmacist. The next month, the atomic bomb dropped by the United States exploded in the sky above his hometown. After World War II, Mr. Akamatsu rebuilt the pharmacy with his older brother, who had returned to Japan after completing his military service, and worked to once again make it a Hondori symbol. However, there were no photos of his parents’ beloved pharmacy taken before the atomic bombing. Unable to forget his expression of disappointment, we continued to collect information, ultimately discovering—in the Hiroshima University Archives in the city of Higashihiroshima—a photo taken around 1942 that showed the sign “Medicine, Akamatsu Pharmacy” and the store front.",
+    fr: "La pharmacie Akamatsu est une ancienne pharmacie créée il y a environ 400 ans. En juillet 1945, M. Akamatsu a commencé ses études dans un collège pharmaceutique de la préfecture de Gifu pour devenir pharmacien. Le mois suivant, la bombe atomique larguée par les États-Unis a explosé dans le ciel de sa ville natale. Après la Seconde Guerre mondiale, M. Akamatsu a reconstruit la pharmacie avec son frère aîné, qui était retourné au Japon après son service militaire, et a travaillé pour en faire à nouveau un symbole du Hondori. Cependant, aucune photo de la pharmacie bien-aimée de ses parents n'a été prise avant le bombardement atomique. Ne pouvant oublier son expression de déception, nous avons continué à recueillir des informations, pour finalement découvrir - dans les archives de l'université d'Hiroshima, dans la ville d'Higashihiroshima - une photo prise vers 1942 qui montrait l'enseigne \"Médecine, pharmacie Akamatsu\" et la devanture du magasin.",
+    jp:"Akamatsu Pharmacy is an old drugstore established about 400 years ago. In July 1945, Mr. Akamatsu started his studies at a pharmaceutical college in Gifu Prefecture to become a pharmacist. The next month, the atomic bomb dropped by the United States exploded in the sky above his hometown. After World War II, Mr. Akamatsu rebuilt the pharmacy with his older brother, who had returned to Japan after completing his military service, and worked to once again make it a Hondori symbol. However, there were no photos of his parents’ beloved pharmacy taken before the atomic bombing. Unable to forget his expression of disappointment, we continued to collect information, ultimately discovering—in the Hiroshima University Archives in the city of Higashihiroshima—a photo taken around 1942 that showed the sign “Medicine, Akamatsu Pharmacy” and the store front."
+  },
   // EVENT
   event_title: {
     en: "Events",

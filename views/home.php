@@ -166,14 +166,14 @@
                         <div class="col-md-6">
                             <img src="../assets/images/cover_events.jpg" class="card-img rounded-0" alt="AR project image">
                             <div class="card-img-overlay ml-4">
-                                <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
+                                <a href="http://gethiroshima.com/features/art-entertainment/festivals/the-saigoku-kaido-in-shareo/" class="btn btn-danger rounded-0 stretched-link trn" title="Learn more">event_title</a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
                                 <h5 class="card-title trn">event_title</h5>
                                 <p class="card-text trn">event_desc</p>
-                                <a href="https://gethiroshima.com/events/" class="btn btn-danger rounded-0 trn" title="Learn more">discover_events</a>
+                                <a href="http://gethiroshima.com/features/art-entertainment/festivals/the-saigoku-kaido-in-shareo/" class="btn btn-danger rounded-0 trn" title="Learn more">discover_events</a>
                             </div>
                         </div>
                     </div>
