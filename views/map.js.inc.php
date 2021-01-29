@@ -64,7 +64,7 @@
     const materialBOX = new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0 });
     // MAP
     loader.load(
-        '../assets/fbx/map.FBX',
+        '../assets/fbx/map.fbx',
         (object) => {
             object.scale.set(.005, .005, .005);
             object.position.set(4, -0.5, -2);
@@ -73,7 +73,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
@@ -95,7 +95,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
@@ -120,7 +120,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
@@ -148,7 +148,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
@@ -218,7 +218,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
@@ -237,14 +237,14 @@
             object.position.set(170, 0, 395);
             object.layers.set(2);
             object.rotateY(0.34);
-            universityPanel = createPanel('Medecine SCHOOL', 'This is an university', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5,2);
+            universityPanel = createPanel('Medecine SCHOOL', 'This is an university', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5, 2);
             universityPanel.visible = false;
             scene.add(universityPanel);
             object.updateMatrix();
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
