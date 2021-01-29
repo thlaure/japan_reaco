@@ -201,6 +201,7 @@
                 let INTERSECTED;
                 let theta = 0;
                 let temple;
+                let map;
                 let templePanel;
                 let objectOVERED,objectSELECTED;
                 const mouse = new THREE.Vector2();
@@ -208,11 +209,11 @@
 
                 scene = new THREE.Scene();
                 // SCENE FOND BLANC //
-                scene.background = new THREE.Color(0xFFFFFFF);
+                // scene.background = new THREE.Color(0xFFFFFFF);
                 // _--------------_ //
 
-                camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
+                camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 5000);
+                camera.far = 1000;
                 // Resize auto canvas  // 
                 const canvas = document.querySelector('#canvas-div');
                 renderer = new THREE.WebGLRenderer({
@@ -233,10 +234,12 @@
                 const lightt = new THREE.DirectionalLight(0xFFFFFF,0.5); // soft white light
                 scene.add(lightt);
                 //spotlight over
-                let spotLight = new THREE.SpotLight(0xFFFF00,5,5, Math.PI / 8);  // <============
-                spotLight.position.set(0, 3, 0);
+                let spotLight = new THREE.SpotLight(0xFFFF00,0,500, Math.PI / 8);  // <============
+                spotLight.position.set(0, 50, 0);
                 spotLight.target.position.set(0, 0, 0);
                 scene.add(spotLight);
+                // let spotLightHelper = new THREE.SpotLightHelper(spotLight);
+                // scene.add(spotLightHelper);
                 // -------------------------- //
 
 
@@ -256,21 +259,22 @@
                 const loader = new FBXLoader();
 
                 //MAP
-                // loader.load(
-                //     '../assets/fbx/map_2.FBX',
-                //     (object) => {
-                //         object.scale.set(.0001, .0001, .0001)
-                //         object.position.set(4,-0.5,-2)
-                //         object.updateMatrix();
-                //         scene.add(object);
-                //     },
-                //     (xhr) => {
-                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                //     },
-                //     (error) => {
-                //         console.log(error);
-                //     }
-                // )
+                loader.load(
+                    '../assets/fbx/map.FBX',
+                    (object) => {
+                        object.scale.set(.005, .005, .005)
+                        object.position.set(4,-0.5,-2)
+                        object.updateMatrix();
+                        map=object;
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
 
                 //BRIDGE
                 // loader.load(
@@ -327,7 +331,11 @@
                     '../assets/fbx/Temples.fbx',
                     (object) => {
                         temple=object;
-                        object.position.set(0,0,0)
+                        object.scale.set(.2, .2, .2)
+                        object.position.set(-545,0,-230)                
+                        templePanel = createPanel('Temple', 'Ceci est un temple', temple.position.x + 300, temple.position.y + 500, temple.position.z + 0, 15);
+                        templePanel.visible = false;
+                        scene.add(templePanel)
                         object.updateMatrix();
                         scene.add(object);
                     },
@@ -341,9 +349,7 @@
 
                 // FOR TEMPLE
                 
-                templePanel = createPanel('Temple', 'Ceci est un temple',0,0,0,15);
-                templePanel.visible = false;
-                scene.add(templePanel)
+
                 ///
                 //UNIVERSITY
                 // loader.load(
@@ -428,10 +434,14 @@
 
                     if (intersects.length > 0) {
                         objectOVERED = intersects[0].object.parent;
-                        spotLight.position.set(objectOVERED.position.x, 3,objectOVERED.position.z)
+                        if(map !== objectOVERED){
+                        spotLight.position.set(objectOVERED.position.x, 50,objectOVERED.position.z)
                         spotLight.target.position.set(objectOVERED.position.x, objectOVERED.position.y, objectOVERED.position.z)
-                        spotLight.intensity = 5;
+                        spotLight.intensity = 8;
                         spotLight.target.updateMatrixWorld();
+                        } else {
+                            spotLight.intensity = 0;
+                        }
 
                     } else {
                         spotLight.intensity = 0;
@@ -439,7 +449,6 @@
                 }
                 function render() {
                     renderer.render(scene, camera);
-
                 }
 
                 function createPanel(titre, description,x_panel,y_panel,z_panel,text_size) {
