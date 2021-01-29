@@ -153,6 +153,8 @@
                 <h2 class="display-4 text-white text-center trn">interactive_title</h2>
             </div>
             <div id="map">
+                <canvas class="map" id="canvas-div"></canvas>
+                <?php include(__DIR__ . "./map.js.inc.php"); ?>
             </div>
         </article>
 

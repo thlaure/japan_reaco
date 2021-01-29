@@ -10,6 +10,7 @@ switch ($request) {
         $projects = json_decode(file_get_contents("./assets/docs/projects.json"));
         require __DIR__ . "/views/team.php";
         break;
+        
     case "/projects":
         $project = preg_match("/\/projects\/([a-z]+)-project/", $_SERVER["REQUEST_URI"], $matches) ? $matches[1] : header("Location: /");
         $participants = json_decode(file_get_contents("./assets/docs/projects.json"))->$project;
