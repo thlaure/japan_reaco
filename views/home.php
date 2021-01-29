@@ -219,8 +219,12 @@
                 // _--------------_ //
 
                 camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 5000);
-                camera.far = 1000;
+                camera.far = 500;
                 camera.layers.enable(1);
+
+                camera.position.x = 270;
+                camera.position.y = 100;
+                camera.position.z = 560;
                 // Resize auto canvas  // 
                 const canvas = document.querySelector('#canvas-div');
                 renderer = new THREE.WebGLRenderer({
@@ -232,7 +236,7 @@
                 renderer.setPixelRatio(window.devicePixelRatio);
                 // ------------------- //
 
-                renderer.setSize(innerWidth, innerHeight);
+                renderer.setSize(innerWidth-50, innerHeight-50);
 
                 // AJOUT DE LUMIERE AMBIANTE  //
                 const light = new THREE.AmbientLight(0xFFFFFF,0.5); // soft white light
@@ -291,7 +295,7 @@
                         object.scale.set(.25, .25, .25)
                         object.position.set(-115,0,-475)   
                         object.rotateY(1.9024070747627)
-                        bridgeEPanel = createPanel('Pont Enko', 'Ceci est un pont', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5);            
+                        bridgeEPanel = createPanel('Pont Enko', 'This is a bridge', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5,2);
                         bridgeEPanel.visible = false;
                         scene.add(bridgeEPanel)
                         object.updateMatrix();
@@ -318,7 +322,7 @@
                         object.scale.set(.25, .25, .25);
                         object.position.set(-400,0,-360);
                         object.rotateY(1.39626)
-                        bridgeKPanel = createPanel('Pont Kyoba', 'Ceci est un pont', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 5);            
+                        bridgeKPanel = createPanel('Pont Kyoba', 'This is a bridge', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 4,2);
                         bridgeKPanel.visible = false;
                         scene.add(bridgeKPanel)
                         object.updateMatrix();
@@ -337,15 +341,19 @@
                 bridgeKBOX.position.set(-400,0,-350);
                 scene.add( bridgeKBOX );
 
-                //PARK
+                //PARK                
+            
+                const parcBOX = new THREE.Mesh( geometryBOX, materialBOX );
                 loader.load(
                     '../assets/fbx/parc.fbx',
                     (object) => {
                         parc = object;
                         object.scale.set(.20, .20, .20);
-                        object.position.set(-445,9,-270);  
+                        object.position.set(-445,9,-270);                  
+                        parcBOX.position.set(-445,9,-300);
+                        scene.add( parcBOX );
                         object.rotateY(1.515)
-                        parcPanel = createPanel('Park SHRINE', 'Ceci est un parc', parc.position.x + 50, parc.position.y + 60, parc.position.z + 0, 5);            
+                        parcPanel = createPanel('Park SHRINE', 'This is a park', parcBOX.position.x + 50, parcBOX.position.y + 60, parcBOX.position.z + 0, 5,2);
                         parcPanel.visible = false;
                         scene.add(parcPanel)
                         object.updateMatrix();
@@ -360,11 +368,10 @@
                 )
                 // const geometry = new THREE.BoxGeometry( 50, 100, 50);
                 // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
-                const parcBOX = new THREE.Mesh( geometryBOX, materialBOX );
-                parcBOX.position.set(-445,9,-300);
-                scene.add( parcBOX );
+
 
                 //PHARMACY
+                const pharmacyBOX = new THREE.Mesh( geometryBOX, materialBOX );
                 loader.load(
                     '../assets/fbx/pharmacy.fbx',
                     (object) => {
@@ -372,7 +379,9 @@
                         object.scale.set(.25, .25, .25);
                         object.position.set(-940,-12,-350);  
                         object.rotateY(-0.212)
-                        pharmacyPanel = createPanel('Pharmacy', 'Ceci est une pharmacy', pharmacy.position.x + 50, pharmacy.position.y + 60, pharmacy.position.z + 0, 5);            
+                        pharmacyBOX.position.set(-990,-12,-340);  
+                        scene.add( pharmacyBOX );
+                        pharmacyPanel = createPanel('Pharmacy', 'This is a pharmacy', pharmacyBOX.position.x + 50, pharmacyBOX.position.y + 60, pharmacyBOX.position.z + 0, 5,2);
                         pharmacyPanel.visible = false;
                         scene.add(pharmacyPanel)
                         object.updateMatrix();
@@ -385,11 +394,6 @@
                         console.log(error);
                     }
                 )
-                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
-                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
-                const pharmacyBOX = new THREE.Mesh( geometryBOX, materialBOX );
-                pharmacyBOX.position.set(-990,-12,-340);  
-                scene.add( pharmacyBOX );
 
                 //TEMPLE TOKUEJi
                 loader.load(
@@ -398,7 +402,7 @@
                         templeT=object;
                         object.scale.set(.25, .25, .25);
                         object.position.set(-545,0,-230) ;
-                        templeTPanel = createPanel('Temple TOKUEJI', 'Ceci est un temple', templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 5);
+                        templeTPanel = createPanel('Temple TOKUEJI', "This shows the Tokueiji Buddhist Temple in Hiroshima, Japan. It was destroyed by the United States' Atomic bombings of Hiroshima in 1945. Which costs 166.000 people their lives, and destroyed about 90 Percent of the whole city. About 60.000 Buildings from 90.000 are lost forever.", templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 4.5,2);
                         templeTPanel.visible = false;
                         scene.add(templeTPanel)
                         object.updateMatrix();
@@ -425,7 +429,7 @@
                         templeS=object;
                         object.scale.set(.25, .25, .25);
                         object.position.set(-580,0,-495);
-                        templeSPanel = createPanel('Temple SHOKOJI', 'Ceci est un temple', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5);            
+                        templeSPanel = createPanel('Temple SHOKOJI', 'The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5,2);
                         templeSPanel.visible = false;
                         scene.add(templeSPanel)
                         object.updateMatrix();
@@ -453,7 +457,7 @@
                         object.position.set(170,0,395); 
                         object.layers.set(2);
                         object.rotateY(0.34)
-                        universityPanel = createPanel('Medecine SCHOOL', 'Ceci est une université', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5);            
+                        universityPanel = createPanel('Medecine SCHOOL', 'This is an university', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5,2);
                         universityPanel.visible = false;
                         scene.add(universityPanel)
                         object.updateMatrix();
@@ -476,9 +480,6 @@
                // ------------------------  //
 
                
-
-                camera.position.z = 350;
-                camera.position.y = 350;
                 const controls = new OrbitControls(camera, renderer.domElement);
 
 				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
@@ -619,103 +620,112 @@
                     renderer.render(scene, camera);
                 }
 
-                function createPanel(titre, description,x_panel,y_panel,z_panel,text_size) {
+                function createPanel(titre, description, x_panel, y_panel, z_panel, text_size,description_size) {
                     const groupObject = new THREE.Group();
-                        //PANEL
-                        const geometry = new THREE.BoxGeometry(50, 50, 0.2);
-                        const material = new THREE.MeshBasicMaterial({
-                            color: 0xDCDCDC,
-                            opacity: 0.7,
-                        });
-                        const cube = new THREE.Mesh(geometry, material);
-                        cube.position.x = x_panel;//-250;
-                        cube.position.z = z_panel;//99;
-                        cube.position.y = y_panel;//0
-                        groupObject.add(cube);
-                        //FONT PANEL
-                        const fontloader = new THREE.FontLoader();
-                        fontloader.load('../assets/helvetiker_regular.typeface.json', function(font) {
+                    //PANEL
+                    const geometry = new THREE.BoxGeometry(50, 60, 0.2);
+                    const material = new THREE.MeshBasicMaterial({
+                        color: 0xDCDCDC,
+                        opacity: 0.7,
+                    });
+                    const cube = new THREE.Mesh(geometry, material);
+                    cube.position.x = x_panel; //-250;
+                    cube.position.z = z_panel; //99;
+                    cube.position.y = y_panel; //0
+                    groupObject.add(cube);
+                    //FONT PANEL
+                    const fontloader = new THREE.FontLoader();
+                    fontloader.load('../assets/fonts/Roboto_Regular.json', function(font) {
 
-                            const color = new THREE.Color(0x000000);
+                        const color = new THREE.Color(0x000000);
 
-                            const matDark = new THREE.MeshBasicMaterial({
-                                color: color,
-                                side: THREE.DoubleSide
-                            });
-
-                            const matLite = new THREE.MeshBasicMaterial({
-                                color: color,
-                                transparent: true,
-                                opacity: 1,
-                                side: THREE.DoubleSide
-                            });
-
-                            const message = titre;
-
-                            //15 = taille texte
-                            const shapes = font.generateShapes(message, text_size);
-
-                            const geometry = new THREE.ShapeGeometry(shapes);
-
-                            geometry.computeBoundingBox();
-
-                            const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
-
-                            geometry.translate(xMid, 0, 0);
-
-                            // make shape ( N.B. edge view not visible )
-
-                            //Position du texte 
-                            const title = new THREE.Mesh(geometry, matLite);
-                            title.position.z = z_panel +1; //100;
-                            title.position.x = x_panel - 10;//-310;
-                            title.position.y = y_panel+16;//120;
-                            groupObject.add(title);
-
+                        const matDark = new THREE.MeshBasicMaterial({
+                            color: color,
+                            side: THREE.DoubleSide
                         });
 
-
-                        //Font description
-
-                        fontloader.load('../assets/helvetiker_regular.typeface.json', function(font) {
-
-                            const color = new THREE.Color(0x000000);
-
-                            const matDark = new THREE.MeshBasicMaterial({
-                                color: color,
-                                side: THREE.DoubleSide
-                            });
-
-                            const matLite = new THREE.MeshBasicMaterial({
-                                color: color,
-                                transparent: true,
-                                opacity: 1,
-                                side: THREE.DoubleSide
-                            });
-                            
-                            
-                            const message = description;
-                            //10 = taille texte
-                            const shapes = font.generateShapes(message, text_size-3);
-
-                            const geometry = new THREE.ShapeGeometry(shapes);
-
-                            geometry.computeBoundingBox();
-
-                            const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
-
-                            geometry.translate(xMid, 0, 0);
-
-                            // make shape ( N.B. edge view not visible )
-
-                            //Position du texte 
-                            const descri = new THREE.Mesh(geometry, matLite);
-                            descri.position.z = z_panel+1;//100;
-                            descri.position.x = x_panel-5;//-260;
-                            descri.position.y = y_panel+10;//90;
-                            groupObject.add(descri);
-
+                        const matLite = new THREE.MeshBasicMaterial({
+                            color: color,
+                            transparent: true,
+                            opacity: 1,
+                            side: THREE.DoubleSide
                         });
+
+                        const message = titre;
+
+                        //15 = taille texte
+                        const shapes = font.generateShapes(message, text_size);
+
+                        const geometry = new THREE.ShapeGeometry(shapes);
+
+                        geometry.computeBoundingBox();
+
+                        const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+
+                        geometry.translate(xMid, 0, 0);
+
+                        // make shape ( N.B. edge view not visible )
+
+                        //Position du texte 
+                        const title = new THREE.Mesh(geometry, matLite);
+                        title.position.z = z_panel + 1; //100;
+                        title.position.x = x_panel ; //-310;
+                        title.position.y = y_panel + 20; //120;
+                        groupObject.add(title);
+
+                    });
+
+
+                    //Font description
+
+                    fontloader.load('../assets/fonts/Roboto_Regular.json', function(font) {
+
+                        const color = new THREE.Color(0x000000);
+
+                        const matDark = new THREE.MeshBasicMaterial({
+                            color: color,
+                            side: THREE.DoubleSide
+                        });
+
+                        const matLite = new THREE.MeshBasicMaterial({
+                            color: color,
+                            transparent: true,
+                            opacity: 1,
+                            side: THREE.DoubleSide
+                        });
+
+                        function formatDescription(description) {
+                            for(let i=0;i<description.length;i=i+1){
+                                if(i%30==0){
+                                    description = [description.slice(0, i), "\n", description.slice(i)].join('');
+                                }
+                            }
+                            return description;
+                        }
+                        const message = formatDescription(description);
+                        console.log(message);
+
+                        //10 = taille texte
+                        const shapes = font.generateShapes(message, description_size);
+
+                        const geometry = new THREE.ShapeGeometry(shapes);
+
+                        geometry.computeBoundingBox();
+
+                        const xMid = -0.5 * (geometry.boundingBox.max.x - geometry.boundingBox.min.x);
+
+                        geometry.translate(xMid, 0, 0);
+
+                        // make shape ( N.B. edge view not visible )
+
+                        //Position du texte 
+                        const descri = new THREE.Mesh(geometry, matLite);
+                        descri.position.z = z_panel + 1; //100;
+                        descri.position.x = x_panel; //-260;
+                        descri.position.y = y_panel + 15; //90;
+                        groupObject.add(descri);
+
+                    });
 
                         return groupObject;
                         }
