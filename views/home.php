@@ -242,8 +242,12 @@
                 const light = new THREE.AmbientLight(0xFFFFFF,0.5); // soft white light
                 scene.add(light);
                 
-                const lightt = new THREE.DirectionalLight(0xFFFFFF,0.5); // soft white light
+                const lightt = new THREE.DirectionalLight(0xFF0000,0.3); // soft white light
+                lightt.position.set(0, 150, 0);
                 scene.add(lightt);
+                const lightWhite = new THREE.DirectionalLight(0xFFFFFF,0.1); // soft white light
+                lightWhite.position.set(0, 150, 0);
+                scene.add(lightWhite);
                 //spotlight over
                 let spotLight = new THREE.SpotLight(0xFFFF00,0,500, Math.PI / 8);  // <============
                 spotLight.position.set(0, 50, 0);
@@ -295,7 +299,7 @@
                         object.scale.set(.25, .25, .25)
                         object.position.set(-115,0,-475)   
                         object.rotateY(1.9024070747627)
-                        bridgeEPanel = createPanel('Pont Enko', 'This is a bridge', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5,2);
+                        bridgeEPanel = createPanel('Enko Bridge', 'This is a bridge', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5,2);
                         bridgeEPanel.visible = false;
                         scene.add(bridgeEPanel)
                         object.updateMatrix();
@@ -322,7 +326,7 @@
                         object.scale.set(.25, .25, .25);
                         object.position.set(-400,0,-360);
                         object.rotateY(1.39626)
-                        bridgeKPanel = createPanel('Pont Kyoba', 'This is a bridge', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 4,2);
+                        bridgeKPanel = createPanel('Kyoba Bridge', 'This is a bridge', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 4,2);
                         bridgeKPanel.visible = false;
                         scene.add(bridgeKPanel)
                         object.updateMatrix();
@@ -353,7 +357,7 @@
                         parcBOX.position.set(-445,9,-300);
                         scene.add( parcBOX );
                         object.rotateY(1.515)
-                        parcPanel = createPanel('Park SHRINE', 'This is a park', parcBOX.position.x + 50, parcBOX.position.y + 60, parcBOX.position.z + 0, 5,2);
+                        parcPanel = createPanel('Shrine Park', 'This is a park', parcBOX.position.x + 50, parcBOX.position.y + 60, parcBOX.position.z + 0, 5,2);
                         parcPanel.visible = false;
                         scene.add(parcPanel)
                         object.updateMatrix();
@@ -402,7 +406,7 @@
                         templeT=object;
                         object.scale.set(.25, .25, .25);
                         object.position.set(-545,0,-230) ;
-                        templeTPanel = createPanel('Temple TOKUEJI', "This shows the Tokueiji Buddhist Temple in Hiroshima, Japan. It was destroyed by the United States' Atomic bombings of Hiroshima in 1945. Which costs 166.000 people their lives, and destroyed about 90 Percent of the whole city. About 60.000 Buildings from 90.000 are lost forever.", templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 4.5,2);
+                        templeTPanel = createPanel('Tokueji Temple', "This shows the Tokueiji Buddhist Temple in Hiroshima, Japan. It was destroyed by the United States' Atomic bombings of Hiroshima in 1945. Which costs 166.000 people their lives, and destroyed about 90 Percent of the whole city. About 60.000 Buildings from 90.000 are lost forever.", templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 4.5,2);
                         templeTPanel.visible = false;
                         scene.add(templeTPanel)
                         object.updateMatrix();
@@ -429,7 +433,7 @@
                         templeS=object;
                         object.scale.set(.25, .25, .25);
                         object.position.set(-580,0,-495);
-                        templeSPanel = createPanel('Temple SHOKOJI', 'The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5,2);
+                        templeSPanel = createPanel('Shokoji Temple', 'The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5,2);
                         templeSPanel.visible = false;
                         scene.add(templeSPanel)
                         object.updateMatrix();
