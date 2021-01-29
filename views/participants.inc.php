@@ -10,9 +10,9 @@
                     <div class="col-md-8">
                         <div class="card-body">
                             <h3 class="h5 card-title"><?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?></h3>
-                            <p class="card-text"><?= $participant->role ?></p>
+                            <p class="card-text trn"><?= $participant->role ?></p>
                             <?php if (isset($participant->degree)) : ?>
-                                <p class="card-text font-italic text-muted"><?= $participant->degree ?></p>
+                                <p class="card-text font-italic text-muted trn"><?= $participant->degree ?></p>
                             <?php endif ?>
                             <?php foreach ($participant->socials as $social) : ?>
                                 <div class="d-inline mx-2">

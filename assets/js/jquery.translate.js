@@ -483,7 +483,6 @@ var dict = {
     fr: "Ingémédia : Communication et management de projet",
     jp: "Ingemedia: project management and communication"
   }
-
 };
 
 if (!localStorage.getItem("lang")) {

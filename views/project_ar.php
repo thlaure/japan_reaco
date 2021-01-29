@@ -8,7 +8,7 @@
         <img src="../assets/images/project_ar/hiroshima-fudoin-temple.jpg" alt="AR picture Hiroshima temple" class="img-fluid mx-auto">
     </div>
 </div>
-<div class="text-justify mt-5">
+<div class="mt-5">
     <p class="lead trn">ar_desc3</p>
 </div>
 <div class="mt-5">
@@ -19,7 +19,7 @@
         <img src="../assets/images/project_ar/ar_phase_2.png" alt="AR picture Phase 2" class="img-fluid mx-auto">
     </div>
 </div>
-<div class="text-justify mt-5">
+<div class="mt-5">
     <p class="lead trn">ar_desc4</p>
     <p class="lead trn">ar_desc5</p>
 </div>

@@ -9,9 +9,13 @@
 <body class="lang-wrapper">
     <section>
         <header class="parallax-header-team text-white">
-            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
-            <div class="container-fluid">
-                <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> Back</a>
+            <div class="row container-fluid mx-auto">
+                <div class="col-md-6">
+                    <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> <span class="trn">back_button</span></a>
+                </div>
+                <div class="col-md-6">
+                    <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
+                </div>
             </div>
             <h1 class="text-center mt-4 display-4">Hiroshima Exploration</h1>
             <hr class="sm-separator w-25">
@@ -20,7 +24,7 @@
 
         <div class="container mt-5">
             <blockquote class="blockquote">
-                <p class="mb-0 text-justify"><i class="fas fa-quote-right"></i> <span class="trn">intro_participants</span></p>
+                <p class="mb-0"><i class="fas fa-quote-right"></i> <span class="trn">intro_participants</span></p>
             </blockquote>
         </div>
 
