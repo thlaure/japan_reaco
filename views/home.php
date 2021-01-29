@@ -215,11 +215,12 @@
 
                 scene = new THREE.Scene();
                 // SCENE FOND BLANC //
-                // scene.background = new THREE.Color(0xFFFFFFF);
+                scene.background = new THREE.Color(0xFEFEFE);
                 // _--------------_ //
 
                 camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 5000);
                 camera.far = 1000;
+                camera.layers.enable(1);
                 // Resize auto canvas  // 
                 const canvas = document.querySelector('#canvas-div');
                 renderer = new THREE.WebGLRenderer({
@@ -262,6 +263,8 @@
                 // FBX LOADING  //
                 const loader = new FBXLoader();
 
+                const geometryBOX = new THREE.BoxGeometry( 50, 150, 50);
+                const materialBOX = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0});
                 //MAP
                 loader.load(
                     '../assets/fbx/map.FBX',
@@ -286,7 +289,7 @@
                     (object) => {
                         bridgeE = object;
                         object.scale.set(.25, .25, .25)
-                        object.position.set(-115,0,-475)  
+                        object.position.set(-115,0,-475)   
                         object.rotateY(1.9024070747627)
                         bridgeEPanel = createPanel('Pont Enko', 'Ceci est un pont', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5);            
                         bridgeEPanel.visible = false;
@@ -301,13 +304,19 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
+                const bridgeEBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                bridgeEBOX.position.set(-115,0,-465);
+                scene.add( bridgeEBOX );
+
                     //BRIDGE KYOBA
                     loader.load(
                     '../assets/fbx/bridge.FBX',
                     (object) => {
                         bridgeK = object;
-                        object.scale.set(.25, .25, .25)
-                        object.position.set(-400,0,-360)  
+                        object.scale.set(.25, .25, .25);
+                        object.position.set(-400,0,-360);
                         object.rotateY(1.39626)
                         bridgeKPanel = createPanel('Pont Kyoba', 'Ceci est un pont', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 5);            
                         bridgeKPanel.visible = false;
@@ -322,13 +331,19 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
+                const bridgeKBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                bridgeKBOX.position.set(-400,0,-350);
+                scene.add( bridgeKBOX );
+
                 //PARK
                 loader.load(
                     '../assets/fbx/parc.fbx',
                     (object) => {
                         parc = object;
-                        object.scale.set(.20, .20, .20)
-                        object.position.set(-445,9,-270)  
+                        object.scale.set(.20, .20, .20);
+                        object.position.set(-445,9,-270);  
                         object.rotateY(1.515)
                         parcPanel = createPanel('Park SHRINE', 'Ceci est un parc', parc.position.x + 50, parc.position.y + 60, parc.position.z + 0, 5);            
                         parcPanel.visible = false;
@@ -343,14 +358,19 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
+                const parcBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                parcBOX.position.set(-445,9,-300);
+                scene.add( parcBOX );
 
                 //PHARMACY
                 loader.load(
                     '../assets/fbx/pharmacy.fbx',
                     (object) => {
                         pharmacy = object;
-                        object.scale.set(.25, .25, .25)
-                        object.position.set(-940,-12,-350)  
+                        object.scale.set(.25, .25, .25);
+                        object.position.set(-940,-12,-350);  
                         object.rotateY(-0.212)
                         pharmacyPanel = createPanel('Pharmacy', 'Ceci est une pharmacy', pharmacy.position.x + 50, pharmacy.position.y + 60, pharmacy.position.z + 0, 5);            
                         pharmacyPanel.visible = false;
@@ -365,14 +385,19 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0.8});
+                const pharmacyBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                pharmacyBOX.position.set(-990,-12,-340);  
+                scene.add( pharmacyBOX );
 
                 //TEMPLE TOKUEJi
                 loader.load(
                     '../assets/fbx/Temples.fbx',
                     (object) => {
                         templeT=object;
-                        object.scale.set(.25, .25, .25)
-                        object.position.set(-545,0,-230)  
+                        object.scale.set(.25, .25, .25);
+                        object.position.set(-545,0,-230) ;
                         templeTPanel = createPanel('Temple TOKUEJI', 'Ceci est un temple', templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 5);
                         templeTPanel.visible = false;
                         scene.add(templeTPanel)
@@ -386,6 +411,11 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0});
+                const templeTBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                templeTBOX.position.set(-545,0,-230);
+                scene.add( templeTBOX );
 
 
                     //TEMPLE SHOKOJI
@@ -393,8 +423,8 @@
                     '../assets/fbx/Temples.fbx',
                     (object) => {
                         templeS=object;
-                        object.scale.set(.25, .25, .25)
-                        object.position.set(-580,0,-495)  
+                        object.scale.set(.25, .25, .25);
+                        object.position.set(-580,0,-495);
                         templeSPanel = createPanel('Temple SHOKOJI', 'Ceci est un temple', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5);            
                         templeSPanel.visible = false;
                         scene.add(templeSPanel)
@@ -408,14 +438,20 @@
                         console.log(error);
                     }
                 )
+                // const geometry = new THREE.BoxGeometry( 50, 100, 50);
+                // const material = new THREE.MeshBasicMaterial({color:0xff0000, transparent:true, opacity:0});
+                const templeSBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                templeSBOX.position.set(-580,0,-495);
+                scene.add( templeSBOX );
                 ///
                 //UNIVERSITY
                 loader.load(
                     '../assets/fbx/university.FBX',
                     (object) => {
                         university=object;
-                        object.scale.set(.30, .30, .30)
-                        object.position.set(170,0,395)  
+                        object.scale.set(.30, .30, .30);
+                        object.position.set(170,0,395); 
+                        object.layers.set(2);
                         object.rotateY(0.34)
                         universityPanel = createPanel('Medecine SCHOOL', 'Ceci est une université', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5);            
                         universityPanel.visible = false;
@@ -430,6 +466,13 @@
                         console.log(error);
                     }
                 )
+                
+                const universityBOX = new THREE.Mesh( geometryBOX, materialBOX );
+                universityBOX.position.set(215,0,455); 
+                scene.add( universityBOX );
+                // const skeleton = new THREE.SkeletonHelper( university );
+                // skeleton.visible = true;
+                // scene.add( skeleton );
                // ------------------------  //
 
                
@@ -438,6 +481,15 @@
                 camera.position.y = 350;
                 const controls = new OrbitControls(camera, renderer.domElement);
 
+				controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
+				controls.dampingFactor = 0.05;
+
+				controls.screenSpacePanning = false;
+
+				controls.minDistance = 100;
+				controls.maxDistance = 500;
+
+				controls.maxPolarAngle = Math.PI / 2;
                 //RAYCASTER ----//
                 raycaster = new THREE.Raycaster();
                 //--------------//
@@ -445,6 +497,7 @@
 
                 document.addEventListener('mousemove', onDocumentMouseMove);
                 document.addEventListener('click', onmouseClick);
+                window.addEventListener( 'resize', onWindowResize );
 
                 function onDocumentMouseMove(event) {
 
@@ -465,28 +518,36 @@
                     raycaster.setFromCamera(mouse, camera);
                     var intersects = raycaster.intersectObjects(scene.children, true);
                     if (intersects.length > 0) {
-                        objectSELECTED = intersects[0].object.parent;
+                        objectSELECTED = intersects[0].object;
                         if(map !== objectSELECTED){
-                            if(templeS === objectSELECTED){
+                            if(templeSBOX === objectSELECTED){
                                 templeSPanel.visible = true;
                             } 
-                            else if (templeT === objectSELECTED){
+                            else if (templeTBOX === objectSELECTED){
                                 templeTPanel.visible = true;
                             }
-                            else if (bridgeE === objectSELECTED){
+                            else if (bridgeEBOX === objectSELECTED){
                                 bridgeEPanel.visible = true;
                             }
-                            else if (bridgeK === objectSELECTED){
+                            else if (bridgeKBOX === objectSELECTED){
                                 bridgeKPanel.visible = true;
                             }
-                            else if (university === objectSELECTED){
+                            else if (universityBOX === objectSELECTED){
                                 universityPanel.visible = true;
                             }
-                            else if (pharmacy === objectSELECTED){
+                            else if (pharmacyBOX === objectSELECTED){
                                 pharmacyPanel.visible = true;
                             }
-                            else if (parc === objectSELECTED){
+                            else if (parcBOX === objectSELECTED){
                                 parcPanel.visible = true;
+                            } else {
+                                templeSPanel.visible = false;
+                                templeTPanel.visible = false;
+                                bridgeEPanel.visible = false;
+                                bridgeKPanel.visible = false;
+                                universityPanel.visible = false;
+                                pharmacyPanel.visible = false;
+                                parcPanel.visible = false;
                             }
                         } else {
                             templeSPanel.visible = false;
@@ -516,6 +577,14 @@
                     render();
                 };
 
+                function onWindowResize() {
+
+                    camera.aspect = window.innerWidth / window.innerHeight;
+                    camera.updateProjectionMatrix();
+
+                    renderer.setSize( window.innerWidth, window.innerHeight );
+
+                }
                 function update(){
 
                     // find intersections
@@ -525,11 +594,18 @@
                     var intersects = raycaster.intersectObjects(scene.children, true);
 
                     if (intersects.length > 0) {
-                        objectOVERED = intersects[0].object.parent;
-                        if(map !== objectOVERED){
-                            spotLight.position.set(objectOVERED.position.x, 50,objectOVERED.position.z)
+                        objectOVERED = intersects[0].object;
+
+                        if(universityBOX == intersects[0].object || universityBOX == intersects[0].object.parent
+                        || templeSBOX == intersects[0].object || templeSBOX == intersects[0].object.parent
+                        || templeTBOX == intersects[0].object || templeTBOX == intersects[0].object.parent
+                        || pharmacyBOX == intersects[0].object || pharmacyBOX == intersects[0].object.parent
+                        || parcBOX == intersects[0].object || parcBOX == intersects[0].object.parent
+                        || bridgeEBOX == intersects[0].object || bridgeEBOX == intersects[0].object.parent
+                        || bridgeKBOX == intersects[0].object || bridgeKBOX == intersects[0].object.parent  ){
+                            spotLight.position.set(objectOVERED.position.x, 75,objectOVERED.position.z)
                             spotLight.target.position.set(objectOVERED.position.x, objectOVERED.position.y, objectOVERED.position.z)
-                            spotLight.intensity = 8;
+                            spotLight.intensity = 7;
                             spotLight.target.updateMatrixWorld();
                         } else {
                             spotLight.intensity = 0;
