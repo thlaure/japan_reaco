@@ -1,14 +1,8 @@
 <script type="module">
     import * as THREE from '../assets/js/three/three.module.js';
-    import {
-        OrbitControls
-    } from '../assets/js/copy_threejs/jsm/controls/OrbitControls.js';
-    import {
-        FBXLoader
-    } from '../assets/js/copy_threejs/jsm/loaders/FBXLoader.js';
-    import {
-        SVGLoader
-    } from '../assets/js/copy_threejs/jsm/loaders/SVGLoader.js';
+    import { OrbitControls } from '../assets/js/copy_threejs/jsm/controls/OrbitControls.js';
+    import { FBXLoader } from '../assets/js/copy_threejs/jsm/loaders/FBXLoader.js';
+    import { SVGLoader } from '../assets/js/copy_threejs/jsm/loaders/SVGLoader.js';
 
     let container, stats;
     let camera, scene, raycaster, renderer;
@@ -38,7 +32,7 @@
     // Resize auto canvas
     const canvas = document.querySelector('#canvas-div');
     renderer = new THREE.WebGLRenderer({
-        canvas
+        "canvas": canvas
     });
 
     // No pixelisation
@@ -60,7 +54,7 @@
     scene.add(spotLight);
     // FBX LOADING
     const loader = new FBXLoader();
-    const geometryBOX = new THREE.BoxGeometry( 50, 150, 50);
+    const geometryBOX = new THREE.BoxGeometry(50, 150, 50);
     const materialBOX = new THREE.MeshBasicMaterial({ color: 0xff0000, transparent: true, opacity: 0 });
     // MAP
     loader.load(
@@ -101,10 +95,10 @@
             console.log(error);
         }
     )
-
     const bridgeEBOX = new THREE.Mesh(geometryBOX, materialBOX);
     bridgeEBOX.position.set(-115, 0, -465);
     scene.add(bridgeEBOX);
+
     // BRIDGE KYOBA
     loader.load(
         '../assets/fbx/bridge.FBX',
@@ -173,7 +167,7 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded')
         },
         (error) => {
             console.log(error);
@@ -194,24 +188,24 @@
             scene.add(object);
         },
         (xhr) => {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
+            // console.log((xhr.loaded / xhr.total * 100) + '% loaded');
         },
         (error) => {
             console.log(error);
         }
     )
-
     const templeTBOX = new THREE.Mesh(geometryBOX, materialBOX);
-    templeTBOX.position.set(-545,0,-230);
+    templeTBOX.position.set(-545, 0, -230);
     scene.add(templeTBOX);
+
     // TEMPLE SHOKOJI
     loader.load(
         '../assets/fbx/Temples.fbx',
         (object) => {
             templeS=object;
             object.scale.set(.25, .25, .25);
-            object.position.set(-580,0,-495);
-            templeSPanel = createPanel('Shokoji Temple', 'The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5,2);
+            object.position.set(-580, 0, -495);
+            templeSPanel = createPanel('Shokoji Temple', 'The temple of Shokoji has an ancient history - the original dates are not known, but it is known that the temple predates the city itself. In fact, the temple provided lodging to lord Mori Terumoto in 1589 while he was surveying the site that would eventually become Hiroshima Castle. Although some stories suggest that the leader of the famous 47 Ronin - Oishi - is buried here, this is somewhat an exaggeration. In actual fact, one of the retainers took a lock of Oishi’s hair and bought it to Hiroshima for burial. It was first taken to the nearby Kokuzenji Temple - as that was the family temple of the Asano lord that the ronin had avenged - however it was turned away. Instead, the hair was buried at Shokoji. The Shokoji Temple is one of the stops on the Futabanosato Historical Walking Trail.', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5, 2);
             templeSPanel.visible = false;
             scene.add(templeSPanel);
             object.updateMatrix();
@@ -224,10 +218,10 @@
             console.log(error);
         }
     )
-
     const templeSBOX = new THREE.Mesh(geometryBOX, materialBOX);
     templeSBOX.position.set(-580, 0, -495);
     scene.add(templeSBOX);
+
     // UNIVERSITY
     loader.load(
         '../assets/fbx/university.FBX',
@@ -250,10 +244,11 @@
             console.log(error);
         }
     )
-
     const universityBOX = new THREE.Mesh(geometryBOX, materialBOX);
     universityBOX.position.set(215, 0, 455);
     scene.add(universityBOX);
+
+    // Controls
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true; // an animation loop is required when either damping or auto-rotation are enabled
     controls.dampingFactor = 0.35;
