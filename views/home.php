@@ -200,7 +200,13 @@
 
                 let INTERSECTED;
                 let theta = 0;
-                let temple;
+                let templeT,templeTPanel;
+                let templeS,templeSPanel;
+                let bridgeE,bridgeEPanel;
+                let bridgeK,bridgeKPanel;
+                let university,universityPanel;
+                let parc,parcPanel;
+                let pharmacy,pharmacyPanel;
                 let map;
                 let templePanel;
                 let objectOVERED,objectSELECTED;
@@ -238,8 +244,6 @@
                 spotLight.position.set(0, 50, 0);
                 spotLight.target.position.set(0, 0, 0);
                 scene.add(spotLight);
-                // let spotLightHelper = new THREE.SpotLightHelper(spotLight);
-                // scene.add(spotLightHelper);
                 // -------------------------- //
 
 
@@ -276,66 +280,59 @@
                     }
                 )
 
-                //BRIDGE
-                // loader.load(
-                //     '../assets/fbx/bridge.FBX',
-                //     (object) => {
-                //         object.scale.set(.01, .01, .01)
-                //         object.position.set(4,0,-2)
-                //         object.updateMatrix();
-                //         scene.add(object);
-                //     },
-                //     (xhr) => {
-                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                //     },
-                //     (error) => {
-                //         console.log(error);
-                //     }
-                // )
-                //PARK
-                // loader.load(
-                //     '../assets/fbx/park.fbx',
-                //     (object) => {
-                //         object.scale.set(.01, .01, .01)
-                //         object.position.set(-2,0,-2)
-                //         object.updateMatrix();
-                //         scene.add(object);
-                //     },
-                //     (xhr) => {
-                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                //     },
-                //     (error) => {
-                //         console.log(error);
-                //     }
-                // )
-
-                //PHARMACY
-                // loader.load(
-                //     '../assets/fbx/pharmacy.fbx',
-                //     (object) => {
-                //         object.scale.set(.003, .003, .003)
-                //         object.position.set(2,0,-2)
-                //         object.updateMatrix();
-                //         scene.add(object);
-                //     },
-                //     (xhr) => {
-                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                //     },
-                //     (error) => {
-                //         console.log(error);
-                //     }
-                // )
-
-                //TEMPLE
+                //BRIDGE ENKO
                 loader.load(
-                    '../assets/fbx/Temples.fbx',
+                    '../assets/fbx/bridge.FBX',
                     (object) => {
-                        temple=object;
-                        object.scale.set(.2, .2, .2)
-                        object.position.set(-545,0,-230)                
-                        templePanel = createPanel('Temple', 'Ceci est un temple', temple.position.x + 300, temple.position.y + 500, temple.position.z + 0, 15);
-                        templePanel.visible = false;
-                        scene.add(templePanel)
+                        bridgeE = object;
+                        object.scale.set(.25, .25, .25)
+                        object.position.set(-115,0,-475)  
+                        object.rotateY(1.9024070747627)
+                        bridgeEPanel = createPanel('Pont Enko', 'Ceci est un pont', bridgeE.position.x + 50, bridgeE.position.y + 60, bridgeE.position.z + 0, 5);            
+                        bridgeEPanel.visible = false;
+                        scene.add(bridgeEPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
+                    //BRIDGE KYOBA
+                    loader.load(
+                    '../assets/fbx/bridge.FBX',
+                    (object) => {
+                        bridgeK = object;
+                        object.scale.set(.25, .25, .25)
+                        object.position.set(-400,0,-360)  
+                        object.rotateY(1.39626)
+                        bridgeKPanel = createPanel('Pont Kyoba', 'Ceci est un pont', bridgeK.position.x + 50, bridgeK.position.y + 60, bridgeK.position.z + 0, 5);            
+                        bridgeKPanel.visible = false;
+                        scene.add(bridgeKPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
+                //PARK
+                loader.load(
+                    '../assets/fbx/parc.fbx',
+                    (object) => {
+                        parc = object;
+                        object.scale.set(.20, .20, .20)
+                        object.position.set(-445,9,-270)  
+                        object.rotateY(1.515)
+                        parcPanel = createPanel('Park SHRINE', 'Ceci est un parc', parc.position.x + 50, parc.position.y + 60, parc.position.z + 0, 5);            
+                        parcPanel.visible = false;
+                        scene.add(parcPanel)
                         object.updateMatrix();
                         scene.add(object);
                     },
@@ -347,26 +344,92 @@
                     }
                 )
 
-                // FOR TEMPLE
-                
+                //PHARMACY
+                loader.load(
+                    '../assets/fbx/pharmacy.fbx',
+                    (object) => {
+                        pharmacy = object;
+                        object.scale.set(.25, .25, .25)
+                        object.position.set(-940,-12,-350)  
+                        object.rotateY(-0.212)
+                        pharmacyPanel = createPanel('Pharmacy', 'Ceci est une pharmacy', pharmacy.position.x + 50, pharmacy.position.y + 60, pharmacy.position.z + 0, 5);            
+                        pharmacyPanel.visible = false;
+                        scene.add(pharmacyPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
 
+                //TEMPLE TOKUEJi
+                loader.load(
+                    '../assets/fbx/Temples.fbx',
+                    (object) => {
+                        templeT=object;
+                        object.scale.set(.25, .25, .25)
+                        object.position.set(-545,0,-230)  
+                        templeTPanel = createPanel('Temple TOKUEJI', 'Ceci est un temple', templeT.position.x + 50, templeT.position.y + 60, templeT.position.z + 0, 5);
+                        templeTPanel.visible = false;
+                        scene.add(templeTPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
+
+
+                    //TEMPLE SHOKOJI
+                    loader.load(
+                    '../assets/fbx/Temples.fbx',
+                    (object) => {
+                        templeS=object;
+                        object.scale.set(.25, .25, .25)
+                        object.position.set(-580,0,-495)  
+                        templeSPanel = createPanel('Temple SHOKOJI', 'Ceci est un temple', templeS.position.x + 50, templeS.position.y + 60, templeS.position.z + 0, 5);            
+                        templeSPanel.visible = false;
+                        scene.add(templeSPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
                 ///
                 //UNIVERSITY
-                // loader.load(
-                //     '../assets/fbx/university.FBX',
-                //     (object) => {
-                //         object.scale.set(.01, .01, .01)
-                //         object.position.set(-2,0,2)
-                //         object.updateMatrix();
-                //         scene.add(object);
-                //     },
-                //     (xhr) => {
-                //         console.log((xhr.loaded / xhr.total * 100) + '% loaded')
-                //     },
-                //     (error) => {
-                //         console.log(error);
-                //     }
-                // )
+                loader.load(
+                    '../assets/fbx/university.FBX',
+                    (object) => {
+                        university=object;
+                        object.scale.set(.30, .30, .30)
+                        object.position.set(170,0,395)  
+                        object.rotateY(0.34)
+                        universityPanel = createPanel('Medecine SCHOOL', 'Ceci est une université', university.position.x + 50, university.position.y + 60, university.position.z + 0, 5);            
+                        universityPanel.visible = false;
+                        scene.add(universityPanel)
+                        object.updateMatrix();
+                        scene.add(object);
+                    },
+                    (xhr) => {
+                        console.log((xhr.loaded / xhr.total * 100) + '% loaded')
+                    },
+                    (error) => {
+                        console.log(error);
+                    }
+                )
                // ------------------------  //
 
                
@@ -402,17 +465,46 @@
                     raycaster.setFromCamera(mouse, camera);
                     var intersects = raycaster.intersectObjects(scene.children, true);
                     if (intersects.length > 0) {
-                            objectSELECTED = intersects[0].object.parent;
-                            console.log(objectSELECTED);
-                            if(temple === objectSELECTED){
-                            templePanel.visible = true;
+                        objectSELECTED = intersects[0].object.parent;
+                        if(map !== objectSELECTED){
+                            if(templeS === objectSELECTED){
+                                templeSPanel.visible = true;
+                            } 
+                            else if (templeT === objectSELECTED){
+                                templeTPanel.visible = true;
                             }
-                            // objectSELECTED.scale.set(.02, .02, .02  );
-                    } else {
-                        if(temple === objectSELECTED){
-                            templePanel.visible = false;
+                            else if (bridgeE === objectSELECTED){
+                                bridgeEPanel.visible = true;
+                            }
+                            else if (bridgeK === objectSELECTED){
+                                bridgeKPanel.visible = true;
+                            }
+                            else if (university === objectSELECTED){
+                                universityPanel.visible = true;
+                            }
+                            else if (pharmacy === objectSELECTED){
+                                pharmacyPanel.visible = true;
+                            }
+                            else if (parc === objectSELECTED){
+                                parcPanel.visible = true;
+                            }
+                        } else {
+                            templeSPanel.visible = false;
+                            templeTPanel.visible = false;
+                            bridgeEPanel.visible = false;
+                            bridgeKPanel.visible = false;
+                            universityPanel.visible = false;
+                            pharmacyPanel.visible = false;
+                            parcPanel.visible = false;
                         }
-                            // objectSELECTED.scale.set(.01, .01, .01  );
+                    } else {
+                            templeSPanel.visible = false;
+                            templeTPanel.visible = false;
+                            bridgeEPanel.visible = false;
+                            bridgeKPanel.visible = false;
+                            universityPanel.visible = false;
+                            pharmacyPanel.visible = false;
+                            parcPanel.visible = false;
                     }
 
                 }
@@ -435,10 +527,10 @@
                     if (intersects.length > 0) {
                         objectOVERED = intersects[0].object.parent;
                         if(map !== objectOVERED){
-                        spotLight.position.set(objectOVERED.position.x, 50,objectOVERED.position.z)
-                        spotLight.target.position.set(objectOVERED.position.x, objectOVERED.position.y, objectOVERED.position.z)
-                        spotLight.intensity = 8;
-                        spotLight.target.updateMatrixWorld();
+                            spotLight.position.set(objectOVERED.position.x, 50,objectOVERED.position.z)
+                            spotLight.target.position.set(objectOVERED.position.x, objectOVERED.position.y, objectOVERED.position.z)
+                            spotLight.intensity = 8;
+                            spotLight.target.updateMatrixWorld();
                         } else {
                             spotLight.intensity = 0;
                         }
@@ -454,7 +546,7 @@
                 function createPanel(titre, description,x_panel,y_panel,z_panel,text_size) {
                     const groupObject = new THREE.Group();
                         //PANEL
-                        const geometry = new THREE.BoxGeometry(300, 300, 0.2);
+                        const geometry = new THREE.BoxGeometry(50, 50, 0.2);
                         const material = new THREE.MeshBasicMaterial({
                             color: 0xDCDCDC,
                             opacity: 0.7,
@@ -500,8 +592,8 @@
                             //Position du texte 
                             const title = new THREE.Mesh(geometry, matLite);
                             title.position.z = z_panel +1; //100;
-                            title.position.x = x_panel - 60;//-310;
-                            title.position.y = y_panel+120;//120;
+                            title.position.x = x_panel - 10;//-310;
+                            title.position.y = y_panel+16;//120;
                             groupObject.add(title);
 
                         });
@@ -528,7 +620,7 @@
                             
                             const message = description;
                             //10 = taille texte
-                            const shapes = font.generateShapes(message, text_size-5);
+                            const shapes = font.generateShapes(message, text_size-3);
 
                             const geometry = new THREE.ShapeGeometry(shapes);
 
@@ -543,8 +635,8 @@
                             //Position du texte 
                             const descri = new THREE.Mesh(geometry, matLite);
                             descri.position.z = z_panel+1;//100;
-                            descri.position.x = x_panel-10;//-260;
-                            descri.position.y = y_panel+90;//90;
+                            descri.position.x = x_panel-5;//-260;
+                            descri.position.y = y_panel+10;//90;
                             groupObject.add(descri);
 
                         });
