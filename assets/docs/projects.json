@@ -4,7 +4,7 @@
             "name": "PAPINI",
             "firstname": "Olivia",
             "image": "../assets/images/team/papini_olivia.jpg",
-            "role": "CNAM teacher and coordinator",
+            "role": "cnam_teacher_coordinator",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -16,7 +16,7 @@
             "name": "ROBERT",
             "firstname": "Jean-Marc",
             "image": "../assets/images/team/jmr.jpg",
-            "role": "CNAM teacher",
+            "role": "cnam_teacher",
             "socials": [
                 {
                     "icon": "fas fa-globe",
@@ -27,15 +27,15 @@
         {
             "name": "BARROY",
             "firstname": "Willy",
-            "image": "../assets/images/team/barroy.jpg",
-            "role": "CNAM and Ingemedia teacher",
+            "image": "",
+            "role": "cnam_ingemedia_teacher",
             "socials": []
         },
         {
             "name": "BONFILS",
             "firstname": "Philippe",
-            "image": "../assets/images/team/bonfils_philippe.jpg",
-            "role": "Ingemedia director and teacher, CNAM teacher",
+            "image": "",
+            "role": "ingemedia_director",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -53,8 +53,8 @@
             "name": "LAURE",
             "firstname": "Thomas",
             "image": "../assets/images/team/laure_thomas.jpg",
-            "role": "Web project manager / Web developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "web_manager",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -79,8 +79,8 @@
             "name": "ANDRES",
             "firstname": "Nicolas",
             "image": "../assets/images/team/andres_nicolas.jpg",
-            "role": "Web developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "web_dev",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -92,8 +92,8 @@
             "name": "ARNOUX",
             "firstname": "Thomas",
             "image": "../assets/images/team/arnoux_thomas.jpg",
-            "role": "Web developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "web_dev",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -105,8 +105,8 @@
             "name": "NEMR",
             "firstname": "Andrew",
             "image": "../assets/images/team/nemr_andrew.jpg",
-            "role": "Graphist / 3D designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "graph_3D",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -118,8 +118,8 @@
             "name": "GOMA",
             "firstname": "Maëva",
             "image": "../assets/images/team/goma_maeva.jpg",
-            "role": "Graphist / 3D designer",
-            "degree": "Ingemedia: communication",
+            "role": "graph_3D",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -131,8 +131,8 @@
             "name": "BONNARD",
             "firstname": "Lucas",
             "image": "../assets/images/team/bonnard_lucas.jpg",
-            "role": "Web designer / 3D designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "web_3D",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -144,8 +144,8 @@
             "name": "BAIBAH",
             "firstname": "Ismail",
             "image": "../assets/images/team/baibah_ismail.jpg",
-            "role": "Storytelling / Communication",
-            "degree": "Ingemedia: numeric creation",
+            "role": "storytelling",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -159,8 +159,8 @@
             "name": "DE SERNA",
             "firstname": "Nathan",
             "image": "../assets/images/team/deserna_nathan.jpg",
-            "role": "AR project manager",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "ar_manager",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -172,8 +172,8 @@
             "name": "DECREUX",
             "firstname": "Alexis",
             "image": "../assets/images/team/decreux_alexis.jpg",
-            "role": "Project manager",
-            "degree": "Ingemedia: communication",
+            "role": "com_manager",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -185,8 +185,8 @@
             "name": "MICHELS",
             "firstname": "Paul",
             "image": "../assets/images/team/michels_paul.jpg",
-            "role": "Unity3D lead developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity_lead",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -198,8 +198,8 @@
             "name": "FEBVRE",
             "firstname": "Ludovic",
             "image": "../assets/images/team/febvre_ludovic.jpg",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -211,8 +211,8 @@
             "name": "DUVAUCHELLE",
             "firstname": "Peter",
             "image": "../assets/images/team/duvauchelle_peter.jpg",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -224,8 +224,8 @@
             "name": "HERLIN",
             "firstname": "Florian",
             "image": "",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -237,8 +237,8 @@
             "name": "HAMIDOUCHE",
             "firstname": "Mehdi",
             "image": "../assets/images/team/hamidouche_mehdi.jpg",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -250,16 +250,16 @@
             "name": "MATSINHEA",
             "firstname": "Eta",
             "image": "",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia",
+            "role": "marketing",
+            "degree": "ingemedia",
             "socials": []
         },
         {
             "name": "PETROSINO",
             "firstname": "Marie",
             "image": "",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia",
+            "role": "marketing",
+            "degree": "ingemedia",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -271,8 +271,8 @@
             "name": "ALLONS",
             "firstname": "Fanny",
             "image": "../assets/images/team/allons_fanny.jpg",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia: communication",
+            "role": "marketing",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -284,8 +284,8 @@
             "name": "AMMAD",
             "firstname": "Rayima",
             "image": "../assets/images/team/ammad_rayima.jpg",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia: communication",
+            "role": "marketing",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -297,16 +297,16 @@
             "name": "TAVARES",
             "firstname": "Cristiane",
             "image": "",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia",
+            "role": "marketing",
+            "degree": "ingemedia",
             "socials": []
         },
         {
             "name": "AMAZAL",
             "firstname": "Anas",
             "image": "../assets/images/team/amazal_anas.jpg",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia: communication",
+            "role": "marketing",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -318,8 +318,8 @@
             "name": "SELIA",
             "firstname": "Sty-Yecha",
             "image": "../assets/images/team/selia_styyecha.jpg",
-            "role": "Marketing / Communication",
-            "degree": "Ingemedia: communication",
+            "role": "marketing",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -331,8 +331,8 @@
             "name": "RI",
             "firstname": "Na",
             "image": "",
-            "role": "Graphic designer / Computer graphic designer",
-            "degree": "Ingemedia",
+            "role": "cpt_design",
+            "degree": "ingemedia",
             "socials": []
         }
     ],
@@ -342,7 +342,7 @@
             "firstname": "Vanessa",
             "image": "../assets/images/team/asejocaspillo_vanessa.jpg",
             "role": "VR project manager / Storytelling",
-            "degree": "CNAM: IT and multimedia engineer",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -354,8 +354,8 @@
             "name": "CIANFARANI",
             "firstname": "Thomas",
             "image": "../assets/images/team/cianfarani_thomas.jpg",
-            "role": "Lead developer Unity3D",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity_lead",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -375,8 +375,8 @@
             "name": "CARTEYRADE",
             "firstname": "Alice",
             "image": "../assets/images/team/carteyrade_alice.jpg",
-            "role": "Communication Project Manager",
-            "degree": "Ingemedia: project management and communication",
+            "role": "com_manager",
+            "degree": "ing_communication",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -388,8 +388,8 @@
             "name": "LAZREG",
             "firstname": "Slim",
             "image": "../assets/images/team/lazreg_slim.jpg",
-            "role": "Lead 3D designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "lead_3d",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -405,8 +405,8 @@
             "name": "BOGANIN",
             "firstname": "Aurore",
             "image": "../assets/images/team/boganin_aurore.jpg",
-            "role": "2D designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "design_2d",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -422,8 +422,8 @@
             "name": "NOLOT",
             "firstname": "Lauriane",
             "image": "../assets/images/team/nolot_lauriane.jpg",
-            "role": "3D designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "design_3d",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -443,16 +443,16 @@
             "name": "LEFEVRE",
             "firstname": "Lucas",
             "image": "../assets/images/team/lefevre_lucas.jpg",
-            "role": "3D designer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "design_3d",
+            "degree": "cnam",
             "socials": []
         },
         {
             "name": "CARPENTIER",
             "firstname": "Océane",
             "image": "../assets/images/team/carpentier_oceane.jpg",
-            "role": "3D designer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "design_3d",
+            "degree": "cnam",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",
@@ -464,40 +464,40 @@
             "name": "ARRA",
             "firstname": "Adrien",
             "image": "../assets/images/team/arra_adrien.png",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": []
         },
         {
             "name": "BONNAMOUR",
             "firstname": "Adrien",
             "image": "",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": []
         },
         {
             "name": "GENTILINI",
             "firstname": "Tony",
             "image": "",
-            "role": "Storytelling",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "storytelling",
+            "degree": "cnam",
             "socials": []
         },
         {
             "name": "TOMASIA",
             "firstname": "Alexandre",
             "image": "../assets/images/team/tomasia_alexandre.jpg",
-            "role": "Unity3D developer",
-            "degree": "CNAM: IT and multimedia engineer",
+            "role": "unity",
+            "degree": "cnam",
             "socials": []
         },
         {
             "name": "ALILI",
             "firstname": "Myriam",
             "image": "../assets/images/team/alili_myriam.jpg",
-            "role": "Graphic designer",
-            "degree": "Ingemedia: numeric creation",
+            "role": "graph_design",
+            "degree": "num_creat",
             "socials": [
                 {
                     "icon": "fab fa-linkedin-in",

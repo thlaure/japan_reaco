@@ -15,19 +15,7 @@
 <body class="lang-wrapper">
     <section>
         <div class="header" id="title">
-            <div class="text-right">
-                <div class="btn-group lang-wrapper mr-md-3 mt-md-2" role="group" aria-label="Change language">
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="en">EN</button>
-                    </div>
-                    <div class="border-right">
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="fr">FR</button>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-light btn-lang lang-selector rounded-0 border-0" data-value="jp">JP</button>
-                    </div>
-                </div>
-            </div>
+            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
             <div class="inner-header flex mt-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまたんけん</h2>
@@ -203,19 +191,19 @@
                 <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_ar.jpg" class="card-img rounded-0" alt="AR project image">
                     <div class="card-img-overlay ml-4">
-                        <a href="/projects/ar-project" class="btn btn-danger rounded-0 stretched-link trn" title="AR project">ar_title</a>
+                        <a href="/projects/ar-project" class="btn btn-danger rounded-0 stretched-link trn" title="AR project">ar_button</a>
                     </div>
                 </div>
                 <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_vr.jpg" class="card-img rounded-0" alt="VR project image">
                     <div class="card-img-overlay mr-4 text-right">
-                        <a href="/projects/vr-project" class="btn btn-danger rounded-0 stretched-link trn" title="VR project">vr_title</a>
+                        <a href="/projects/vr-project" class="btn btn-danger rounded-0 stretched-link trn" title="VR project">vr_button</a>
                     </div>
                 </div>
                 <div class="card text-white col-md-6 border-0 mx-auto my-3">
                     <img src="../assets/images/cover_web.jpg" class="card-img rounded-0" alt="Web project image">
                     <div class="card-img-overlay mr-4 text-center">
-                        <a href="/projects/web-project" class="btn btn-danger rounded-0 stretched-link trn" title="Web project">web_title</a>
+                        <a href="/projects/web-project" class="btn btn-danger rounded-0 stretched-link trn" title="Web project">web_button</a>
                     </div>
                 </div>
             </div>

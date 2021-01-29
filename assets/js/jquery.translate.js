@@ -269,17 +269,17 @@ var dict = {
     fr: "Découvrir différemment",
     jp: "Discover differently",
   },
-  ar_title: {
+  ar_button: {
     en: "AR project",
     fr: "Projet AR",
     jp: "AR project",
   },
-  vr_title: {
+  vr_button: {
     en: "VR project",
     fr: "Projet VR",
     jp: "VR project",
   },
-  web_title: {
+  web_button: {
     en: "Web project",
     fr: "Projet Web",
     jp: "Web project",
@@ -294,6 +294,196 @@ var dict = {
     fr: "Développé par les étudiants du CNAM en collaboration avec les étudiants d'Ingémédia, écoles françaises",
     jp: "Developed by CNAM students in collaboration with Ingemedia students, french schools",
   },
+  back_button: {
+    en: "Back",
+    fr: "Retour",
+    jp: "Back"
+  },
+  projects: {
+    en: "Projects",
+    fr: "Projets",
+    jp: "Projects"
+  },
+  // VR
+  vr_title: {
+    en: "Hiroshima Castle town immersion: On the traces of the Saigoku Kaido",
+    fr: "Immersion dans la ville du château d'Hiroshima : Sur les traces du Saigoku Kaido",
+    jp: "Hiroshima Castle town immersion: On the traces of the Saigoku Kaido"
+  },
+  vr_desc1: {
+    en: "This project immerses you in the Edo period, in the old streets of Hiroshima and more particularly known as Hondori street today. You are accompanied by a descendant of a famous merchant family of the time who is proud to tell the story of his city. Equip yourself with the virtual helmet, let yourself be guided and immerse yourself in the stories that blend into the pilgrimage of the Saigoku road.",
+    fr: "Ce projet vous plonge dans la période Edo, dans les vieilles rues d'Hiroshima et plus particulièrement dans la rue Hondori aujourd'hui. Vous êtes accompagné par un descendant d'une célèbre famille de commerçants de l'époque qui est fier de raconter l'histoire de sa ville. Equipez-vous du casque virtuel, laissez-vous guider et immergez-vous dans les histoires qui se fondent dans le pèlerinage de la route de Saigoku.",
+    jp: "This project immerses you in the Edo period, in the old streets of Hiroshima and more particularly known as Hondori street today. You are accompanied by a descendant of a famous merchant family of the time who is proud to tell the story of his city. Equip yourself with the virtual helmet, let yourself be guided and immerse yourself in the stories that blend into the pilgrimage of the Saigoku road."
+  },
+  vr_desc2: {
+    en: "We wish you a good exploration !",
+    fr: "Nous vous souhaitons une bonne exploration !",
+    jp: "We wish you a good exploration !"
+  },
+  // AR
+  ar_desc1: {
+    en: "Due to the Coronavirus crisis, tourism has been really impacted in the entire world, including the city of Hiroshima. Everyone's freedom is limited, and priorities go more towards evenings with friends and family than towards culture and the discovery of heritage.",
+    fr: "En raison de la crise du Coronavirus, le tourisme a été réellement touché dans le monde entier, y compris dans la ville d'Hiroshima. La liberté de chacun est limitée, et les priorités vont plus aux soirées entre amis et en famille qu'à la culture et à la découverte du patrimoine.",
+    jp: "Due to the Coronavirus crisis, tourism has been really impacted in the entire world, including the city of Hiroshima. Everyone's freedom is limited, and priorities go more towards evenings with friends and family than towards culture and the discovery of heritage."
+  },
+  ar_desc2: {
+    en: "That’s why we have developed the “Hiroshimap” smartphone application to help revitalize tourism in Hiroshima.",
+    fr: "C'est pourquoi nous avons développé l'application pour smartphone \"Hiroshimap\" pour aider à revitaliser le tourisme à Hiroshima.",
+    jp: "That’s why we have developed the “Hiroshimap” smartphone application to help revitalize tourism in Hiroshima."
+  },
+  ar_desc3: {
+    en: "Hiroshimap is a smartphone application using geolocalization that permits gathering points of interest on the Saigoku road. The application offers another option which consists in using the smartphone camera to exploit AR (Augmented Reality) technology. The application uses this AR technology to display essential information thanks to a virtual character.",
+    fr: "Hiroshimap est une application pour smartphone utilisant la géolocalisation qui permet de rassembler des points d'intérêt sur la route de Saigoku. L'application offre une autre option qui consiste à utiliser la caméra du smartphone pour exploiter la technologie AR (Réalité Augmentée). L'application utilise cette technologie AR pour afficher des informations essentielles grâce à un personnage virtuel.",
+    jp: "Hiroshimap is a smartphone application using geolocalization that permits gathering points of interest on the Saigoku road. The application offers another option which consists in using the smartphone camera to exploit AR (Augmented Reality) technology. The application uses this AR technology to display essential information thanks to a virtual character."
+  },
+  ar_desc4: {
+    en: "The goal is to make the visit of Hiroshima and get an overview of main monuments and points of interests. This will help to teach users the history of the city and to learn in a fun way.",
+    fr: "L'objectif est de faire la visite d'Hiroshima et d'avoir un aperçu des principaux monuments et points d'intérêt. Cela permettra d'enseigner aux utilisateurs l'histoire de la ville et d'apprendre de manière ludique.",
+    jp: "The goal is to make the visit of Hiroshima and get an overview of main monuments and points of interests. This will help to teach users the history of the city and to learn in a fun way."
+  },
+  ar_desc5: {
+    en: "The application is available on any Android smartphone.",
+    fr: "L'application est disponible sur tout smartphone Android.",
+    jp: "The application is available on any Android smartphone."
+  },
+  // WEB
+  web_desc1: {
+    en: "We build this website as part of a collaborative work between the CNAM and Ingemedia, respectively an IT engineering school and an audio-visual communication school, with the aim of promoting toursim in the Hiroshima region in Japan.",
+    fr: "Nous avons construit ce site dans le cadre d'un travail de collaboration entre le CNAM et Ingémédia, respectivement une école d'ingénieurs en informatique et une école de communication audiovisuelle, dans le but de promouvoir le tourisme dans la région d'Hiroshima au Japon.",
+    jp: "We build this website as part of a collaborative work between the CNAM and Ingemedia, respectively an IT engineering school and an audio-visual communication school, with the aim of promoting toursim in the Hiroshima region in Japan."
+  },
+  web_desc2: {
+    en: "The timeline describes the main periods of the Hiroshima region, and the interactive map presents some monuments of the Saigoku road.",
+    fr: "La timeline décrit les principales périodes de la région d'Hiroshima, et la carte interactive présente quelques monuments de la route de Saigoku.",
+    jp: "The timeline describes the main periods of the Hiroshima region, and the interactive map presents some monuments of the Saigoku road."
+  },
+  // Projects participants
+  title_participants: {
+    en: "Project participants",
+    fr: "Participants du projet",
+    jp: "Project participants"
+  },
+  intro_participants: {
+    en: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road.",
+    fr: "Il s'agit d'un projet multidisciplinaire (web/AR/VR) développé par les élèves de deux écoles françaises toulonnaises, le CNAM et Ingémédia, afin d'encourager le tourisme au Japon mais plus spécifiquement dans la région d'Hiroshima par la route de Saigoku.",
+    jp: "It is a multidisciplinary project (web/AR/VR) developed by the students of two french schools, the CNAM and Ingemedia, in order to encourage tourism in Japan but more specifically in the Hiroshima region through Saigoku road."
+  },
+  cnam_teacher_coordinator: {
+    en: "CNAM teacher and coordinator",
+    fr: "Enseignante et coordinatrice au CNAM",
+    jp: "CNAM teacher and coordinator"
+  },
+  cnam_teacher: {
+    en: "CNAM teacher",
+    fr: "Enseignant au CNAM",
+    jp: "CNAM teacher"
+  },
+  cnam_ingemedia_teacher: {
+    en: "CNAM and Ingemedia teacher",
+    fr: "Enseignant au CNAM et à Ingémédia",
+    jp: "CNAM and Ingemedia teacher"
+  },
+  ingemedia_director: {
+    en: "Ingemedia director and teacher, CNAM teacher",
+    fr: "Directeur d'Ingémédia / enseignant à Ingémédia et au CNAM",
+    jp: "Ingemedia director and teacher, CNAM teacher"
+  },
+  web_manager: {
+    en: "Web project manager / Web developer",
+    fr: "Chef de projet web / Développeur web",
+    jp: "Web project manager / Web developer"
+  },
+  web_dev: {
+    en: "Web developer",
+    fr: "Développeur web",
+    jp: "Web developer"
+  },
+  graph_3D: {
+    en: "Graphist / 3D designer",
+    fr: "Graphiste / Designer 3D",
+    jp: "Graphist / 3D designer"
+  },
+  web_3D: {
+    en: "Web designer / 3D designer",
+    fr: "Designer web / 3D",
+    jp: "Web designer / 3D designer"
+  },
+  storytelling: {
+    en: "Storytelling / Communication",
+    fr: "Storytelling / Communication",
+    jp: "Storytelling / Communication"
+  },
+  ar_manager: {
+    en: "AR project manager",
+    fr: "Chef de projet AR",
+    jp: "AR project manager"
+  },
+  com_manager: {
+    en: "Communication Project Manager",
+    fr: "Responsable communication",
+    jp: "Communication Project Manager"
+  },
+  unity_lead: {
+    en: "Unity3D lead developer",
+    fr: "Lead développeur Unity3D",
+    jp: "Unity3D lead developer"
+  },
+  unity: {
+    en: "Unity3D developer",
+    fr: "Développeur Unity3D",
+    jp: "Unity3D developer"
+  },
+  marketing: {
+    en: "Marketing / Communication",
+    fr: "Marketing / Communication",
+    jp: "Marketing / Communication"
+  },
+  cpt_design: {
+    en: "Computer graphic designer",
+    fr: "Infographiste",
+    jp: "Computer graphic designer"
+  },
+  graph_design: {
+    en: "Graphic designer",
+    fr: "Designer graphique",
+    jp: "Graphic designer"
+  },
+  design_3d: {
+    en: "3D designer",
+    fr: "Designer 3D",
+    jp: "3D designer"
+  },
+  design_2d: {
+    en: "2D designer",
+    fr: "Designer 2D",
+    jp: "2D designer"
+  },
+  lead_3d: {
+    en: "Lead 3D designer",
+    fr: "Responsable design 3D",
+    jp: "Lead 3D designer"
+  },
+  cnam: {
+    en: "CNAM: IT and multimedia engineer",
+    fr: "Ingénieur informatique au CNAM",
+    jp: "CNAM: IT and multimedia engineer"
+  },
+  ingemedia: {
+    en: "Ingemedia",
+    fr: "Ingémédia",
+    jp: "Ingemedia"
+  },
+  num_creat: {
+    en: "Ingemedia: numeric creation",
+    fr: "Ingémédia : Création numérique",
+    jp: "Ingemedia: numeric creation"
+  },
+  ing_communication: {
+    en: "Ingemedia: project management and communication",
+    fr: "Ingémédia : Communication et management de projet",
+    jp: "Ingemedia: project management and communication"
+  }
+
 };
 
 if (!localStorage.getItem("lang")) {
