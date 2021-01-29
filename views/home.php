@@ -16,7 +16,7 @@
     <section>
         <div class="header" id="title">
             <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
-            <div class="inner-header flex mt-5">
+            <div class="inner-header flex my-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまんけん</h2>
                 <hr class="sm-separator w-25 my-md-5">
