@@ -242,7 +242,7 @@
                 const light = new THREE.AmbientLight(0xFFFFFF,0.5); // soft white light
                 scene.add(light);
                 
-                const lightt = new THREE.DirectionalLight(0xFF0000,0.3); // soft white light
+                const lightt = new THREE.DirectionalLight(0xbc032c,0.3); // soft white light
                 lightt.position.set(0, 150, 0);
                 scene.add(lightt);
                 const lightWhite = new THREE.DirectionalLight(0xFFFFFF,0.9); // soft white light
