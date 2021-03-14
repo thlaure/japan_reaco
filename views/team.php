@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include(__DIR__ . "/head.inc.php"); ?>
+    <?php include(__DIR__ . '/head.inc.php'); ?>
     <link rel="stylesheet" href="../assets/css/team.css">
 </head>
 
@@ -14,7 +14,7 @@
                     <a href="/" class="btn btn-light rounded-pill p-md-3 font-weight-bold col-md-2 mt-3 mx-md-3" title="Return to home"><i class="fas fa-arrow-left"></i> <span class="trn">back_button</span></a>
                 </div>
                 <div class="col-md-6">
-                    <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
+                    <?php include(__DIR__ . '/lang_wrapper.inc.php'); ?>
                 </div>
             </div>
             <h1 class="text-center mt-4 display-4">Hiroshima Exploration</h1>
@@ -29,14 +29,14 @@
         </div>
 
         <?php foreach ($projects as $key => $participants) : ?>
-            <article id="<?= strtolower(str_replace(" ", "-", $key)) ?>" class="container my-5">
+            <article id="<?= strtolower(str_replace(' ', '-', $key)) ?>" class="container my-5">
                 <h2 class="display-4 mb-5"><?= strtoupper($key) ?></h2>
                 <div class="row container mx-auto">
                     <?php foreach ($participants as $participant) : ?>
                         <div class="card mb-3 col-md-6 border-0 mx-auto" style="max-width: 540px;">
                             <div class="row no-gutters">
                                 <div class="col-md-4">
-                                    <img src="<?= $participant->image ? $participant->image : "../assets/images/team/default_avatar.png" ?>" class="card-img" alt="Portrait of <?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?>">
+                                    <img src="<?= $participant->image ? $participant->image : '../assets/images/team/default_avatar.png' ?>" class="card-img" alt="Portrait of <?= ucwords($participant->firstname) ?> <?= strtoupper($participant->name) ?>">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -64,7 +64,7 @@
         </div>
     </section>
 
-    <?php include(__DIR__ . "/footer.inc.php"); ?>
+    <?php include(__DIR__ . '/footer.inc.php'); ?>
 </body>
 
 </html>

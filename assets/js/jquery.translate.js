@@ -15,8 +15,8 @@
     var that = this; // a reference to ourselves
 
     var settings = {
-      css: "trn",
-      lang: "en",
+      css: 'trn',
+      lang: 'en',
     };
     settings = $.extend(settings, options || {});
     if (settings.css.lastIndexOf(".", 0) !== 0) {
@@ -59,10 +59,10 @@
     this.find(settings.css).each(function (i) {
       var $this = $(this);
 
-      var trnKey = $this.attr("data-trn-key");
+      var trnKey = $this.attr('data-trn-key');
       if (!trnKey) {
         trnKey = $this.html();
-        $this.attr("data-trn-key", trnKey); // store key for next time
+        $this.attr('data-trn-key', trnKey); // store key for next time
       }
 
       $this.html(that.get(trnKey));
@@ -485,19 +485,19 @@ var dict = {
   }
 };
 
-if (!localStorage.getItem("lang")) {
-  localStorage.setItem("lang", "en");
+if (!localStorage.getItem('lang')) {
+  localStorage.setItem('lang', 'en');
 }
-localStorage.getItem("lang");
+localStorage.getItem('lang');
 
-var translator = $(".lang-wrapper").translate({
-  lang: localStorage.getItem("lang"),
+var translator = $('.lang-wrapper').translate({
+  lang: localStorage.getItem('lang'),
   t: dict,
 });
 
-$(".lang-selector").on("click", function (e) {
+$('.lang-selector').on('click', function (e) {
   e.preventDefault();
-  var elLanguage = $(this).attr("data-value");
-  localStorage.setItem("lang", elLanguage);
+  var elLanguage = $(this).attr('data-value');
+  localStorage.setItem('lang', elLanguage);
   translator.lang(elLanguage);
 });
