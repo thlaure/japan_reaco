@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="./assets/js/home.js" defer></script>
     <script src="./assets/js/timeline.js" defer></script>
+    <script src="https://js.arcgis.com/4.18/" defer></script>
+    <script src="./assets/js/3d_map.js" defer></script>
+
 </head>
 
 <body class="lang-wrapper">
@@ -149,14 +153,13 @@
         </article>
 
         <article>
-            <div class="view parallax-map mb-3">
+            <div class="view parallax-map">
                 <h2 class="display-4 text-white text-center trn">interactive_title</h2>
             </div>
-            <div id="map">
-            </div>
+            <div id="map"></div>
         </article>
 
-        <article class="my-5" id="events">
+        <article id="events">
             <div class="view parallax-events mb-3">
                 <h2 class="display-4 text-white text-center trn">event_title</h2>
             </div>
@@ -215,8 +218,6 @@
             <button class="btn btn-danger btn-rotate rounded-0" id="scroll-title" title="Scroll to the title"><i class="fas fa-arrow-up"></i></button>
         </div>
     </section>
-
-    <?php include(__DIR__ . "/footer.inc.php"); ?>
 </body>
 
 </html>
