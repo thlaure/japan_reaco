@@ -75,7 +75,6 @@
                             <p class="trn">prg1_early</p>
                             <p class="trn">prg2_early</p>
                             <p class="trn">prg3_early</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -89,7 +88,6 @@
                             <p class="trn">prg1_sengoku</p>
                             <p class="trn">prg2_sengoku</p>
                             <p class="trn">prg3_sengoku</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -103,7 +101,6 @@
                             <p class="trn">prg1_edo</p>
                             <p class="trn">prg2_edo</p>
                             <p class="trn">prg3_edo</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -117,7 +114,6 @@
                             <p class="trn">prg1_imperial</p>
                             <p class="trn">prg2_imperial</p>
                             <p class="trn">prg3_imperial</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -131,7 +127,6 @@
                             <p class="trn">prg1_WWII</p>
                             <p class="trn">prg2_WWII</p>
                             <p class="trn">prg3_WWII</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -145,7 +140,6 @@
                             <p class="trn">prg1_postwar</p>
                             <p class="trn">prg2_postwar</p>
                             <p class="trn">prg3_postwar</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
                 </div>
