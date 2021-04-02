@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="./assets/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
     <script src="./assets/js/home.js" defer></script>
     <script src="./assets/js/timeline.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
+    <script src="./assets/js/2dmap.js" defer></script>
 </head>
 
 <body class="lang-wrapper">
@@ -71,7 +74,6 @@
                             <p class="trn">prg1_early</p>
                             <p class="trn">prg2_early</p>
                             <p class="trn">prg3_early</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -85,7 +87,6 @@
                             <p class="trn">prg1_sengoku</p>
                             <p class="trn">prg2_sengoku</p>
                             <p class="trn">prg3_sengoku</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -99,7 +100,6 @@
                             <p class="trn">prg1_edo</p>
                             <p class="trn">prg2_edo</p>
                             <p class="trn">prg3_edo</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -113,7 +113,6 @@
                             <p class="trn">prg1_imperial</p>
                             <p class="trn">prg2_imperial</p>
                             <p class="trn">prg3_imperial</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -127,7 +126,6 @@
                             <p class="trn">prg1_WWII</p>
                             <p class="trn">prg2_WWII</p>
                             <p class="trn">prg3_WWII</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
 
@@ -141,7 +139,6 @@
                             <p class="trn">prg1_postwar</p>
                             <p class="trn">prg2_postwar</p>
                             <p class="trn">prg3_postwar</p>
-                            <!--<a href="#" class="read-more">Read more</a>-->
                         </div>
                     </div>
                 </div>
@@ -149,16 +146,13 @@
         </article>
 
         <article>
-            <div class="view parallax-map mb-3">
+            <div class="view parallax-map">
                 <h2 class="display-4 text-white text-center trn">interactive_title</h2>
             </div>
-            <div id="map">
-                <canvas class="map" id="canvas-div"></canvas>
-                <?php include(__DIR__ . "/map.js.inc.php"); ?>
-            </div>
+            <div class="container-fluid" id="map"></div>
         </article>
 
-        <article class="my-5" id="events">
+        <article id="events">
             <div class="view parallax-events mb-3">
                 <h2 class="display-4 text-white text-center trn">event_title</h2>
             </div>
