@@ -148,7 +148,7 @@ h1 {
 
 .inner-header {
   text-align: center;
-  height: 80vh;
+  height: 65vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -218,5 +218,8 @@ h1 {
   }
   #map {
     height: 450px;
+  }
+  .inner-header {
+    height: 75vh;
   }
 }

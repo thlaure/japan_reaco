@@ -151,7 +151,7 @@
             <div class="view parallax-map">
                 <h2 class="display-4 text-white text-center trn">interactive_title</h2>
             </div>
-            <div class="container-lg" id="map"></div>
+            <div class="container-fluid" id="map"></div>
         </article>
 
         <article id="events">
