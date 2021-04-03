@@ -25,13 +25,13 @@ function createMarker(latitude, longitude, label, link, description, image = nul
         </div>`, { keepInView: true });
 }
 
-createMarker(34.395493, 132.453620, 'A-Bomb Dome', 'http://en.wikipedia.org/wiki/A-Bomb_Dome', 'Designated a UNESCO World Heritage Site, the A-Bomb Dome is the only building left standing near the hypocentre of the atomic bomb.', 'map/a_bomb_dome.JPG');
+createMarker(34.395493, 132.453620, 'A-Bomb Dome', 'http://en.wikipedia.org/wiki/A-Bomb_Dome', 'Designated a UNESCO World Heritage Site, the A-Bomb Dome is the only building left standing near the hypocentre of the atomic bomb.', 'timeline/ww2.jpg');
 
 createMarker(34.394130747695115, 132.45276527965459, 'Children Peace Memorial', 'http://en.wikipedia.org/wiki/Children%27s_Peace_Monument', 'It is a monument to commemorate thousands of child victims of the a-bomb. The girl holding an origami crane on top is modelled after Sadako Sasaki, one of the victims.', 'map/children_peace_memorial.jpg');
 
 createMarker(34.39254012628748, 132.4523983752547, 'Peace Memorial Park', 'https://en.wikipedia.org/wiki/Hiroshima_Peace_Memorial_Park', 'The Peace Memorial Parl is a memorial park in the center of Hiroshima, Japan. It is dedicated to the legacy of Hiroshima as the first city in the world to suffer a nuclear attack, and to the memories of the bomb\'s direct and indirect victims.', 'map/peace_memorial_park.jpg');
 
-createMarker(34.40277778, 132.45916667, 'Hiroshima Castle', 'http://en.wikipedia.org/wiki/Hiroshima_castle', 'Originally constructed in 1590s as the home of the feudal lord of the Hiroshima fief, the castle was destroyed by the 1945 atomic bombing and was rebuilt in 1958.', 'map/hiroshima_castle.jpg');
+createMarker(34.40277778, 132.45916667, 'Hiroshima Castle', 'http://en.wikipedia.org/wiki/Hiroshima_castle', 'Originally constructed in 1590s as the home of the feudal lord of the Hiroshima fief, the castle was destroyed by the 1945 atomic bombing and was rebuilt in 1958.', 'timeline/castle_edo.jpg');
 
 createMarker(34.3929723223356, 132.45256682229862, 'Victims Memorial Cenotaph', 'http://en.wikipedia.org/wiki/Hiroshima_Peace_Memorial_Park#Memorial_Cenotaph', 'The cenotaph holds the names of all victims of the a-bomb, and is aligned to the A-Bomb Dome, which is seen in the background.', 'map/hiroshima_peace_memorial.jpg');
 

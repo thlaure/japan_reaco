@@ -3,16 +3,16 @@
 
 <head>
     <?php include(__DIR__ . "/head.inc.php"); ?>
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/home.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="./assets/css/timeline.css">
+    <link rel="stylesheet" href="./assets/css/timeline.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="./assets/js/home.js" defer></script>
-    <script src="./assets/js/timeline.js" defer></script>
+    <script src="./assets/js/home.min.js" defer></script>
+    <script src="./assets/js/timeline.min.js" defer></script>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin="" defer></script>
-    <script src="./assets/js/2dmap.js" defer></script>
+    <script src="./assets/js/2dmap.min.js" defer></script>
 </head>
 
 <body class="lang-wrapper">
@@ -55,10 +55,12 @@
         </div>
 
         <div class="container my-5">
-            <p class="lead py-5 trn">text_intro</p>
+            <blockquote class="blockquote">
+                <p class="lead py-5 text-intro"><i class="fas fa-quote-left"></i> <span class="trn">text_intro</span></p>
+            </blockquote>
         </div>
 
-        <article>
+        <article class="pt-5">
             <div class="view parallax-projects mb-3">
                 <h2 class="display-4 text-white text-center trn">timeline_title</h2>
             </div>
@@ -149,7 +151,7 @@
             <div class="view parallax-map">
                 <h2 class="display-4 text-white text-center trn">interactive_title</h2>
             </div>
-            <div class="container-fluid" id="map"></div>
+            <div class="container-lg" id="map"></div>
         </article>
 
         <article id="events">
