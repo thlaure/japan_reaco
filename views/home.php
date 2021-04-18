@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php include(__DIR__ . "/head.inc.php"); ?>
+    <?php include(__DIR__ . '/head.inc.php'); ?>
     <link rel="stylesheet" href="./assets/css/home.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="./assets/css/timeline.min.css">
@@ -18,7 +18,7 @@
 <body class="lang-wrapper">
     <section>
         <div class="header" id="title">
-            <?php include(__DIR__ . "/lang_wrapper.inc.php"); ?>
+            <?php include(__DIR__ . '/lang_wrapper.inc.php'); ?>
             <div class="inner-header flex mt-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
                 <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまんけん</h2>
@@ -214,7 +214,7 @@
         </div>
     </section>
 
-    <?php include(__DIR__ . "/footer.inc.php"); ?>
+    <?php include(__DIR__ . '/footer.inc.php'); ?>
 </body>
 
 </html>

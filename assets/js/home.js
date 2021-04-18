@@ -7,17 +7,17 @@
    * @param {string} block
    */
   function scrollTo(to, behavior, block) {
-    const scroll = document.getElementById("scroll-" + to);
+    const scroll = document.getElementById('scroll-' + to);
     scroll.onclick = (_) => document.getElementById(to).scrollIntoView({ behavior: behavior, block: block });
   }
 
-  scrollTo("timeline", "smooth", "start");
-  scrollTo("map", "smooth", "start");
-  scrollTo("events", "smooth", "start");
-  scrollTo("projects", "smooth", "start");
-  scrollTo("title", "smooth", "start");
+  scrollTo('timeline', 'smooth', 'start');
+  scrollTo('map', 'smooth', 'start');
+  scrollTo('events', 'smooth', 'start');
+  scrollTo('projects', 'smooth', 'start');
+  scrollTo('title', 'smooth', 'start');
 
-  $(window).on("scroll", function () {
+  $(window).on('scroll', function () {
     // set scroll position in session storage
     sessionStorage.scrollPos = $(window).scrollTop();
   });

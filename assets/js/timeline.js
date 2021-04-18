@@ -1,9 +1,9 @@
 $.js = function (el) {
-  return $("[data-js=" + el + "]");
+  return $('[data-js=' + el + ']');
 };
 
 function carousel() {
-  $.js("timeline-carousel").slick({
+  $.js('timeline-carousel').slick({
     infinite: false,
     arrows: false,
     dots: true,
