@@ -21,7 +21,7 @@
             <?php include(__DIR__ . '/lang_wrapper.inc.php'); ?>
             <div class="inner-header flex mt-5">
                 <h1 class="display-3" data-aos="zoom-out" data-aos-duration="1000">Hiroshima Exploration</h1>
-                <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしまんけん</h2>
+                <h2 data-aos="zoom-out" data-aos-duration="1000">ひろしま</h2>
                 <hr class="sm-separator w-25 my-md-5">
                 <div class="mx-auto container mt-md-5 row" data-aos="zoom-out" data-aos-duration="2000">
                     <div class="col-md-3 mt-2 mx-auto">
